@@ -1,0 +1,242 @@
+{
+ "schema_version": "1.0",
+ "map": "Town07",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-101",
+  "type": "ego",
+  "x": -151.5,
+  "y": -61.3,
+  "z": 0.57,
+  "yaw": 91,
+  "initial_speed": 12.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": -151.5,
+       "y": -61.3,
+       "z": 0.57,
+       "strategy": "fastest"
+      },
+      {
+       "x": -133.5,
+       "y": -33.3,
+       "z": 0.55,
+       "strategy": "fastest"
+      },
+      {
+       "x": -102.6,
+       "y": -21.3,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -83.9,
+       "y": 1,
+       "z": 0.53,
+       "strategy": "fastest"
+      },
+      {
+       "x": -28.8,
+       "y": 0.4,
+       "z": 0.53,
+       "strategy": "fastest"
+      },
+      {
+       "x": -6,
+       "y": 2.2,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -5.6,
+       "y": 15.6,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 12.2,
+       "y": 62.9,
+       "z": 0.53,
+       "strategy": "fastest"
+      },
+      {
+       "x": 32.5,
+       "y": 63.6,
+       "z": 0.53,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-100",
+   "type": "car",
+   "x": -5.1,
+   "y": -44.1,
+   "z": 0.5,
+   "yaw": 91,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": -5.1,
+        "y": -44.1,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -5.6,
+        "y": 15.6,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -52.1,
+        "y": 55.8,
+        "z": 0.53,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 96.3
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 3
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 7.8
+      }
+     }
+    }
+   ],
+   "obey_traffic_lights": false,
+   "obey_obstacles": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_4",
+   "x": 5.6,
+   "y": 5.8,
+   "z": 0.03,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 74.2
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 57.3
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 43.4
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 32.5
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 24.7
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "junction_conflict",
+  "label": "Querverkehr Kreuzung",
+  "seed": 1,
+  "town": "Town07",
+  "near": {
+   "x": -7.3,
+   "y": 4.4
+  },
+  "anchored": false,
+  "attempt": 18,
+  "overrides": {
+   "layout": "ego_right_crossing",
+   "npc_from": "left"
+  },
+  "params": {
+   "ego_speed": 12.5,
+   "layout": "ego_right_crossing",
+   "npc_from": "left",
+   "npc_type": "car",
+   "junction": "725",
+   "signalized": true,
+   "oncoming": false,
+   "npc_speed": 7.8,
+   "npc_run_up_m": 48.7,
+   "arrival_offset_s": -0.54,
+   "trigger_m": 96.3
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": null,
+   "decel_mps2": 0,
+   "min_gap_m": 1.5,
+   "conflict_with": "car",
+   "at": {
+    "x": -7.3,
+    "y": 4.4
+   }
+  },
+  "signature": "knewos"
+ }
+}

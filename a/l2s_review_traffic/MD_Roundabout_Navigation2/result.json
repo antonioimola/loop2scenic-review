@@ -1,0 +1,121 @@
+{
+ "name": "l2st-MD_Roundabout_Navigation2",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   27.25,
+   26.5,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 2.0,
+   "shape_median_m": 0.23,
+   "end_diff_m": 1.13,
+   "turn_deg": [
+    -103,
+    -103
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.96,
+   "shape_median_m": 0.37,
+   "end_diff_m": 0.44,
+   "turn_deg": [
+    -7,
+    -6
+   ],
+   "z": [
+    0.02,
+    0.69
+   ],
+   "closest_to_hero": [
+    1.82,
+    3.05
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.48,
+   "shape_median_m": 0.23,
+   "end_diff_m": 0.35,
+   "turn_deg": [
+    -89,
+    -93
+   ],
+   "z": [
+    0.03,
+    0.67
+   ],
+   "closest_to_hero": [
+    4.0,
+    4.01
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Roundabout_Navigation2",
+ "hash": "de3642feceab",
+ "elapsed": 17,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Roundabout_Navigation2__Town03__2026-11-16_04-20-23_897"
+}

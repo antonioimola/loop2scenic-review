@@ -1,0 +1,81 @@
+{
+ "id": "l2s-media-r7",
+ "source": "Loop2Scenic r7_town05_ins_ss (image)",
+ "description": "the ego car travels straight through a four-way intersection ... an adversarial car proceeds straight from the cross street",
+ "town": "Town05",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "crossing",
+  "npc_from": "left"
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-r7.xosc",
+  "route": "l2s-media-r7_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9,
+  "layout": "crossing",
+  "npc_from": "left",
+  "npc_type": "car",
+  "junction": "1292",
+  "signalized": true,
+  "oncoming": false,
+  "npc_speed": 9.1,
+  "npc_run_up_m": 23.4,
+  "arrival_offset_s": -0.44,
+  "trigger_m": 40
+ },
+ "checks": [
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): builds \u2014 \u201cthe ego car travels straight through a four-way intersection ... an ad\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'crossing', 'crossing')"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): pinned npc_from honoured",
+   "status": "PASS",
+   "detail": "('npc_from', 'left', 'left')"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((51, 65, '1292'), (2, 18, '1292'))"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): the ego goes straight through it",
+   "status": "PASS",
+   "detail": "0.0"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "0.6906523928203114"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): ...it comes from the ego's left",
+   "status": "PASS",
+   "detail": "88.5532639305842"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): they meet in junction 1292, the one in the picture",
+   "status": "PASS",
+   "detail": "(51, 65, '1292')"
+  },
+  {
+   "check": "l2s-media-r7 (Loop2Scenic r7_town05_ins_ss (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

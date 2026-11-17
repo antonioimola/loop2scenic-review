@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 13,
+    "walkers": 14,
+    "seed": 3900,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -335,
+    "y": 30,
+    "z": 0.64,
+    "yaw": 0,
+    "initial_speed": 11,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -335,
+              "y": 30,
+              "z": 0.64,
+              "strategy": "fastest"
+            },
+            {
+              "x": -127.7,
+              "y": 30.28,
+              "z": 8.97,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -315,
+      "y": 30.02,
+      "z": 0.91,
+      "yaw": 0,
+      "initial_speed": 11,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 11
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 60
+            }
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_point",
+            "value": 2.5,
+            "point": {
+              "x": -224,
+              "y": 30.15,
+              "z": 3.992
+            },
+            "entity_ref": "obj-2"
+          },
+          "action": {
+            "type": "lane_change",
+            "direction": "left",
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "distance",
+              "value": 8
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    },
+    {
+      "id": "obj-3",
+      "type": "child",
+      "x": -200,
+      "y": 30,
+      "z": 5.33,
+      "yaw": 90,
+      "initial_speed": 0,
+      "events": []
+    },
+    {
+      "id": "obj-4",
+      "type": "fox",
+      "x": -196,
+      "y": 33.7,
+      "z": 5.54,
+      "yaw": 90,
+      "initial_speed": 0,
+      "events": []
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

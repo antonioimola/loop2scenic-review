@@ -1,0 +1,160 @@
+{
+ "name": "l2st-moving_deceleration_navigationnotpossible",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   60.3,
+   25.55,
+   "idle"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    6.4,
+    6.4
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.26,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.27,
+    4.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.65,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.66,
+    5.03
+   ],
+   "closest_to_hero": [
+    4.81,
+    4.23
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 1.31,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.31,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.41,
+    10.98
+   ],
+   "closest_to_hero": [
+    5.3,
+    5.32
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.22,
+    6.87
+   ],
+   "closest_to_hero": [
+    27.67,
+    26.68
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.58,
+    7.23
+   ],
+   "closest_to_hero": [
+    34.67,
+    33.68
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "moving_deceleration_navigationnotpossible",
+ "hash": "71aa08fbfa3e",
+ "elapsed": 25,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-moving_deceleration_navigationnotpossible__Town04__2026-11-16_03-51-06_115"
+}

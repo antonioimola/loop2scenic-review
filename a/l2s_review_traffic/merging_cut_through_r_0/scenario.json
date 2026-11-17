@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 9,
+    "walkers": 13,
+    "seed": 5420,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -320,
+    "y": 30.02,
+    "z": 0.83,
+    "yaw": 0,
+    "initial_speed": 10,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -320,
+              "y": 30.02,
+              "z": 0.83,
+              "strategy": "fastest"
+            },
+            {
+              "x": -270,
+              "y": 30.09,
+              "z": 2.05,
+              "strategy": "fastest"
+            },
+            {
+              "x": -267,
+              "y": 30.18,
+              "z": 2.16,
+              "strategy": "shortest"
+            },
+            {
+              "x": -264,
+              "y": 30.4,
+              "z": 2.26,
+              "strategy": "shortest"
+            },
+            {
+              "x": -261.01,
+              "y": 30.73,
+              "z": 2.37,
+              "strategy": "shortest"
+            },
+            {
+              "x": -258.01,
+              "y": 31.16,
+              "z": 2.48,
+              "strategy": "shortest"
+            },
+            {
+              "x": -255.01,
+              "y": 31.64,
+              "z": 2.6,
+              "strategy": "shortest"
+            },
+            {
+              "x": -252.02,
+              "y": 32.15,
+              "z": 2.71,
+              "strategy": "shortest"
+            },
+            {
+              "x": -249.02,
+              "y": 32.65,
+              "z": 2.84,
+              "strategy": "shortest"
+            },
+            {
+              "x": -246.03,
+              "y": 33.12,
+              "z": 2.96,
+              "strategy": "shortest"
+            },
+            {
+              "x": -243.03,
+              "y": 33.51,
+              "z": 3.09,
+              "strategy": "shortest"
+            },
+            {
+              "x": -240.04,
+              "y": 33.81,
+              "z": 3.22,
+              "strategy": "shortest"
+            },
+            {
+              "x": -237.04,
+              "y": 33.99,
+              "z": 3.36,
+              "strategy": "shortest"
+            },
+            {
+              "x": -235.04,
+              "y": 33.63,
+              "z": 3.45,
+              "strategy": "shortest"
+            },
+            {
+              "x": -40,
+              "y": 33.92,
+              "z": 10.82,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -300,
+      "y": 26.54,
+      "z": 1.21,
+      "yaw": 0,
+      "initial_speed": 10,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -300,
+                "y": 26.54,
+                "z": 1.21,
+                "strategy": "fastest"
+              },
+              {
+                "x": -250,
+                "y": 26.61,
+                "z": 2.8,
+                "strategy": "fastest"
+              },
+              {
+                "x": -247,
+                "y": 26.69,
+                "z": 2.92,
+                "strategy": "shortest"
+              },
+              {
+                "x": -244,
+                "y": 26.91,
+                "z": 3.05,
+                "strategy": "shortest"
+              },
+              {
+                "x": -241,
+                "y": 27.28,
+                "z": 3.18,
+                "strategy": "shortest"
+              },
+              {
+                "x": -238,
+                "y": 27.77,
+                "z": 3.31,
+                "strategy": "shortest"
+              },
+              {
+                "x": -235,
+                "y": 28.36,
+                "z": 3.45,
+                "strategy": "shortest"
+              },
+              {
+                "x": -232,
+                "y": 29.03,
+                "z": 3.59,
+                "strategy": "shortest"
+              },
+              {
+                "x": -229,
+                "y": 29.74,
+                "z": 3.74,
+                "strategy": "shortest"
+              },
+              {
+                "x": -226,
+                "y": 30.48,
+                "z": 3.89,
+                "strategy": "shortest"
+              },
+              {
+                "x": -223,
+                "y": 31.19,
+                "z": 4.04,
+                "strategy": "shortest"
+              },
+              {
+                "x": -220,
+                "y": 31.86,
+                "z": 4.19,
+                "strategy": "shortest"
+              },
+              {
+                "x": -217,
+                "y": 32.45,
+                "z": 4.35,
+                "strategy": "shortest"
+              },
+              {
+                "x": -214,
+                "y": 32.94,
+                "z": 4.5,
+                "strategy": "shortest"
+              },
+              {
+                "x": -211,
+                "y": 33.31,
+                "z": 4.66,
+                "strategy": "shortest"
+              },
+              {
+                "x": -208,
+                "y": 33.53,
+                "z": 4.81,
+                "strategy": "shortest"
+              },
+              {
+                "x": -205,
+                "y": 33.67,
+                "z": 4.97,
+                "strategy": "shortest"
+              },
+              {
+                "x": 100,
+                "y": 34.52,
+                "z": 11.17,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

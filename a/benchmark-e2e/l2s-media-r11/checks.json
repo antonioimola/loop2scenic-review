@@ -1,0 +1,101 @@
+{
+ "id": "l2s-media-r11",
+ "source": "Loop2Scenic r11_town05_ins_sl (image)",
+ "description": "attempts a left turn ... at a signalized, multi-lane four-way urban intersection",
+ "town": "Town05",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "ego_left_crossing",
+  "npc_from": "left"
+ },
+ "passed": 13,
+ "total": 13,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-r11.xosc",
+  "route": "l2s-media-r11_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 11.5,
+  "layout": "ego_left_crossing",
+  "npc_from": "left",
+  "npc_type": "car",
+  "junction": "1292",
+  "signalized": true,
+  "oncoming": false,
+  "npc_speed": 9.2,
+  "npc_run_up_m": 45.1,
+  "arrival_offset_s": -0.35,
+  "trigger_m": 84.1
+ },
+ "checks": [
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): builds \u2014 \u201cattempts a left turn ... at a signalized, multi-lane four-way urban in\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'ego_left_crossing', 'ego_left_crossing')"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): pinned npc_from honoured",
+   "status": "PASS",
+   "detail": "('npc_from', 'left', 'left')"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((53, 66, '1292'), (13, 28, '1292'))"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): the ego goes left through it",
+   "status": "PASS",
+   "detail": "-88.55032371564573"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "-0.002940214938519148"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): ...it comes from the ego's left",
+   "status": "PASS",
+   "detail": "91.4441020653868"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): they meet",
+   "status": "PASS",
+   "detail": "1.098676302663258"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): they meet in junction 1292, the one in the picture",
+   "status": "PASS",
+   "detail": "(53, 66, '1292')"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): the ego's route goes through a junction there",
+   "status": "PASS",
+   "detail": "{'x': 25.327, 'y': -89.107}"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): a traffic light governs the ego's way through the junction",
+   "status": "PASS",
+   "detail": "([16, 55, 80, 98], (53, 66, '1292'))"
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): ...agrees with the generator's own label",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-r11 (Loop2Scenic r11_town05_ins_sl (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

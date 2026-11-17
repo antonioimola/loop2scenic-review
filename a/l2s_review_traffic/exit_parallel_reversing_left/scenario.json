@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 12,
+    "walkers": 7,
+    "seed": 797,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -335,
+    "y": 33.5,
+    "z": 0.64,
+    "yaw": 0,
+    "initial_speed": 8,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -335,
+              "y": 33.5,
+              "z": 0.64,
+              "strategy": "fastest"
+            },
+            {
+              "x": -127.7,
+              "y": 33.78,
+              "z": 8.97,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -230,
+      "y": 33.64,
+      "z": 3.69,
+      "yaw": 0,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 40
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": -230,
+                "y": 33.64,
+                "z": 3.69,
+                "velocity": 1
+              },
+              {
+                "x": -220,
+                "y": 37.14,
+                "z": 4.19,
+                "velocity": 1
+              }
+            ]
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "event_started",
+            "event_id": "evt-1"
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 2.5,
+              "reverse": true
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 5.5
+            }
+          }
+        },
+        {
+          "id": "evt-3",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "evt-2"
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 0
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 30
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

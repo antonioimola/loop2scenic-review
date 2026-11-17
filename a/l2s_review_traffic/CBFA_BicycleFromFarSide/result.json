@@ -1,0 +1,105 @@
+{
+ "name": "l2st-CBFA_BicycleFromFarSide",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.45,
+   20.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    6.9,
+    6.9
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.07,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.73,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 6.72,
+   "shape_median_m": 3.26,
+   "end_diff_m": 3.26,
+   "turn_deg": [
+    63,
+    0
+   ],
+   "z": [
+    -0.08,
+    0.79
+   ],
+   "closest_to_hero": [
+    1.55,
+    0.95
+   ]
+  },
+  "problems": [
+   "adversary drives 3.26 m off the preview path (median)",
+   "adversary turns 63\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary drives 3.26 m off the preview path (median)",
+  "adversary turns 63\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "CBFA_BicycleFromFarSide",
+ "hash": "760f025c4da4",
+ "elapsed": 12,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CBFA_BicycleFromFarSide__Town01__2026-11-16_03-04-08_141"
+}

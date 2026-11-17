@@ -1,0 +1,158 @@
+{
+ "name": "l2st-MD_Intersection_Deadlock_Resolution6",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   18.17,
+   17.65,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    0.1,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_SpeedEvent1",
+    3.45,
+    3.45
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_SpeedEvent1",
+    2.35,
+    2.35
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.65,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.66,
+   "turn_deg": [
+    87,
+    85
+   ],
+   "z": [
+    0.02,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.4,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.4,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    12.27,
+    12.55
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.68,
+   "shape_median_m": 0.25,
+   "end_diff_m": 0.32,
+   "turn_deg": [
+    60,
+    62
+   ],
+   "z": [
+    0.03,
+    0.75
+   ],
+   "closest_to_hero": [
+    17.46,
+    18.68
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.68,
+   "shape_median_m": 0.17,
+   "end_diff_m": 1.06,
+   "turn_deg": [
+    -24,
+    -26
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    5.1,
+    4.55
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Intersection_Deadlock_Resolution6",
+ "hash": "25442c151b1e",
+ "elapsed": 11,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Intersection_Deadlock_Resolution6__Town05__2026-11-16_03-26-14_461"
+}

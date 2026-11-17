@@ -1,0 +1,76 @@
+{
+ "id": "l2s-media-lc-r-2",
+ "source": "Loop2Scenic lc_r_2 (image)",
+ "description": "lane change right with a following object in the target lane",
+ "town": "Town04",
+ "type": "rear_approach",
+ "seed": 1,
+ "pins": {
+  "side": "right"
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-lc-r-2.xosc",
+  "route": "l2s-media-lc-r-2_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9,
+  "npc_type": "car",
+  "side": "right",
+  "speed_diff": 3.4,
+  "gap_at_change_m": 4.7,
+  "lane_change_m": 17.5,
+  "surge_before_s": 2.16
+ },
+ "checks": [
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): builds \u2014 \u201clane change right with a following object in the target lane\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): pinned side honoured",
+   "status": "PASS",
+   "detail": "('side', 'right', 'right')"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): the car from behind is a car",
+   "status": "PASS",
+   "detail": "car"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): the ego is set to change lanes",
+   "status": "PASS",
+   "detail": "['assign_route', 'lane_change']"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): it starts behind the ego",
+   "status": "PASS",
+   "detail": "-9.77014637490402"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): ...in the next lane, not the ego's",
+   "status": "PASS",
+   "detail": "4.130888501636226"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): it is faster than the ego",
+   "status": "PASS",
+   "detail": "(12.4, 9)"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): an ego that changes regardless is hit",
+   "status": "PASS",
+   "detail": "1.9800575876114244"
+  },
+  {
+   "check": "l2s-media-lc-r-2 (Loop2Scenic lc_r_2 (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

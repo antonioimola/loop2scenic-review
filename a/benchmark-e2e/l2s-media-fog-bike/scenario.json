@@ -1,0 +1,111 @@
+{
+ "schema_version": "1.0",
+ "map": "Town05",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-252",
+  "type": "ego",
+  "x": 207.5,
+  "y": 6.1,
+  "z": 0.5,
+  "yaw": -91,
+  "initial_speed": 14,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 207.5,
+       "y": 6.1,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 174.4,
+       "y": -173.9,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-251",
+   "type": "cyclist",
+   "x": 206.9,
+   "y": -81.5,
+   "z": 0.6,
+   "yaw": -91,
+   "initial_speed": 0,
+   "events": []
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "obstacle",
+  "label": "Hindernis auf Spur",
+  "seed": 3,
+  "town": "Town05",
+  "near": {
+   "x": 206.5,
+   "y": -78.7
+  },
+  "anchored": false,
+  "attempt": 0,
+  "overrides": {
+   "variant": "stationary_vru",
+   "side": "right",
+   "vru_type": "cyclist",
+   "lateral_m": 0.5
+  },
+  "params": {
+   "ego_speed": 14,
+   "variant": "stationary_vru",
+   "vru_type": "cyclist",
+   "lateral_m": 0.5,
+   "site": "straight",
+   "distance_m": 87.6,
+   "side": "right"
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 8.25,
+   "decel_mps2": 0,
+   "min_gap_m": 0,
+   "conflict_with": "cyclist",
+   "at": {
+    "x": 206.5,
+    "y": -78.7
+   }
+  },
+  "signature": "xywoch"
+ }
+}

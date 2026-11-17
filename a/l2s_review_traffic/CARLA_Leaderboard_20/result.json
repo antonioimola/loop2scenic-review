@@ -1,0 +1,96 @@
+{
+ "name": "l2st-CARLA_Leaderboard_20",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   31.7,
+   31.35,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    9.9,
+    9.9
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.57,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 13.33,
+   "shape_median_m": 0.92,
+   "end_diff_m": 13.33,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.95,
+    4.14
+   ],
+   "closest_to_hero": [
+    3.82,
+    4.05
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    2.51,
+    2.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "CARLA_Leaderboard_20",
+ "hash": "40813398a818",
+ "elapsed": 16,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CARLA_Leaderboard_20__Town01__2026-11-16_03-07-40_966"
+}

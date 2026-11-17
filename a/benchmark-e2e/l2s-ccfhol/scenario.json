@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "map": "Town05",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-218",
+  "type": "ego",
+  "x": -237.9,
+  "y": -91.7,
+  "z": 0.5,
+  "yaw": 176,
+  "initial_speed": 8.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": -237.9,
+       "y": -91.7,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -272.5,
+       "y": 22,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -220.1,
+       "y": 91.3,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-217",
+   "type": "car",
+   "x": -217.4,
+   "y": 87.8,
+   "z": 0.5,
+   "yaw": -180,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": -217.4,
+        "y": 87.8,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -244.7,
+        "y": 87.5,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -264.6,
+        "y": 79.7,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -268.8,
+        "y": 41.3,
+        "z": 0.5,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 67.3
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 3
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 10
+      }
+     }
+    },
+    {
+     "id": "evt-3",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 20.7
+     },
+     "action": {
+      "type": "lane_offset",
+      "direction": "left",
+      "offset": 2.8
+     }
+    }
+   ],
+   "obey_traffic_lights": false,
+   "obey_obstacles": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "oncoming_drift",
+  "label": "Gegenverkehr driftet",
+  "seed": 2,
+  "town": "Town05",
+  "near": {
+   "x": -257.8,
+   "y": 87.6
+  },
+  "anchored": false,
+  "attempt": 3,
+  "overrides": {
+   "cause": "none"
+  },
+  "params": {
+   "ego_speed": 8.5,
+   "style": "offset",
+   "cause": "none",
+   "npc_type": "car",
+   "npc_speed": 10,
+   "offset_m": 2.8,
+   "return_ttc_s": 0,
+   "npc_run_up_m": 40.1,
+   "arrival_offset_s": -0.25,
+   "trigger_m": 67.3
+  },
+  "criticality": {
+   "verdict": "unavoidable",
+   "ttc_s": 0.95,
+   "decel_mps2": 4.8,
+   "min_gap_m": 0,
+   "conflict_with": "car",
+   "at": {
+    "x": -257.8,
+    "y": 87.6
+   }
+  },
+  "signature": "10mbitx"
+ }
+}

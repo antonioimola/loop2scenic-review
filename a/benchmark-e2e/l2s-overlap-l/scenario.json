@@ -1,0 +1,155 @@
+{
+ "schema_version": "1.0",
+ "map": "Town03",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-229",
+  "type": "ego",
+  "x": 115.3,
+  "y": 62.5,
+  "z": 0.5,
+  "yaw": 0,
+  "initial_speed": 13.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 115.3,
+       "y": 62.5,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 167.2,
+       "y": 86.5,
+       "z": 0.7,
+       "strategy": "fastest"
+      },
+      {
+       "x": 82.2,
+       "y": 129.9,
+       "z": 0.56,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-228",
+   "type": "car",
+   "x": 167.2,
+   "y": 92.6,
+   "z": 0.74,
+   "yaw": 91,
+   "initial_speed": 5.1,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": 167.2,
+        "y": 92.6,
+        "z": 0.74,
+        "strategy": "fastest"
+       },
+       {
+        "x": 22.2,
+        "y": 130.8,
+        "z": 0.5,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 75.2
+     },
+     "action": {
+      "type": "lane_offset",
+      "direction": "left",
+      "offset": 0.8
+     }
+    }
+   ],
+   "obey_traffic_lights": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "slow_lead",
+  "label": "Langsames Fahrzeug voraus",
+  "seed": 1,
+  "town": "Town03",
+  "near": {
+   "x": 136.2,
+   "y": 128.4
+  },
+  "anchored": false,
+  "attempt": 17,
+  "overrides": {
+   "lead_type": "car",
+   "lateral_m": 0.8,
+   "side": "left"
+  },
+  "params": {
+   "ego_speed": 13.5,
+   "lead_type": "car",
+   "lead_speed": 5.1,
+   "speed_diff_kmh": 30,
+   "initial_gap_m": 78.2,
+   "lateral_m": 0.8,
+   "side": "left"
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 11.6,
+   "decel_mps2": 0,
+   "min_gap_m": 0,
+   "conflict_with": "car",
+   "at": {
+    "x": 136.2,
+    "y": 128.4
+   }
+  },
+  "signature": "19jannf"
+ }
+}

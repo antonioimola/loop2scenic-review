@@ -1,0 +1,87 @@
+{
+ "name": "l2st-u-turn_with_obj_from_right_crossing_after_node",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   24.75,
+   23.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    1.55,
+    1.45
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 2.26,
+   "shape_median_m": 1.09,
+   "end_diff_m": 4.79,
+   "turn_deg": [
+    -155,
+    -153
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 2.24,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.3,
+   "turn_deg": [
+    24,
+    0
+   ],
+   "z": [
+    0.95,
+    0.96
+   ],
+   "closest_to_hero": [
+    3.35,
+    4.59
+   ]
+  },
+  "problems": [
+   "adversary turns 24\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": [
+   "hero runs 1.09 m beside the preview path (median)"
+  ]
+ },
+ "problems": [
+  "adversary turns 24\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [
+  "hero runs 1.09 m beside the preview path (median)"
+ ],
+ "verdict": "FAIL",
+ "card": "u-turn_with_obj_from_right_crossing_after_node",
+ "hash": "df04f0652bca",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-u-turn_with_obj_from_right_crossing_after_node__Town03__2026-11-16_04-13-23_441"
+}

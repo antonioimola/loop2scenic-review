@@ -1,0 +1,141 @@
+{
+ "name": "l2st-CARLA_Leaderboard_18",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   31.6,
+   31.3,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    10.25,
+    10.2
+   ],
+   [
+    "adversary_SpeedEvent2",
+    11.9,
+    11.9
+   ],
+   [
+    "adversary_SpeedEvent3",
+    14.9,
+    14.95
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_SpeedEvent1",
+    14.9,
+    14.95
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.51,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.52,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    10.14
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.75,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.88,
+    10.37
+   ],
+   "closest_to_hero": [
+    9.34,
+    9.17
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.0,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.61,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.32,
+    10.59
+   ],
+   "closest_to_hero": [
+    22.87,
+    22.69
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "CARLA_Leaderboard_18",
+ "hash": "7becf77f974a",
+ "elapsed": 17,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CARLA_Leaderboard_18__Town04__2026-11-16_03-11-05_542"
+}

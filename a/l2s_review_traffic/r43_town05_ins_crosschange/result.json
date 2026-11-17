@@ -1,0 +1,143 @@
+{
+ "name": "l2st-r43_town05_ins_crosschange",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   18.15,
+   17.65,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.59,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.6,
+   "turn_deg": [
+    77,
+    76
+   ],
+   "z": [
+    0.02,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.72,
+   "shape_median_m": 0.37,
+   "end_diff_m": 0.37,
+   "turn_deg": [
+    91,
+    89
+   ],
+   "z": [
+    0.03,
+    0.75
+   ],
+   "closest_to_hero": [
+    3.5,
+    3.5
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.47,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.54,
+   "turn_deg": [
+    55,
+    55
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    10.0,
+    10.02
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.48,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.52,
+   "turn_deg": [
+    63,
+    63
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    7.05,
+    6.86
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "r43_town05_ins_crosschange",
+ "hash": "6ccd0433f5aa",
+ "elapsed": 11,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-r43_town05_ins_crosschange__Town05__2026-11-16_03-35-18_403"
+}

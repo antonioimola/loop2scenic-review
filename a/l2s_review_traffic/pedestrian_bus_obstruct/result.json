@@ -1,0 +1,100 @@
+{
+ "name": "l2st-pedestrian_bus_obstruct",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   30.95,
+   30.6,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    7.15,
+    7.1
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.28,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.43,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 4.43,
+   "shape_median_m": 0.0,
+   "end_diff_m": 6.51,
+   "turn_deg": [
+    168,
+    0
+   ],
+   "z": [
+    0.19,
+    1.01
+   ],
+   "closest_to_hero": [
+    1.74,
+    0.32
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.0,
+    0.69
+   ],
+   "closest_to_hero": [
+    4.11,
+    3.94
+   ]
+  },
+  "problems": [
+   "adversary turns 168\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary turns 168\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "pedestrian_bus_obstruct",
+ "hash": "9b09f36aff68",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-pedestrian_bus_obstruct__Town01__2026-11-16_03-56-49_375"
+}

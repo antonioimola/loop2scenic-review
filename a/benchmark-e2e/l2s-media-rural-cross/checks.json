@@ -1,0 +1,102 @@
+{
+ "id": "l2s-media-rural-cross",
+ "source": "Loop2Scenic turning_intersection_both_straight (video)",
+ "description": "a silver passenger van on the right arm of the intersection drives straight across, failing to yield",
+ "town": "Town07",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "crossing",
+  "npc_from": "right",
+  "npc_type": "van"
+ },
+ "passed": 13,
+ "total": 13,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-rural-cross.xosc",
+  "route": "l2s-media-rural-cross_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 10,
+  "layout": "crossing",
+  "npc_from": "right",
+  "npc_type": "van",
+  "junction": "169",
+  "signalized": false,
+  "oncoming": false,
+  "npc_speed": 7.7,
+  "npc_run_up_m": 35.3,
+  "arrival_offset_s": 0.04,
+  "trigger_m": 64.1
+ },
+ "checks": [
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): builds \u2014 \u201ca silver passenger van on the right arm of the intersection drives str\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'crossing', 'crossing')"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): pinned npc_from honoured",
+   "status": "PASS",
+   "detail": "('npc_from', 'right', 'right')"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): pinned npc_type honoured",
+   "status": "PASS",
+   "detail": "('npc_type', 'van', 'van')"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((49, 60, '169'), (11, 22, '169'))"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): the ego goes straight through it",
+   "status": "PASS",
+   "detail": "5.729230377937711e-05"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "5.684341886080802e-14"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): ...it comes from the ego's right",
+   "status": "PASS",
+   "detail": "-90.24348295318904"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): the ego's route goes through a junction there",
+   "status": "PASS",
+   "detail": "{'x': -151.848, 'y': -35.351}"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): no traffic light at the junction (no traffic controls)",
+   "status": "PASS",
+   "detail": "([111], (49, 60, '169'))"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): ...agrees with the generator's own label",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): the other road user is a van",
+   "status": "PASS",
+   "detail": "van"
+  },
+  {
+   "check": "l2s-media-rural-cross (Loop2Scenic turning_intersection_both_straight (video)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

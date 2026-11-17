@@ -1,0 +1,92 @@
+{
+ "name": "l2st-right_turn_standstill",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.6,
+   20.2,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "hero_SpeedEvent1",
+    10.5,
+    10.5
+   ],
+   [
+    "hero_SpeedEvent2",
+    11.7,
+    11.75
+   ],
+   [
+    "hero_SpeedEvent3",
+    15.7,
+    15.8
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.91,
+   "shape_median_m": 0.12,
+   "end_diff_m": 0.65,
+   "turn_deg": [
+    91,
+    90
+   ],
+   "z": [
+    0.0,
+    0.75
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "right_turn_standstill",
+ "hash": "ec4fa51564fb",
+ "elapsed": 10,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-right_turn_standstill__Town05__2026-11-16_02-11-23_766"
+}

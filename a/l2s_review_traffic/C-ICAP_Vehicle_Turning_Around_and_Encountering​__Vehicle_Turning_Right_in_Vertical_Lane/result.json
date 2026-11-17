@@ -1,0 +1,104 @@
+{
+ "name": "l2st-C-ICAP_Vehicle_Turning_Around_and_Encountering\u200b__Vehicle_Turning_Right_in_Vertical_Lane",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   24.55,
+   23.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    7.55,
+    8.15
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 2.11,
+   "shape_median_m": 0.93,
+   "end_diff_m": 4.13,
+   "turn_deg": [
+    -155,
+    -153
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.73,
+   "shape_median_m": 0.13,
+   "end_diff_m": 0.45,
+   "turn_deg": [
+    48,
+    54
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    18.38,
+    14.8
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "C-ICAP_Vehicle Turning Around and Encountering\u200b  Vehicle Turning Right in Vertical Lane",
+ "hash": "dd7cfb946e11",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-C-ICAP_Vehicle_Turning_Around_and_Encountering\u200b__Vehicle_Turning_Right_in_Vertical_Lane__Town03__2026-11-16_04-12-03_007"
+}

@@ -1,0 +1,120 @@
+{
+ "schema_version": "1.0",
+ "map": "Town05",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-220",
+  "type": "ego",
+  "x": 207.5,
+  "y": 6,
+  "z": 0.5,
+  "yaw": -91,
+  "initial_speed": 8.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 207.5,
+       "y": 6,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 90.5,
+       "y": -204.3,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-219",
+   "type": "cyclist",
+   "x": 206.9,
+   "y": -39,
+   "z": 0.6,
+   "yaw": -91,
+   "initial_speed": 3.2,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 400
+     },
+     "action": {
+      "type": "lane_offset",
+      "direction": "right",
+      "offset": 1
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "cyclist_ahead",
+  "label": "Radfahrer voraus",
+  "seed": 2,
+  "town": "Town05",
+  "near": {
+   "x": 206.6,
+   "y": -65.6
+  },
+  "anchored": false,
+  "attempt": 12,
+  "overrides": {
+   "swerves": false
+  },
+  "params": {
+   "ego_speed": 8.5,
+   "speed": 3.2,
+   "initial_gap_m": 45,
+   "edge_offset_m": 1,
+   "swerves": false,
+   "swerve_ttc_s": null
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 9.7,
+   "decel_mps2": 0,
+   "min_gap_m": 0,
+   "conflict_with": "cyclist",
+   "at": {
+    "x": 206.6,
+    "y": -65.6
+   }
+  },
+  "signature": "a65vvr"
+ }
+}

@@ -1,0 +1,144 @@
+{
+ "schema_version": "1.0",
+ "map": "Town05",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-231",
+  "type": "ego",
+  "x": 122,
+  "y": 199.7,
+  "z": 0.5,
+  "yaw": -13,
+  "initial_speed": 9.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 122,
+       "y": 199.7,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 203,
+       "y": -78.2,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-230",
+   "type": "car",
+   "x": 142,
+   "y": 197,
+   "z": 0.5,
+   "yaw": -23,
+   "initial_speed": 6.1,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 9.8
+     },
+     "action": {
+      "type": "lane_change",
+      "direction": "left",
+      "dynamics": {
+       "shape": "linear",
+       "value": 15.8
+      }
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "after_event",
+      "event_id": "evt-1"
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 4.6
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 3
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "cut_in",
+  "label": "Einscheren",
+  "seed": 1,
+  "town": "Town05",
+  "near": {
+   "x": 167.4,
+   "y": 176.9
+  },
+  "anchored": false,
+  "attempt": 0,
+  "overrides": {
+   "brakes_after": true
+  },
+  "params": {
+   "ego_speed": 9.5,
+   "npc_type": "car",
+   "from_side": "right",
+   "npc_speed": 6.1,
+   "initial_gap_m": 19.6,
+   "trigger_m": 9.8,
+   "lane_change_m": 15.8,
+   "brakes_after": true
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 1.45,
+   "decel_mps2": 3.4,
+   "min_gap_m": 0,
+   "conflict_with": "car",
+   "at": {
+    "x": 167.4,
+    "y": 176.9
+   }
+  },
+  "signature": "1q0xwcw"
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "name": "l2st-lateral_truck_overtake",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   60.3,
+   25.95,
+   "idle"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.77,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.77,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.01,
+    0.73
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.85,
+   "shape_median_m": 0.03,
+   "end_diff_m": 0.85,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.02,
+    0.69
+   ],
+   "closest_to_hero": [
+    1.93,
+    2.12
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.52,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.44,
+   "turn_deg": [
+    360,
+    0
+   ],
+   "z": [
+    -0.07,
+    1.63
+   ],
+   "closest_to_hero": [
+    4.01,
+    4.04
+   ]
+  },
+  "problems": [
+   "adversary1 turns 360\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary1's body yaw jumps up to 160\u00b0 in one tick (5\u00d7)",
+  "adversary1 turns 360\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "lateral_truck_overtake",
+ "hash": "2242937e2b24",
+ "elapsed": 25,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_truck_overtake__Town01__2026-11-16_02-32-45_285"
+}

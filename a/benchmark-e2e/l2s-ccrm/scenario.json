@@ -1,0 +1,150 @@
+{
+ "schema_version": "1.0",
+ "map": "Town04",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-208",
+  "type": "ego",
+  "x": 45.4,
+  "y": 6.3,
+  "z": 11.5,
+  "yaw": -179,
+  "initial_speed": 14,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 45.4,
+       "y": 6.3,
+       "z": 11.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -128.8,
+       "y": 5.8,
+       "z": 8.91,
+       "strategy": "fastest"
+      },
+      {
+       "x": -222.8,
+       "y": 5.7,
+       "z": 4.05,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-207",
+   "type": "car",
+   "x": -12.2,
+   "y": 6,
+   "z": 11.29,
+   "yaw": -179,
+   "initial_speed": 5.5,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": -12.2,
+        "y": 6,
+        "z": 11.29,
+        "strategy": "fastest"
+       },
+       {
+        "x": -128.8,
+        "y": 5.8,
+        "z": 8.91,
+        "strategy": "fastest"
+       },
+       {
+        "x": -282.8,
+        "y": 5.6,
+        "z": 1.65,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    }
+   ],
+   "obey_traffic_lights": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "slow_lead",
+  "label": "Langsames Fahrzeug voraus",
+  "seed": 5,
+  "town": "Town04",
+  "near": {
+   "x": -55.5,
+   "y": 5.9
+  },
+  "anchored": false,
+  "attempt": 11,
+  "overrides": {
+   "ego_speed": 14,
+   "lead_type": "car",
+   "lead_speed": 5.5,
+   "lateral_m": 0
+  },
+  "params": {
+   "ego_speed": 14,
+   "lead_type": "car",
+   "lead_speed": 5.5,
+   "speed_diff_kmh": 31,
+   "initial_gap_m": 57.6,
+   "lateral_m": 0,
+   "side": "right"
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 9.4,
+   "decel_mps2": 0,
+   "min_gap_m": 0,
+   "conflict_with": "car",
+   "at": {
+    "x": -55.5,
+    "y": 5.9
+   }
+  },
+  "signature": "1th5o2w"
+ }
+}

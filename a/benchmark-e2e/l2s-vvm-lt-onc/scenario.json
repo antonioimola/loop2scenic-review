@@ -1,0 +1,217 @@
+{
+ "schema_version": "1.0",
+ "map": "Town05",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-93",
+  "type": "ego",
+  "x": -191.6,
+  "y": 52.2,
+  "z": 0.56,
+  "yaw": 90,
+  "initial_speed": 9,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": -191.6,
+       "y": 52.2,
+       "z": 0.56,
+       "strategy": "fastest"
+      },
+      {
+       "x": -166,
+       "y": 91.4,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -124.1,
+       "y": 67.9,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -125,
+       "y": -20.7,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -124.4,
+       "y": -108.4,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-92",
+   "type": "truck",
+   "x": -91,
+   "y": 88,
+   "z": 0.5,
+   "yaw": -180,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": -91,
+        "y": 88,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -149.8,
+        "y": 87.9,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": -188.7,
+        "y": 131.2,
+        "z": 0.56,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 86.4
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 3
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 11
+      }
+     }
+    }
+   ],
+   "obey_traffic_lights": false,
+   "obey_obstacles": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_35",
+   "x": -112.6,
+   "y": 101.1,
+   "z": 0,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 81.7
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 68.2
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 54.4
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 43.6
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 35.8
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "junction_conflict",
+  "label": "Querverkehr Kreuzung",
+  "seed": 1,
+  "town": "Town05",
+  "near": {
+   "x": -131.5,
+   "y": 88.1
+  },
+  "anchored": false,
+  "attempt": 3,
+  "overrides": {
+   "layout": "ego_left_oncoming"
+  },
+  "params": {
+   "ego_speed": 9,
+   "layout": "ego_left_oncoming",
+   "npc_from": "oncoming",
+   "npc_type": "truck",
+   "junction": "1722",
+   "signalized": true,
+   "oncoming": true,
+   "npc_speed": 11,
+   "npc_run_up_m": 39.2,
+   "arrival_offset_s": -0.1,
+   "trigger_m": 86.4
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 1.7,
+   "decel_mps2": 2.7,
+   "min_gap_m": 0,
+   "conflict_with": "truck",
+   "at": {
+    "x": -131.5,
+    "y": 88.1
+   }
+  },
+  "signature": "1u5modv"
+ }
+}

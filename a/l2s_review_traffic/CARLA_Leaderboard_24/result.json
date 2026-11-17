@@ -1,0 +1,116 @@
+{
+ "name": "l2st-CARLA_Leaderboard_24",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   32.1,
+   31.45,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.2,
+   "shape_median_m": 0.05,
+   "end_diff_m": 0.08,
+   "turn_deg": [
+    15,
+    16
+   ],
+   "z": [
+    0.0,
+    1.05
+   ]
+  },
+  "adversary": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.5,
+    1.15
+   ],
+   "closest_to_hero": [
+    9.1,
+    9.12
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.17,
+    0.82
+   ],
+   "closest_to_hero": [
+    2.93,
+    2.74
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "CARLA_Leaderboard_24",
+ "hash": "3acb7480993f",
+ "elapsed": 21,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CARLA_Leaderboard_24__Town03__2026-11-16_03-58-46_901"
+}

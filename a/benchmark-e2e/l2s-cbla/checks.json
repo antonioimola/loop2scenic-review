@@ -1,0 +1,75 @@
+{
+ "id": "l2s-cbla",
+ "source": "Loop2Scenic CBLA_50_50kph (Euro NCAP)",
+ "description": "a vehicle travels forwards towards a bicyclist cycling in the same direction in front of the vehicle",
+ "town": "Town05",
+ "type": "cyclist_ahead",
+ "seed": 2,
+ "pins": {
+  "swerves": false
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-cbla.xosc",
+  "route": "l2s-cbla_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 8.5,
+  "speed": 3.2,
+  "initial_gap_m": 45,
+  "edge_offset_m": 1,
+  "swerves": false,
+  "swerve_ttc_s": null
+ },
+ "checks": [
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): builds \u2014 \u201ca vehicle travels forwards towards a bicyclist cycling in the same dir\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): pinned swerves honoured",
+   "status": "PASS",
+   "detail": "('swerves', False, False)"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): a cyclist",
+   "status": "PASS",
+   "detail": "['ego', 'cyclist']"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): it rides in the ego's lane, towards the kerb side",
+   "status": "PASS",
+   "detail": "1.0002008028030855"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): ...in the ego's direction",
+   "status": "PASS",
+   "detail": "(-91, -90.67039706784918)"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): ...ahead of the ego",
+   "status": "PASS",
+   "detail": "(22, 0)"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): ...slower than the ego",
+   "status": "PASS",
+   "detail": "(3.2000000000001676, 8.5)"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "1.0001102719002217"
+  },
+  {
+   "check": "l2s-cbla (Loop2Scenic CBLA_50_50kph (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

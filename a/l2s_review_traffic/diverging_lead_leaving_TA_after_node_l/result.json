@@ -1,0 +1,99 @@
+{
+ "name": "l2st-diverging_lead_leaving_TA_after_node_l",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   18.3,
+   17.8,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.4,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.44,
+   "turn_deg": [
+    77,
+    76
+   ],
+   "z": [
+    0.02,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.72,
+   "shape_median_m": 0.03,
+   "end_diff_m": 0.53,
+   "turn_deg": [
+    -115,
+    -116
+   ],
+   "z": [
+    0.03,
+    0.75
+   ],
+   "closest_to_hero": [
+    9.54,
+    9.59
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "diverging_lead_leaving_TA_after_node_l",
+ "hash": "0e95f0f06bee",
+ "elapsed": 11,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-diverging_lead_leaving_TA_after_node_l__Town05__2026-11-16_03-31-52_045"
+}

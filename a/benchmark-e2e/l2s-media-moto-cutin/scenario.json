@@ -1,0 +1,150 @@
+{
+ "schema_version": "1.0",
+ "map": "Town03",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-250",
+  "type": "ego",
+  "x": -85.2,
+  "y": -115.9,
+  "z": 0.32,
+  "yaw": 90,
+  "initial_speed": 9.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": -85.2,
+       "y": -115.9,
+       "z": 0.32,
+       "strategy": "fastest"
+      },
+      {
+       "x": -84.8,
+       "y": 36.6,
+       "z": 0.72,
+       "strategy": "fastest"
+      },
+      {
+       "x": -84.3,
+       "y": 126,
+       "z": 0.53,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-249",
+   "type": "motorcycle",
+   "x": -88.6,
+   "y": -82.5,
+   "z": -0.33,
+   "yaw": 90,
+   "initial_speed": 5.3,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 20.9
+     },
+     "action": {
+      "type": "lane_change",
+      "direction": "left",
+      "dynamics": {
+       "shape": "linear",
+       "value": 11.8
+      }
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "after_event",
+      "event_id": "evt-1"
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 4.3
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 3
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "cut_in",
+  "label": "Einscheren",
+  "seed": 3,
+  "town": "Town03",
+  "near": {
+   "x": -85,
+   "y": -40.3
+  },
+  "anchored": false,
+  "attempt": 1,
+  "overrides": {
+   "npc_type": "motorcycle"
+  },
+  "params": {
+   "ego_speed": 9.5,
+   "npc_type": "motorcycle",
+   "from_side": "right",
+   "npc_speed": 5.3,
+   "initial_gap_m": 33.4,
+   "trigger_m": 20.9,
+   "lane_change_m": 11.8,
+   "brakes_after": true
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 3.95,
+   "decel_mps2": 1.2,
+   "min_gap_m": 0,
+   "conflict_with": "motorcycle",
+   "at": {
+    "x": -85,
+    "y": -40.3
+   }
+  },
+  "signature": "1px28j6"
+ }
+}

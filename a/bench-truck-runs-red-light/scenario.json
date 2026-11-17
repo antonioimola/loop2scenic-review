@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "map": "Town05",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -172,
+    "y": 94.87,
+    "z": 0.5,
+    "yaw": -0.0,
+    "trajectory": [],
+    "events": []
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "truck",
+      "x": -120.2,
+      "y": 122,
+      "yaw": -90.5,
+      "z": 0.5,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "e1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 45
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 16
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 11
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": []
+}

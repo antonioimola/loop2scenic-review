@@ -1,0 +1,180 @@
+{
+ "name": "l2st-MD_BlockedLaneObstacle1",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   29.75,
+   29.45,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    5.4,
+    5.4
+   ],
+   [
+    "adversary_SpeedEvent2",
+    13.4,
+    13.45
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_SpeedEvent1",
+    13.4,
+    13.5
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.28,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.46,
+   "turn_deg": [
+    77,
+    76
+   ],
+   "z": [
+    0.02,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.28,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.36,
+   "turn_deg": [
+    91,
+    90
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    18.3,
+    17.99
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.3,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.76,
+   "turn_deg": [
+    89,
+    88
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    8.8,
+    10.07
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.69,
+   "shape_median_m": 0.43,
+   "end_diff_m": 0.69,
+   "turn_deg": [
+    87,
+    85
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    6.33,
+    6.24
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 4.24,
+   "shape_median_m": 0.18,
+   "end_diff_m": 4.24,
+   "turn_deg": [
+    75,
+    68
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    3.29,
+    3.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_BlockedLaneObstacle1",
+ "hash": "6ee4d20d4282",
+ "elapsed": 16,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_BlockedLaneObstacle1__Town05__2026-11-16_03-35-40_526"
+}

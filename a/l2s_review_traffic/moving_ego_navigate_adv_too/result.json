@@ -1,0 +1,125 @@
+{
+ "name": "l2st-moving_ego_navigate_adv_too",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   12.0,
+   13.4,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_LaneChangeEvent0",
+    8.45,
+    8.55
+   ],
+   [
+    "adversary1_SpeedEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_LaneChangeEvent1",
+    8.45,
+    8.5
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.24,
+   "shape_median_m": 0.0,
+   "end_diff_m": 6.71,
+   "turn_deg": [
+    -1,
+    -1
+   ],
+   "z": [
+    0.17,
+    2.43
+   ]
+  },
+  "adversary": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.04,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    3.21,
+    3.9
+   ],
+   "closest_to_hero": [
+    17.1,
+    10.64
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.43,
+   "shape_median_m": 0.0,
+   "end_diff_m": 11.77,
+   "turn_deg": [
+    7,
+    -1
+   ],
+   "z": [
+    0.59,
+    2.76
+   ],
+   "closest_to_hero": [
+    2.98,
+    4.16
+   ]
+  },
+  "problems": [
+   "adversary comes within 17.1 m of the ego in CARLA vs 10.6 m"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary comes within 17.1 m of the ego in CARLA vs 10.6 m"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "moving_ego_navigate_adv_too",
+ "hash": "dc846bd34107",
+ "elapsed": 9,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-moving_ego_navigate_adv_too__Town04__2026-11-16_02-04-09_583"
+}

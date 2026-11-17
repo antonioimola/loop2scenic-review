@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="0" town="Town04">
+    <waypoint x="-320" y="33.52" z="0.83" pitch="0.0" roll="0.0" yaw="0.08" />
+    <waypoint x="-262" y="33.6" z="2.33" pitch="0.0" roll="0.0" yaw="-1.15" />
+    <waypoint x="-259" y="33.54" z="2.44" pitch="0.0" roll="0.0" yaw="-4.38" />
+    <waypoint x="-256" y="33.31" z="2.56" pitch="0.0" roll="0.0" yaw="-6.82" />
+    <waypoint x="-252.99" y="32.95" z="2.67" pitch="0.0" roll="0.0" yaw="-9.09" />
+    <waypoint x="-249.99" y="32.47" z="2.8" pitch="0.0" roll="0.0" yaw="-9.8" />
+    <waypoint x="-246.98" y="31.95" z="2.92" pitch="0.0" roll="0.0" yaw="-10.02" />
+    <waypoint x="-243.98" y="31.42" z="3.05" pitch="0.0" roll="0.0" yaw="-8.87" />
+    <waypoint x="-240.97" y="30.95" z="3.18" pitch="0.0" roll="0.0" yaw="-7.03" />
+    <waypoint x="-237.97" y="30.58" z="3.31" pitch="0.0" roll="0.0" yaw="-4.18" />
+    <waypoint x="-234.96" y="30.36" z="3.46" pitch="0.0" roll="0.0" yaw="-4.19" />
+    <waypoint x="-231.96" y="30.14" z="3.6" pitch="0.0" roll="0.0" yaw="0.08" />
+    <waypoint x="-40" y="30.42" z="10.81" pitch="0.0" roll="0.0" yaw="0.08" />
+  </route>
+</routes>

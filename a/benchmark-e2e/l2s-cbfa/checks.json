@@ -1,0 +1,101 @@
+{
+ "id": "l2s-cbfa",
+ "source": "Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)",
+ "description": "a vehicle travels forwards towards a bicyclist crossing its path cycling from the farside",
+ "town": "Town03",
+ "type": "vru_crossing",
+ "seed": 3,
+ "pins": {
+  "vru_type": "cyclist",
+  "speed": 4.2,
+  "from": "left"
+ },
+ "passed": 13,
+ "total": 13,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-cbfa.xosc",
+  "route": "l2s-cbfa_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 13.5,
+  "vru_type": "cyclist",
+  "speed": 4.2,
+  "from": "left",
+  "crossing_m": 22.4,
+  "on_crosswalk": false,
+  "arrival_offset_s": 0.66,
+  "trigger_m": 65.1,
+  "occluded": false,
+  "stops_in_lane_s": null
+ },
+ "checks": [
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): builds \u2014 \u201ca vehicle travels forwards towards a bicyclist crossing its path cycli\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'cyclist', 'cyclist')"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): pinned speed honoured",
+   "status": "PASS",
+   "detail": "('speed', 4.2, 4.2)"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): pinned from honoured",
+   "status": "PASS",
+   "detail": "('from', 'left', 'left')"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): a crossing cyclist",
+   "status": "PASS",
+   "detail": "['ego', 'cyclist']"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): ...on a trajectory",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): it starts off the carriageway",
+   "status": "PASS",
+   "detail": "None"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): ...and walks from one side of the ego's path to the other",
+   "status": "PASS",
+   "detail": "(-18.146521641365265, 4.17401999059798)"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): ...across it",
+   "status": "PASS",
+   "detail": "88.29129243693836"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): ...coming from the ego's left",
+   "status": "PASS",
+   "detail": "-18.146521641365265"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): it moves at 4.2 m/s in the preview",
+   "status": "PASS",
+   "detail": "4.199999999999901"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): a non-reacting ego meets it",
+   "status": "PASS",
+   "detail": "0.5377103196101455"
+  },
+  {
+   "check": "l2s-cbfa (Loop2Scenic CBFA_BicycleFromFarSide (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

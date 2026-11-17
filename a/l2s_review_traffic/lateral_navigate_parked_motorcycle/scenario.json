@@ -1,0 +1,144 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 13,
+    "walkers": 10,
+    "seed": 8913,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -262,
+    "y": 30.1,
+    "z": 2.33,
+    "yaw": 0.6,
+    "initial_speed": 2.3,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -262,
+              "y": 30.1,
+              "z": 2.33,
+              "strategy": "fastest"
+            },
+            {
+              "x": -136,
+              "y": 30.26,
+              "z": 8.55,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "van",
+      "x": -259.5,
+      "y": 33.6,
+      "z": 2.42,
+      "yaw": 0,
+      "initial_speed": 2.3,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -259.5,
+                "y": 33.6,
+                "z": 2.42,
+                "strategy": "fastest"
+              },
+              {
+                "x": -244,
+                "y": 33.62,
+                "z": 3.05,
+                "strategy": "fastest"
+              },
+              {
+                "x": -241,
+                "y": 32.88,
+                "z": 3.18,
+                "strategy": "shortest"
+              },
+              {
+                "x": -238,
+                "y": 31.26,
+                "z": 3.31,
+                "strategy": "shortest"
+              },
+              {
+                "x": -235,
+                "y": 30.11,
+                "z": 3.45,
+                "strategy": "shortest"
+              },
+              {
+                "x": -234,
+                "y": 30.13,
+                "z": 3.5,
+                "strategy": "shortest"
+              },
+              {
+                "x": -106,
+                "y": 30.3,
+                "z": 9.69,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    },
+    {
+      "id": "obj-3",
+      "type": "motorcycle",
+      "x": -226,
+      "y": 33.64,
+      "z": 3.89,
+      "yaw": 0,
+      "initial_speed": 0,
+      "events": [],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

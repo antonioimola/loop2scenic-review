@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": false,
+    "count": 19,
+    "walkers": 0,
+    "seed": 1,
+    "radius": 80,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-13",
+    "type": "ego",
+    "x": -327.6,
+    "y": 30,
+    "z": 0.72,
+    "yaw": 0,
+    "initial_speed": 12,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -327.6,
+              "y": 30,
+              "z": 0.72,
+              "strategy": "fastest"
+            },
+            {
+              "x": -127.8,
+              "y": 30.3,
+              "z": 8.96,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-14",
+      "type": "truck",
+      "x": -277.7,
+      "y": 33.6,
+      "z": 1.8,
+      "yaw": 0.6,
+      "initial_speed": 6,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 6
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 60
+            }
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 10
+          },
+          "action": {
+            "type": "lane_offset",
+            "direction": "left",
+            "offset": 1.3,
+            "continuous": true
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

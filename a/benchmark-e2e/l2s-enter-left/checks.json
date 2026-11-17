@@ -1,0 +1,80 @@
+{
+ "id": "l2s-enter-left",
+ "source": "Loop2Scenic enter_turning_forward_left (VVM)",
+ "description": "an adversarial object cuts ahead by turning from the left lane toward the right",
+ "town": "Town06",
+ "type": "cut_in",
+ "seed": 1,
+ "pins": {},
+ "passed": 10,
+ "total": 10,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-enter-left.xosc",
+  "route": "l2s-enter-left_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 8.5,
+  "npc_type": "van",
+  "from_side": "left",
+  "npc_speed": 5.9,
+  "initial_gap_m": 42.2,
+  "trigger_m": 12,
+  "lane_change_m": 20.4,
+  "brakes_after": false
+ },
+ "checks": [
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): builds \u2014 \u201can adversarial object cuts ahead by turning from the left lane toward \u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): the other car starts in the neighbouring lane",
+   "status": "PASS",
+   "detail": "3.4549415681323374"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): ...on the ego's left",
+   "status": "PASS",
+   "detail": "-3.4549415681323374"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): ...ahead of the ego",
+   "status": "PASS",
+   "detail": "(21, 0)"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): it changes lanes",
+   "status": "PASS",
+   "detail": "['lane_change']"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): ...when the ego closes in",
+   "status": "PASS",
+   "detail": "{'type': 'distance_to_ego', 'value': 12}"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): ...towards the ego's lane",
+   "status": "PASS",
+   "detail": "('right', False)"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): it ends up in the ego's lane (within 1.0 m of its centre)",
+   "status": "PASS",
+   "detail": "0.0"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.06931309019587002"
+  },
+  {
+   "check": "l2s-enter-left (Loop2Scenic enter_turning_forward_left (VVM)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

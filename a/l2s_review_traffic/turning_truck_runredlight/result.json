@@ -1,0 +1,104 @@
+{
+ "name": "l2st-turning_truck_runredlight",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   60.35,
+   60.05,
+   "time"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    7.4,
+    7.2
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 9.34,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.14,
+   "turn_deg": [
+    -179,
+    -179
+   ],
+   "z": [
+    -0.07,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.63,
+   "shape_median_m": 0.53,
+   "end_diff_m": 0.53,
+   "turn_deg": [
+    126,
+    125
+   ],
+   "z": [
+    -0.0,
+    1.79
+   ],
+   "closest_to_hero": [
+    2.93,
+    0.32
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "turning_truck_runredlight",
+ "hash": "ec4c11ebffb3",
+ "elapsed": 29,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-turning_truck_runredlight__Town05__2026-11-16_04-01-58_903"
+}

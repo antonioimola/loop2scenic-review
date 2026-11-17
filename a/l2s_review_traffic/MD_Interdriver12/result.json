@@ -1,0 +1,131 @@
+{
+ "name": "l2st-MD_Interdriver12",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   26.8,
+   26.25,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "hero_SpeedEvent1",
+    7.6,
+    7.5
+   ],
+   [
+    "hero_SpeedEvent2",
+    14.6,
+    14.55
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.67,
+   "shape_median_m": 0.24,
+   "end_diff_m": 1.02,
+   "turn_deg": [
+    125,
+    124
+   ],
+   "z": [
+    3.41,
+    11.0
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.36,
+   "shape_median_m": 0.0,
+   "end_diff_m": 3.31,
+   "turn_deg": [
+    1,
+    1
+   ],
+   "z": [
+    4.11,
+    11.03
+   ],
+   "closest_to_hero": [
+    9.06,
+    8.89
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 1.32,
+   "shape_median_m": 0.0,
+   "end_diff_m": 3.27,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    3.33,
+    11.03
+   ],
+   "closest_to_hero": [
+    6.8,
+    6.7
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Interdriver12",
+ "hash": "f09766965063",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Interdriver12__Town04__2026-11-16_03-52-41_917"
+}

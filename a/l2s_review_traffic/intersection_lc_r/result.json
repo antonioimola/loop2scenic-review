@@ -1,0 +1,77 @@
+{
+ "name": "l2st-intersection_lc_r",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   11.15,
+   10.95,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.69,
+   "shape_median_m": 0.16,
+   "end_diff_m": 0.5,
+   "turn_deg": [
+    15,
+    13
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "intersection_lc_r",
+ "hash": "6c55f585e150",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-intersection_lc_r__Town03__2026-11-16_02-03-17_718"
+}

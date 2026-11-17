@@ -1,0 +1,102 @@
+{
+ "id": "l2s-media-lat-cross",
+ "source": "Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)",
+ "description": "a pink object (a pedestrian dot) crosses the ego's lane from the right",
+ "town": "Town01",
+ "type": "vru_crossing",
+ "seed": 1,
+ "pins": {
+  "vru_type": "pedestrian",
+  "from": "right",
+  "occluded": false,
+  "stops_in_lane_s": 0
+ },
+ "passed": 13,
+ "total": 13,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-lat-cross.xosc",
+  "route": "l2s-media-lat-cross_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9.5,
+  "vru_type": "pedestrian",
+  "speed": 2.3,
+  "from": "right",
+  "crossing_m": 11.4,
+  "on_crosswalk": false,
+  "arrival_offset_s": -0.42,
+  "trigger_m": 12.1,
+  "occluded": false,
+  "stops_in_lane_s": null
+ },
+ "checks": [
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): builds \u2014 \u201ca pink object (a pedestrian dot) crosses the ego's lane from the right\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'pedestrian', 'pedestrian')"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): pinned from honoured",
+   "status": "PASS",
+   "detail": "('from', 'right', 'right')"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): pinned occluded honoured",
+   "status": "PASS",
+   "detail": "('occluded', False, False)"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): pinned stops_in_lane_s honoured",
+   "status": "PASS",
+   "detail": "('stops_in_lane_s', None, 0)"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): a crossing pedestrian",
+   "status": "PASS",
+   "detail": "['ego', 'pedestrian']"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): ...on a trajectory",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): it starts off the carriageway",
+   "status": "PASS",
+   "detail": "None"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): ...and walks from one side of the ego's path to the other",
+   "status": "PASS",
+   "detail": "(3.7350000000000003, -7.665)"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): ...across it",
+   "status": "PASS",
+   "detail": "90.00716197240183"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): ...coming from the ego's right",
+   "status": "PASS",
+   "detail": "3.7350000000000003"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): a non-reacting ego meets it",
+   "status": "PASS",
+   "detail": "0.9843057322890607"
+  },
+  {
+   "check": "l2s-media-lat-cross (Loop2Scenic approach_lat_crossing_traffic_area_from_right (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

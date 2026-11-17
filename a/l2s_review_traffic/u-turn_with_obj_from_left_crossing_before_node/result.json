@@ -1,0 +1,87 @@
+{
+ "name": "l2st-u-turn_with_obj_from_left_crossing_before_node",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   26.4,
+   25.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    0.1,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 2.11,
+   "shape_median_m": 1.04,
+   "end_diff_m": 3.49,
+   "turn_deg": [
+    -155,
+    -154
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 33.91,
+   "shape_median_m": 4.27,
+   "end_diff_m": 33.91,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.95,
+    1.1
+   ],
+   "closest_to_hero": [
+    5.23,
+    4.65
+   ]
+  },
+  "problems": [
+   "adversary drives 4.27 m off the preview path (median)"
+  ],
+  "warnings": [
+   "hero runs 1.04 m beside the preview path (median)"
+  ]
+ },
+ "problems": [
+  "adversary drives 4.27 m off the preview path (median)"
+ ],
+ "warnings": [
+  "hero runs 1.04 m beside the preview path (median)"
+ ],
+ "verdict": "FAIL",
+ "card": "u-turn_with_obj_from_left_crossing_before_node",
+ "hash": "5484e413e813",
+ "elapsed": 16,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-u-turn_with_obj_from_left_crossing_before_node__Town03__2026-11-16_04-12-56_942"
+}

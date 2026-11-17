@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "map": "Town01",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 10,
+    "walkers": 12,
+    "seed": 6480,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-75",
+    "type": "ego",
+    "x": 154.1,
+    "y": 16,
+    "z": 0.5,
+    "yaw": 90,
+    "initial_speed": 0,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 3,
+            "reverse": true
+          },
+          "dynamics": {
+            "shape": "step",
+            "dimension": "time",
+            "value": 3.8
+          }
+        }
+      },
+      {
+        "id": "evt-2",
+        "trigger": {
+          "type": "after_event",
+          "event_id": "evt-1"
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 0
+          },
+          "dynamics": {
+            "shape": "step",
+            "dimension": "time",
+            "value": 6
+          }
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-76",
+      "type": "car",
+      "x": 116.6,
+      "y": 2,
+      "z": 0.5,
+      "yaw": 0,
+      "initial_speed": 8,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": 116.6,
+                "y": 2,
+                "z": 0.5,
+                "strategy": "fastest"
+              },
+              {
+                "x": 228,
+                "y": 2,
+                "z": 0.5,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

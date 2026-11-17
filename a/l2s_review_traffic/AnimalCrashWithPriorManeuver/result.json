@@ -1,0 +1,85 @@
+{
+ "name": "l2st-AnimalCrashWithPriorManeuver",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   29.4,
+   20.55,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    2.05,
+    1.9
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.45,
+   "shape_median_m": 0.1,
+   "end_diff_m": 49.03,
+   "turn_deg": [
+    2,
+    2
+   ],
+   "z": [
+    2.11,
+    7.07
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 2.37,
+   "shape_median_m": 0.23,
+   "end_diff_m": 4.36,
+   "turn_deg": [
+    -90,
+    0
+   ],
+   "z": [
+    3.56,
+    4.31
+   ],
+   "closest_to_hero": [
+    1.5,
+    2.83
+   ]
+  },
+  "problems": [
+   "the run lasts 29 s in CARLA vs 21 s (egoDone)",
+   "adversary turns -90\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "the run lasts 29 s in CARLA vs 21 s (egoDone)",
+  "adversary turns -90\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "AnimalCrashWithPriorManeuver",
+ "hash": "b47034ca4f50",
+ "elapsed": 25,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-AnimalCrashWithPriorManeuver__Town04__2026-11-16_02-17-22_631"
+}

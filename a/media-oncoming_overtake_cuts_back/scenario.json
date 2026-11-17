@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "map": "Town01",
+  "weather": {
+    "fog": 0,
+    "rainy": 0.6,
+    "cloudy": 0.8,
+    "sunny": 0,
+    "wet_road": 0.8,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": false,
+    "count": 19,
+    "walkers": 0,
+    "seed": 1,
+    "radius": 80,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-67",
+    "type": "ego",
+    "x": 392.3,
+    "y": 109.8,
+    "z": 0.5,
+    "yaw": 90,
+    "initial_speed": 8,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": 392.3,
+              "y": 109.8,
+              "z": 0.5,
+              "strategy": "fastest"
+            },
+            {
+              "x": 392.3,
+              "y": 299.6,
+              "z": 0.5,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-68",
+      "type": "truck",
+      "x": 396.3,
+      "y": 214.6,
+      "z": 0.5,
+      "yaw": -90,
+      "initial_speed": 4,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": 396.3,
+                "y": 214.6,
+                "z": 0.5,
+                "strategy": "fastest"
+              },
+              {
+                "x": 396.4,
+                "y": 14.6,
+                "z": 0.5,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    },
+    {
+      "id": "obj-69",
+      "type": "car",
+      "x": 396.3,
+      "y": 237.6,
+      "z": 0.5,
+      "yaw": -90,
+      "initial_speed": 10,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": 396.3,
+                "y": 237.6,
+                "z": 0.5,
+                "velocity": 10
+              },
+              {
+                "x": 396.1,
+                "y": 225.6,
+                "z": 0.5,
+                "velocity": 10
+              },
+              {
+                "x": 392.2,
+                "y": 213.4,
+                "z": 0.5,
+                "velocity": 10
+              },
+              {
+                "x": 392.2,
+                "y": 187.4,
+                "z": 0.5,
+                "velocity": 10
+              },
+              {
+                "x": 396.1,
+                "y": 171.7,
+                "z": 0.5,
+                "velocity": 10
+              },
+              {
+                "x": 396.1,
+                "y": 109.6,
+                "z": 0.5,
+                "velocity": 10
+              },
+              {
+                "x": 396.1,
+                "y": 19.6,
+                "z": 0.5,
+                "velocity": 10
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

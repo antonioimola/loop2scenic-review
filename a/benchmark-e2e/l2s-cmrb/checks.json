@@ -1,0 +1,84 @@
+{
+ "id": "l2s-cmrb",
+ "source": "Loop2Scenic CMRb_50kph (Euro NCAP)",
+ "description": "a vehicle travels forwards towards a motorcyclist that is travelling at constant speed and then decelerates",
+ "town": "Town04",
+ "type": "lead_brake",
+ "seed": 2,
+ "pins": {
+  "lead_type": "motorcycle"
+ },
+ "passed": 10,
+ "total": 10,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-cmrb.xosc",
+  "route": "l2s-cmrb_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 10.5,
+  "lead_type": "motorcycle",
+  "initial_gap_m": 50.4,
+  "lead_speed": 7.9,
+  "brake_headway_s": 2.74,
+  "trigger_m": 32.1,
+  "decel": 7.2,
+  "end_speed": 0,
+  "hold_s": 7.1,
+  "resumes": true
+ },
+ "checks": [
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): builds \u2014 \u201ca vehicle travels forwards towards a motorcyclist that is travelling a\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): pinned lead_type honoured",
+   "status": "PASS",
+   "detail": "('lead_type', 'motorcycle', 'motorcycle')"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): lead is a motorcycle",
+   "status": "PASS",
+   "detail": "motorcycle"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): the lead is in the ego's lane",
+   "status": "PASS",
+   "detail": "0.04084277245966822"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): ...ahead of it",
+   "status": "PASS",
+   "detail": "(25, 0)"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): it brakes when the ego closes in",
+   "status": "PASS",
+   "detail": "[{'type': 'assign_route', 'route_strategy': 'fastest', 'waypoints': [{'x': 294.3, 'y': -121.7, 'z': 0.52, 'strategy': 'fastest'}, {'x': 258.3, 'y': -137.5, 'z': 0.52, 'strategy': 'fastest'}, {'x': 258.5, 'y': -188.3, 'z': 0.52, 'strategy': 'fastest'}, {'x': 274, 'y': -246.3, 'z': 0.5, 'strategy': 'fastest'}, {'x': 311.5, 'y': -231.2, 'z': 0.5, 'strategy': 'fastest'}, {'x': 311.5, 'y': -224.6, 'z': 0.5, 'strategy': 'fastest'}]}, {'type': 'set_speed', 'dynamics': {'shape': 'linear', 'dimension': 'rate', 'value': 7.2}, 'target': {'mode': 'absolute', 'value': 0}}, {'type': 'set_speed', 'dynamics': {'shape': 'step', 'dimension': 'time', 'value': 7.1}, 'target': {'mode': 'absolute', 'value': 0}}, {'type': 'set_speed', 'dynamics': {'shape': 'linear', 'dimension': 'rate', 'value': 2.5}, 'target': {'mode': 'absolute', 'value': 7.9}}]"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.15748630100391275"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): it was driving before it braked",
+   "status": "PASS",
+   "detail": "(7.9000000000005315, 7.9)"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): ...and has slowed to 0 m/s by the contact",
+   "status": "PASS",
+   "detail": "0.0"
+  },
+  {
+   "check": "l2s-cmrb (Loop2Scenic CMRb_50kph (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

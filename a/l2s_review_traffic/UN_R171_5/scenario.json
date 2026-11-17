@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 9,
+    "walkers": 11,
+    "seed": 6427,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -320,
+    "y": 33.52,
+    "z": 0.83,
+    "yaw": 0,
+    "initial_speed": 11,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -320,
+              "y": 33.52,
+              "z": 0.83,
+              "strategy": "fastest"
+            },
+            {
+              "x": -186,
+              "y": 33.7,
+              "z": 5.95,
+              "strategy": "fastest"
+            },
+            {
+              "x": -183,
+              "y": 33.61,
+              "z": 6.11,
+              "strategy": "shortest"
+            },
+            {
+              "x": -180,
+              "y": 33.36,
+              "z": 6.27,
+              "strategy": "shortest"
+            },
+            {
+              "x": -177,
+              "y": 32.96,
+              "z": 6.42,
+              "strategy": "shortest"
+            },
+            {
+              "x": -174,
+              "y": 32.46,
+              "z": 6.58,
+              "strategy": "shortest"
+            },
+            {
+              "x": -171,
+              "y": 31.9,
+              "z": 6.73,
+              "strategy": "shortest"
+            },
+            {
+              "x": -168,
+              "y": 31.34,
+              "z": 6.89,
+              "strategy": "shortest"
+            },
+            {
+              "x": -165,
+              "y": 30.84,
+              "z": 7.04,
+              "strategy": "shortest"
+            },
+            {
+              "x": -162,
+              "y": 30.44,
+              "z": 7.2,
+              "strategy": "shortest"
+            },
+            {
+              "x": -159,
+              "y": 30.19,
+              "z": 7.35,
+              "strategy": "shortest"
+            },
+            {
+              "x": -156,
+              "y": 30.24,
+              "z": 7.51,
+              "strategy": "shortest"
+            },
+            {
+              "x": -20,
+              "y": 30.5,
+              "z": 11.15,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -324,
+      "y": 30.01,
+      "z": 0.77,
+      "yaw": 0,
+      "initial_speed": 11,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -324,
+                "y": 30.01,
+                "z": 0.77,
+                "strategy": "fastest"
+              },
+              {
+                "x": 100,
+                "y": 31.02,
+                "z": 11.17,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_point",
+            "value": 2.5,
+            "point": {
+              "x": -239.99930406959305,
+              "y": 30.12840695930407,
+              "z": 3.223627837216278
+            },
+            "entity_ref": "obj-2"
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 16
+            },
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "rate",
+              "value": 3
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

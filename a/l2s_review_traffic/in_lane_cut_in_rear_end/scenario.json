@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 9,
+    "walkers": 7,
+    "seed": 7337,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -320,
+    "y": 30.02,
+    "z": 0.83,
+    "yaw": 0,
+    "initial_speed": 13,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -320,
+              "y": 30.02,
+              "z": 0.83,
+              "strategy": "fastest"
+            },
+            {
+              "x": -40,
+              "y": 30.42,
+              "z": 10.81,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -298,
+      "y": 33.55,
+      "z": 1.26,
+      "yaw": 0,
+      "initial_speed": 8,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 8
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 60
+            }
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 15
+          },
+          "action": {
+            "type": "lane_change",
+            "direction": "left",
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "distance",
+              "value": 10
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

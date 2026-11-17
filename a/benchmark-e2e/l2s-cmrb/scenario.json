@@ -1,0 +1,327 @@
+{
+ "schema_version": "1.0",
+ "map": "Town04",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-212",
+  "type": "ego",
+  "x": 310.9,
+  "y": -158.1,
+  "z": 0.5,
+  "yaw": 91,
+  "initial_speed": 10.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 310.9,
+       "y": -158.1,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 294.1,
+       "y": -121.7,
+       "z": 0.52,
+       "strategy": "fastest"
+      },
+      {
+       "x": 258.3,
+       "y": -137.5,
+       "z": 0.52,
+       "strategy": "fastest"
+      },
+      {
+       "x": 258.5,
+       "y": -188.3,
+       "z": 0.52,
+       "strategy": "fastest"
+      },
+      {
+       "x": 271.5,
+       "y": -246.3,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-211",
+   "type": "motorcycle",
+   "x": 294.3,
+   "y": -121.7,
+   "z": 0.52,
+   "yaw": -179,
+   "initial_speed": 7.9,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": 294.3,
+        "y": -121.7,
+        "z": 0.52,
+        "strategy": "fastest"
+       },
+       {
+        "x": 258.3,
+        "y": -137.5,
+        "z": 0.52,
+        "strategy": "fastest"
+       },
+       {
+        "x": 258.5,
+        "y": -188.3,
+        "z": 0.52,
+        "strategy": "fastest"
+       },
+       {
+        "x": 274,
+        "y": -246.3,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": 311.5,
+        "y": -231.2,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": 311.5,
+        "y": -224.6,
+        "z": 0.5,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 32.1
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 7.2
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 0
+      }
+     }
+    },
+    {
+     "id": "evt-3",
+     "trigger": {
+      "type": "after_event",
+      "event_id": "evt-2"
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "step",
+       "dimension": "time",
+       "value": 7.1
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 0
+      }
+     }
+    },
+    {
+     "id": "evt-4",
+     "trigger": {
+      "type": "after_event",
+      "event_id": "evt-3"
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 2.5
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 7.9
+      }
+     }
+    }
+   ],
+   "obey_traffic_lights": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_20",
+   "x": 305.6,
+   "y": -113.5,
+   "z": 0.02,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 41.8
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 30.9
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 23
+    }
+   ]
+  },
+  {
+   "id": "traffic_light_28",
+   "x": 249.9,
+   "y": -128.2,
+   "z": 0.02,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 61.6
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 56.2
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 42.3
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 31.4
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 23.6
+    }
+   ]
+  },
+  {
+   "id": "traffic_light_23",
+   "x": 263.8,
+   "y": -177.7,
+   "z": 0.17,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 57.6
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 54.8
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 41.7
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 30.8
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 23
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "lead_brake",
+  "label": "Vorausfahrzeug bremst",
+  "seed": 2,
+  "town": "Town04",
+  "near": {
+   "x": 258.5,
+   "y": -137.1
+  },
+  "anchored": false,
+  "attempt": 8,
+  "overrides": {
+   "lead_type": "motorcycle"
+  },
+  "params": {
+   "ego_speed": 10.5,
+   "lead_type": "motorcycle",
+   "initial_gap_m": 50.4,
+   "lead_speed": 7.9,
+   "brake_headway_s": 2.74,
+   "trigger_m": 32.1,
+   "decel": 7.2,
+   "end_speed": 0,
+   "hold_s": 7.1,
+   "resumes": true
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 3.75,
+   "decel_mps2": 1.4,
+   "min_gap_m": 0,
+   "conflict_with": "motorcycle",
+   "at": {
+    "x": 258.5,
+    "y": -137.1
+   }
+  },
+  "signature": "mt77tz"
+ }
+}

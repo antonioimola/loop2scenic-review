@@ -1,0 +1,108 @@
+{
+ "name": "l2st-u-turn_with_obj_from_right_passing_straight",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   24.55,
+   23.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    6.9,
+    6.35
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 2.28,
+   "shape_median_m": 1.03,
+   "end_diff_m": 4.07,
+   "turn_deg": [
+    -155,
+    -153
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.38,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.38,
+   "turn_deg": [
+    2,
+    3
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    7.7,
+    6.6
+   ]
+  },
+  "problems": [],
+  "warnings": [
+   "hero runs 1.03 m beside the preview path (median)"
+  ]
+ },
+ "problems": [],
+ "warnings": [
+  "hero runs 1.03 m beside the preview path (median)"
+ ],
+ "verdict": "PASS*",
+ "card": "u-turn_with_obj_from_right_passing_straight",
+ "hash": "63cd6b7ce0d8",
+ "elapsed": 17,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-u-turn_with_obj_from_right_passing_straight__Town03__2026-11-16_03-37-35_438"
+}

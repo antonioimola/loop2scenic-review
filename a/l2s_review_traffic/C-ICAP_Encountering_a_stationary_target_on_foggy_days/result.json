@@ -1,0 +1,99 @@
+{
+ "name": "l2st-C-ICAP_Encountering_a_stationary_target_on_foggy_days",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   60.3,
+   15.3,
+   "idle"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.11,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    3.94
+   ]
+  },
+  "adversary": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    4.45,
+    5.26
+   ],
+   "closest_to_hero": [
+    10.38,
+    9.25
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "C-ICAP_Encountering a stationary target on foggy days",
+ "hash": "1bcfa7964b18",
+ "elapsed": 25,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-C-ICAP_Encountering_a_stationary_target_on_foggy_days__Town04__2026-11-16_03-52-09_832"
+}

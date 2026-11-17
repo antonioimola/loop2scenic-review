@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "map": "Town03",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": false,
+    "count": 19,
+    "walkers": 0,
+    "seed": 1,
+    "radius": 80,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-82",
+    "type": "ego",
+    "x": -46.7,
+    "y": 185.4,
+    "z": 0.5,
+    "yaw": 142.3,
+    "initial_speed": 9,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -46.7,
+              "y": 185.4,
+              "z": 0.5,
+              "strategy": "fastest"
+            },
+            {
+              "x": -74.1,
+              "y": 80.3,
+              "z": 1.21,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-83",
+      "type": "car",
+      "x": -113.1,
+      "y": 136.5,
+      "z": 0.5,
+      "yaw": -1.1,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -113.1,
+                "y": 136.5,
+                "z": 0.5,
+                "strategy": "fastest"
+              },
+              {
+                "x": -77.6,
+                "y": 80.3,
+                "z": 1.21,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 70
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 8
+            },
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "rate",
+              "value": 3
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [
+    {
+      "id": "traffic_light_7",
+      "x": -67.8,
+      "y": 121.4,
+      "z": 0.06,
+      "events": [
+        {
+          "id": "traffic-event-1",
+          "state": "green",
+          "trigger_distance": 69.6
+        },
+        {
+          "id": "traffic-event-2",
+          "state": "green",
+          "trigger_distance": 61.6
+        },
+        {
+          "id": "traffic-event-3",
+          "state": "green",
+          "trigger_distance": 49.7
+        },
+        {
+          "id": "traffic-event-4",
+          "state": "green",
+          "trigger_distance": 39.3
+        },
+        {
+          "id": "traffic-event-5",
+          "state": "green",
+          "trigger_distance": 31.5
+        }
+      ]
+    }
+  ],
+  "generated": null,
+  "trafficSources": []
+}

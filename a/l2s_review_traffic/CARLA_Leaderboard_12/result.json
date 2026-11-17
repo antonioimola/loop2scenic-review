@@ -1,0 +1,182 @@
+{
+ "name": "l2st-CARLA_Leaderboard_12",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   29.25,
+   28.85,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.1,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary4_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.17,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.68,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    10.15
+   ]
+  },
+  "adversary": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    5.8,
+    6.46
+   ],
+   "closest_to_hero": [
+    3.55,
+    3.5
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.22,
+    6.87
+   ],
+   "closest_to_hero": [
+    3.81,
+    3.8
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.73,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.79,
+    10.46
+   ],
+   "closest_to_hero": [
+    16.16,
+    16.2
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.73,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.24,
+    9.89
+   ],
+   "closest_to_hero": [
+    16.25,
+    16.29
+   ]
+  },
+  "adversary4": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.76,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.05,
+    9.28
+   ],
+   "closest_to_hero": [
+    49.22,
+    49.29
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "CARLA_Leaderboard_12",
+ "hash": "07e111a4de79",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CARLA_Leaderboard_12__Town04__2026-11-16_02-49-02_065"
+}

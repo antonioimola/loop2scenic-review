@@ -1,0 +1,125 @@
+{
+ "name": "l2st-moving_rain_sudden_cut_out",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   19.25,
+   17.05,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    5.25,
+    5.25
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.15,
+   "shape_median_m": 0.01,
+   "end_diff_m": 28.12,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.39,
+    10.14
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 33.37,
+   "shape_median_m": 0.12,
+   "end_diff_m": 37.42,
+   "turn_deg": [
+    -1,
+    0
+   ],
+   "z": [
+    0.9,
+    10.59
+   ],
+   "closest_to_hero": [
+    0.3,
+    0.43
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.32,
+    6.97
+   ],
+   "closest_to_hero": [
+    3.54,
+    3.51
+   ]
+  },
+  "problems": [
+   "the run lasts 19 s in CARLA vs 17 s (egoDone)"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "the run lasts 19 s in CARLA vs 17 s (egoDone)"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "moving_rain_sudden_cut_out",
+ "hash": "a21e22fa2329",
+ "elapsed": 12,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-moving_rain_sudden_cut_out__Town04__2026-11-16_03-49-44_166"
+}

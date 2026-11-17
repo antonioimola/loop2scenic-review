@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "map": "Town03",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 7,
+    "walkers": 9,
+    "seed": 4090,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-30",
+    "type": "ego",
+    "x": -73.7,
+    "y": 176.2,
+    "z": 0.5,
+    "yaw": -116,
+    "initial_speed": 10,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "follow_trajectory",
+          "trajectory": [
+            {
+              "x": -73.7,
+              "y": 176.2,
+              "z": 0.5,
+              "velocity": 8
+            },
+            {
+              "x": -78.2,
+              "y": 154.8,
+              "z": 0.5,
+              "velocity": 8
+            },
+            {
+              "x": -78.2,
+              "y": 146.7,
+              "z": 0.5,
+              "velocity": 8
+            },
+            {
+              "x": -74.2,
+              "y": 120.3,
+              "z": 0.57,
+              "velocity": 8
+            },
+            {
+              "x": -74.2,
+              "y": 95.2,
+              "z": 0.95,
+              "velocity": 8
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [],
+  "staticObjects": [],
+  "trafficSignals": [
+    {
+      "id": "traffic_light_7",
+      "x": -67.8,
+      "y": 121.4,
+      "z": 0.06,
+      "events": [
+        {
+          "id": "traffic-event-1",
+          "state": "green",
+          "trigger_distance": 49.9
+        },
+        {
+          "id": "traffic-event-2",
+          "state": "green",
+          "trigger_distance": 39.8
+        },
+        {
+          "id": "traffic-event-3",
+          "state": "green",
+          "trigger_distance": 32.5
+        }
+      ]
+    }
+  ],
+  "generated": null,
+  "trafficSources": []
+}

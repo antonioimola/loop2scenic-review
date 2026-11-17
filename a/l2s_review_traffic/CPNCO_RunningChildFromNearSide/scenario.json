@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "map": "Town01",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 9,
+    "walkers": 13,
+    "seed": 3368,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": 392.36,
+    "y": 30,
+    "z": 0.5,
+    "yaw": 90,
+    "initial_speed": 13.9,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": 392.36,
+              "y": 30,
+              "z": 0.5,
+              "strategy": "fastest"
+            },
+            {
+              "x": 392.34,
+              "y": 300,
+              "z": 0.5,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ],
+    "max_acceleration": 6,
+    "obey_obstacles": false
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "child",
+      "x": 390.3,
+      "y": 140,
+      "z": 0.6,
+      "yaw": -0.0,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 22
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": 390.3,
+                "y": 140,
+                "z": 0.5,
+                "velocity": 1.39
+              },
+              {
+                "x": 398.5,
+                "y": 140,
+                "z": 0.5,
+                "velocity": 1.39
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "obj-3",
+      "type": "van",
+      "x": 389.8,
+      "y": 135.5,
+      "z": 0.5,
+      "yaw": 90,
+      "initial_speed": 0,
+      "events": [],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

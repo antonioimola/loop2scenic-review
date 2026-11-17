@@ -1,0 +1,84 @@
+{
+ "id": "l2s-carla-16",
+ "source": "Loop2Scenic CARLA_Leaderboard_16",
+ "description": "a slow moving hazard blocking part of the lane ... next to a lane of traffic moving in the opposite direction",
+ "town": "Town03",
+ "type": "slow_lead",
+ "seed": 3,
+ "pins": {
+  "lead_type": "motorcycle",
+  "lateral_m": 1.0,
+  "side": "right",
+  "lead_speed": 2
+ },
+ "passed": 10,
+ "total": 10,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-carla-16.xosc",
+  "route": "l2s-carla-16_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 13,
+  "lead_type": "motorcycle",
+  "lead_speed": 2,
+  "speed_diff_kmh": 40,
+  "initial_gap_m": 69.5,
+  "lateral_m": 1,
+  "side": "right"
+ },
+ "checks": [
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): builds \u2014 \u201ca slow moving hazard blocking part of the lane ... next to a lane of t\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): pinned lead_type honoured",
+   "status": "PASS",
+   "detail": "('lead_type', 'motorcycle', 'motorcycle')"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): pinned lateral_m honoured",
+   "status": "PASS",
+   "detail": "('lateral_m', 1, 1.0)"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): pinned side honoured",
+   "status": "PASS",
+   "detail": "('side', 'right', 'right')"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): pinned lead_speed honoured",
+   "status": "PASS",
+   "detail": "('lead_speed', 2, 2)"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): lead is a motorcycle",
+   "status": "PASS",
+   "detail": "motorcycle"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "1.0163820480263812"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): lead held 1.0 m off the lane centre",
+   "status": "PASS",
+   "detail": "[{'id': 'evt-2', 'trigger': {'type': 'distance_to_ego', 'value': 66.5}, 'action': {'type': 'lane_offset', 'direction': 'right', 'offset': 1}}]"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): ...and actually off it when the ego closes in",
+   "status": "PASS",
+   "detail": "0.9902056064539028"
+  },
+  {
+   "check": "l2s-carla-16 (Loop2Scenic CARLA_Leaderboard_16): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

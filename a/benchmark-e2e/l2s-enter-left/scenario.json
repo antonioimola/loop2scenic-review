@@ -1,0 +1,123 @@
+{
+ "schema_version": "1.0",
+ "map": "Town06",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-224",
+  "type": "ego",
+  "x": 336.1,
+  "y": 251.6,
+  "z": 0.5,
+  "yaw": 0,
+  "initial_speed": 8.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 336.1,
+       "y": 251.6,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 591.5,
+       "y": 251.7,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-223",
+   "type": "van",
+   "x": 378.4,
+   "y": 248.2,
+   "z": 0.5,
+   "yaw": 0,
+   "initial_speed": 5.9,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 12
+     },
+     "action": {
+      "type": "lane_change",
+      "direction": "right",
+      "dynamics": {
+       "shape": "linear",
+       "value": 20.4
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "cut_in",
+  "label": "Einscheren",
+  "seed": 1,
+  "town": "Town06",
+  "near": {
+   "x": 466.3,
+   "y": 251.7
+  },
+  "anchored": false,
+  "attempt": 6,
+  "overrides": {},
+  "params": {
+   "ego_speed": 8.5,
+   "npc_type": "van",
+   "from_side": "left",
+   "npc_speed": 5.9,
+   "initial_gap_m": 42.2,
+   "trigger_m": 12,
+   "lane_change_m": 20.4,
+   "brakes_after": false
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 2.4,
+   "decel_mps2": 1.8,
+   "min_gap_m": 0,
+   "conflict_with": "van",
+   "at": {
+    "x": 466.3,
+    "y": 251.7
+   }
+  },
+  "signature": "uchhli"
+ }
+}

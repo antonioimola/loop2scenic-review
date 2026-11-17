@@ -1,0 +1,106 @@
+{
+ "name": "l2st-MD_Pedestrian_Crosswalk5",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.9,
+   20.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    0.1,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_SpeedEvent1",
+    4.4,
+    4.4
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.48,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.81,
+   "turn_deg": [
+    86,
+    85
+   ],
+   "z": [
+    0.02,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 6.57,
+   "shape_median_m": 0.0,
+   "end_diff_m": 6.57,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.95,
+    1.16
+   ],
+   "closest_to_hero": [
+    4.38,
+    4.63
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.73,
+   "shape_median_m": 0.1,
+   "end_diff_m": 0.9,
+   "turn_deg": [
+    -6,
+    -7
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    3.53,
+    3.54
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Pedestrian_Crosswalk5",
+ "hash": "d9283d43f75c",
+ "elapsed": 16,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Pedestrian_Crosswalk5__Town05__2026-11-16_02-22-07_026"
+}

@@ -1,0 +1,143 @@
+{
+ "name": "l2st-MD_Interdriver36",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   16.55,
+   16.2,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.43,
+   "shape_median_m": 0.07,
+   "end_diff_m": 0.3,
+   "turn_deg": [
+    90,
+    89
+   ],
+   "z": [
+    0.0,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.48,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.78,
+   "turn_deg": [
+    87,
+    85
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    16.96,
+    16.96
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.32,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.46,
+   "turn_deg": [
+    86,
+    85
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    7.47,
+    7.47
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.3,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.61,
+   "turn_deg": [
+    64,
+    65
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    3.47,
+    3.48
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Interdriver36",
+ "hash": "cd672e73d3af",
+ "elapsed": 11,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Interdriver36__Town05__2026-11-16_03-34-37_546"
+}

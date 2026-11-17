@@ -1,0 +1,82 @@
+{
+ "id": "l2s-hidrive-cutin",
+ "source": "Loop2Scenic in_lane_cut_in_rear_end (HiDrive)",
+ "description": "another object is doing a cut-in that results in a rear-end conflict",
+ "town": "Town05",
+ "type": "cut_in",
+ "seed": 1,
+ "pins": {
+  "brakes_after": true
+ },
+ "passed": 10,
+ "total": 10,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-hidrive-cutin.xosc",
+  "route": "l2s-hidrive-cutin_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9.5,
+  "npc_type": "car",
+  "from_side": "right",
+  "npc_speed": 6.1,
+  "initial_gap_m": 19.6,
+  "trigger_m": 9.8,
+  "lane_change_m": 15.8,
+  "brakes_after": true
+ },
+ "checks": [
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): builds \u2014 \u201canother object is doing a cut-in that results in a rear-end conflict\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): pinned brakes_after honoured",
+   "status": "PASS",
+   "detail": "('brakes_after', True, True)"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): the other car starts in the neighbouring lane",
+   "status": "PASS",
+   "detail": "3.530555633254922"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): ...ahead of the ego",
+   "status": "PASS",
+   "detail": "(9, 0)"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): it changes lanes",
+   "status": "PASS",
+   "detail": "['lane_change', 'set_speed']"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): ...when the ego closes in",
+   "status": "PASS",
+   "detail": "{'type': 'distance_to_ego', 'value': 9.8}"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): ...towards the ego's lane",
+   "status": "PASS",
+   "detail": "('left', True)"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): it ends up in the ego's lane (within 1.0 m of its centre)",
+   "status": "PASS",
+   "detail": "4.95872646887596e-06"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.9181065914112674"
+  },
+  {
+   "check": "l2s-hidrive-cutin (Loop2Scenic in_lane_cut_in_rear_end (HiDrive)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

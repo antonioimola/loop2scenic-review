@@ -1,0 +1,175 @@
+{
+ "name": "l2st-lateral_overtake_adv_slower_traffic",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   23.55,
+   23.2,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "hero_SpeedEvent1",
+    8.75,
+    8.7
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    5.75,
+    5.75
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.51,
+   "shape_median_m": 0.03,
+   "end_diff_m": 0.12,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 5.64,
+   "shape_median_m": 0.27,
+   "end_diff_m": 7.13,
+   "turn_deg": [
+    -1,
+    0
+   ],
+   "z": [
+    -0.01,
+    0.69
+   ],
+   "closest_to_hero": [
+    3.94,
+    3.47
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.36,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    9.01,
+    8.76
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.12,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.0,
+    0.69
+   ],
+   "closest_to_hero": [
+    21.03,
+    20.76
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 0.41,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.41,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    4.0,
+    4.0
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "lateral_overtake_adv_slower_traffic",
+ "hash": "4a7db5712fe4",
+ "elapsed": 12,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "FAILURE"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_overtake_adv_slower_traffic__Town01__2026-11-16_02-32-22_801"
+}

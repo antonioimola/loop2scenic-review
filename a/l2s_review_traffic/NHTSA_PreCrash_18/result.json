@@ -1,0 +1,121 @@
+{
+ "name": "l2st-NHTSA_PreCrash_18",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   22.2,
+   21.85,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.14,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.85,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.28,
+    11.0
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.69,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    2.3,
+    11.03
+   ],
+   "closest_to_hero": [
+    3.51,
+    3.5
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.25,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.05,
+   "turn_deg": [
+    1,
+    1
+   ],
+   "z": [
+    4.68,
+    11.03
+   ],
+   "closest_to_hero": [
+    10.56,
+    10.34
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "NHTSA_PreCrash_18",
+ "hash": "602adf218ac3",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-NHTSA_PreCrash_18__Town04__2026-11-16_03-47-59_911"
+}

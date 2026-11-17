@@ -1,0 +1,104 @@
+{
+ "name": "l2st-pass_straight_with_oncoming_obj_turning_left",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   18.6,
+   18.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    1.8,
+    1.8
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.42,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.42,
+   "turn_deg": [
+    86,
+    85
+   ],
+   "z": [
+    0.01,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.41,
+   "shape_median_m": 0.28,
+   "end_diff_m": 0.28,
+   "turn_deg": [
+    -125,
+    -121
+   ],
+   "z": [
+    0.03,
+    0.75
+   ],
+   "closest_to_hero": [
+    6.14,
+    6.7
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "pass_straight_with_oncoming_obj_turning_left",
+ "hash": "533221c2037d",
+ "elapsed": 11,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-pass_straight_with_oncoming_obj_turning_left__Town05__2026-11-16_02-34-45_777"
+}

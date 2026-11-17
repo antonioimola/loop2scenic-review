@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": false,
+    "count": 19,
+    "walkers": 0,
+    "seed": 1,
+    "radius": 80,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-11",
+    "type": "ego",
+    "x": -327.7,
+    "y": 30,
+    "z": 0.72,
+    "yaw": 0,
+    "initial_speed": 10,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "event_started",
+          "event_id": "evt-2",
+          "actor_ref": "obj-12"
+        },
+        "action": {
+          "type": "lane_change",
+          "direction": "left",
+          "dynamics": {
+            "shape": "linear",
+            "dimension": "distance",
+            "value": 14
+          }
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-12",
+      "type": "car",
+      "x": -297.6,
+      "y": 30.1,
+      "z": 1.26,
+      "yaw": 0,
+      "initial_speed": 7,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 7
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 60
+            }
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 22
+          },
+          "action": {
+            "type": "lane_change",
+            "direction": "left",
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "distance",
+              "value": 14
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

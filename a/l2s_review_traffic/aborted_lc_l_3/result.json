@@ -1,0 +1,123 @@
+{
+ "name": "l2st-aborted_lc_l_3",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.35,
+   20,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.26,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.68,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.44,
+    8.13
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 2.53,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.52,
+   "turn_deg": [
+    14,
+    0
+   ],
+   "z": [
+    0.97,
+    9.12
+   ],
+   "closest_to_hero": [
+    6.97,
+    5.47
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.72,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.67,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.15,
+    8.41
+   ],
+   "closest_to_hero": [
+    3.53,
+    3.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [
+  "adversary's body yaw jumps up to 58\u00b0 in one tick (1\u00d7)"
+ ],
+ "verdict": "PASS*",
+ "card": "aborted_lc_l_3",
+ "hash": "b1cb03543784",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-aborted_lc_l_3__Town04__2026-11-16_02-05-26_674"
+}

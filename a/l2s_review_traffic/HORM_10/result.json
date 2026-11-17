@@ -1,0 +1,165 @@
+{
+ "name": "l2st-HORM_10",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   21.15,
+   20.7,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.27,
+   "shape_median_m": 0.15,
+   "end_diff_m": 0.59,
+   "turn_deg": [
+    125,
+    124
+   ],
+   "z": [
+    3.4,
+    11.0
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.91,
+   "shape_median_m": 0.06,
+   "end_diff_m": 0.91,
+   "turn_deg": [
+    111,
+    110
+   ],
+   "z": [
+    4.61,
+    11.03
+   ],
+   "closest_to_hero": [
+    13.94,
+    13.91
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 2.1,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.1,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.94,
+    11.03
+   ],
+   "closest_to_hero": [
+    29.77,
+    28.54
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 2.07,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.07,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.93,
+    11.03
+   ],
+   "closest_to_hero": [
+    30.48,
+    29.04
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 1.85,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.85,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    4.14,
+    11.01
+   ],
+   "closest_to_hero": [
+    23.3,
+    24.56
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "HORM_10",
+ "hash": "b033a7cd3d6d",
+ "elapsed": 12,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-HORM_10__Town04__2026-11-16_02-15-42_852"
+}

@@ -1,0 +1,247 @@
+{
+ "schema_version": "1.0",
+ "map": "Town03",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-97",
+  "type": "ego",
+  "x": 82.6,
+  "y": -163.9,
+  "z": 5.44,
+  "yaw": 91,
+  "initial_speed": 13,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 82.6,
+       "y": -163.9,
+       "z": 5.44,
+       "strategy": "fastest"
+      },
+      {
+       "x": 104.1,
+       "y": -132.5,
+       "z": 8.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 150.1,
+       "y": -112.9,
+       "z": 8.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 149.1,
+       "y": -54.8,
+       "z": 6.53,
+       "strategy": "fastest"
+      },
+      {
+       "x": 127.8,
+       "y": -6.6,
+       "z": 0.58,
+       "strategy": "fastest"
+      },
+      {
+       "x": 81.4,
+       "y": -25.7,
+       "z": 1.79,
+       "strategy": "fastest"
+      },
+      {
+       "x": 81.6,
+       "y": -30.6,
+       "z": 2.44,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-96",
+   "type": "truck",
+   "x": 152.4,
+   "y": -41.5,
+   "z": 3.95,
+   "yaw": -89,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": 152.4,
+        "y": -41.5,
+        "z": 3.95,
+        "strategy": "fastest"
+       },
+       {
+        "x": 130.6,
+        "y": -72.5,
+        "z": 8.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": 78.1,
+        "y": -32.1,
+        "z": 2.65,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 91.1
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 3
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 12.3
+      }
+     }
+    }
+   ],
+   "obey_traffic_lights": false,
+   "obey_obstacles": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_13",
+   "x": 73.2,
+   "y": -123.6,
+   "z": 8,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 38.4
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 30.6
+    }
+   ]
+  },
+  {
+   "id": "traffic_light_35",
+   "x": 162.8,
+   "y": -123.8,
+   "z": 8,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 78.5
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 62.1
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 48.2
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 37.4
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 29.6
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "junction_conflict",
+  "label": "Querverkehr Kreuzung",
+  "seed": 4,
+  "town": "Town03",
+  "near": {
+   "x": 149.5,
+   "y": -74.2
+  },
+  "anchored": false,
+  "attempt": 17,
+  "overrides": {
+   "layout": "npc_left_oncoming"
+  },
+  "params": {
+   "ego_speed": 13,
+   "layout": "npc_left_oncoming",
+   "npc_from": "oncoming",
+   "npc_type": "truck",
+   "junction": "1441",
+   "signalized": false,
+   "oncoming": true,
+   "npc_speed": 12.3,
+   "npc_run_up_m": 32,
+   "arrival_offset_s": 0.41,
+   "trigger_m": 91.1
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": null,
+   "decel_mps2": 0,
+   "min_gap_m": 0.1,
+   "conflict_with": "truck",
+   "at": {
+    "x": 149.5,
+    "y": -74.2
+   }
+  },
+  "signature": "owgwtj"
+ }
+}

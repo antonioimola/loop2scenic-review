@@ -1,0 +1,227 @@
+{
+ "schema_version": "1.0",
+ "map": "Town10HD",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-103",
+  "type": "ego",
+  "x": -10,
+  "y": 16.7,
+  "z": 0.5,
+  "yaw": -179,
+  "initial_speed": 13,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": -10,
+       "y": 16.7,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -48.7,
+       "y": 50.6,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -48.5,
+       "y": 90.6,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -78.8,
+       "y": 129.8,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": -107.4,
+       "y": 61.8,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-102",
+   "type": "pedestrian",
+   "x": -74.8,
+   "y": 121.5,
+   "z": 1,
+   "yaw": 115,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 31.8
+     },
+     "action": {
+      "type": "follow_trajectory",
+      "trajectory": [
+       {
+        "x": -74.8,
+        "y": 121.5,
+        "z": 0.5,
+        "velocity": 2.5
+       },
+       {
+        "x": -83.9,
+        "y": 141.4,
+        "z": 0.5,
+        "velocity": 2.5
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "after_event",
+      "event_id": "evt-1"
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "step",
+       "dimension": "time",
+       "value": 5
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 0
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_6",
+   "x": -63.9,
+   "y": 7.1,
+   "z": 0,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 49.4
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 41.6
+    }
+   ]
+  },
+  {
+   "id": "traffic_light_9",
+   "x": -58.7,
+   "y": 145.5,
+   "z": 0,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 86.4
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 69.6
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 55.8
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 45
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 37.3
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "turn_vru",
+  "label": "Abbiegen, Fu\u00dfg\u00e4nger/Rad quert",
+  "seed": 2,
+  "town": "Town10HD",
+  "near": {
+   "x": -76.6,
+   "y": 130.4
+  },
+  "anchored": false,
+  "attempt": 9,
+  "overrides": {
+   "turn": "right",
+   "vru_type": "pedestrian"
+  },
+  "params": {
+   "ego_speed": 13,
+   "turn": "right",
+   "junction": "468",
+   "vru_type": "pedestrian",
+   "speed": 2.5,
+   "from": "right",
+   "crossing_m": 21.9,
+   "on_crosswalk": false,
+   "arrival_offset_s": 0.47,
+   "trigger_m": 31.8,
+   "stops_in_lane_s": null
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 3.75,
+   "decel_mps2": 1.8,
+   "min_gap_m": 0,
+   "conflict_with": "pedestrian",
+   "at": {
+    "x": -76.6,
+    "y": 130.4
+   }
+  },
+  "signature": "12k0dvg"
+ }
+}

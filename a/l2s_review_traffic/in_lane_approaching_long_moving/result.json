@@ -1,0 +1,121 @@
+{
+ "name": "l2st-in_lane_approaching_long_moving",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   31.7,
+   31.3,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.89,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.28,
+    11.0
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.52,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.12,
+   "turn_deg": [
+    1,
+    1
+   ],
+   "z": [
+    2.5,
+    11.03
+   ],
+   "closest_to_hero": [
+    10.59,
+    10.34
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.49,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.49,
+   "turn_deg": [
+    1,
+    1
+   ],
+   "z": [
+    0.18,
+    11.02
+   ],
+   "closest_to_hero": [
+    3.5,
+    3.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "in_lane_approaching_long_moving",
+ "hash": "f55908fc84c3",
+ "elapsed": 16,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-in_lane_approaching_long_moving__Town04__2026-11-16_03-51-42_346"
+}

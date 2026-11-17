@@ -1,0 +1,74 @@
+{
+ "id": "l2s-encroach",
+ "source": "Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)",
+ "description": "Another moving vehicle is approaching in an opposing lane of travel and begins to drift into the SV's lane",
+ "town": "Town05",
+ "type": "oncoming_drift",
+ "seed": 1,
+ "pins": {
+  "offset_m": 2.5
+ },
+ "passed": 8,
+ "total": 8,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-encroach.xosc",
+  "route": "l2s-encroach_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9,
+  "style": "offset",
+  "cause": "parked",
+  "npc_type": "truck",
+  "npc_speed": 9.4,
+  "offset_m": 2.5,
+  "return_ttc_s": 0,
+  "npc_run_up_m": 34.2,
+  "arrival_offset_s": -0.27,
+  "trigger_m": 78.4
+ },
+ "checks": [
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): builds \u2014 \u201cAnother moving vehicle is approaching in an opposing lane of travel an\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): pinned offset_m honoured",
+   "status": "PASS",
+   "detail": "('offset_m', 2.5, 2.5)"
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): a moving oncoming car",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): it comes from the opposite direction",
+   "status": "PASS",
+   "detail": "174.26188366221203"
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): it drifts towards the ego's lane",
+   "status": "PASS",
+   "detail": "0.9989199706518488"
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): ...and into a non-reacting ego's way",
+   "status": "PASS",
+   "detail": "1.2207613700746973"
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): offset_m is 2.5",
+   "status": "PASS",
+   "detail": "2.5"
+  },
+  {
+   "check": "l2s-encroach (Loop2Scenic EncroachingOncomingVehicle (NHTSA ADS)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

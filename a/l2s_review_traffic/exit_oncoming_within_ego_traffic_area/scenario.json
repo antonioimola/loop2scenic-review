@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "map": "Town01",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 14,
+    "walkers": 8,
+    "seed": 7965,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": 392.32,
+    "y": 60,
+    "z": 0.5,
+    "yaw": 90,
+    "initial_speed": 9,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": 392.32,
+              "y": 60,
+              "z": 0.5,
+              "strategy": "fastest"
+            },
+            {
+              "x": 392.34,
+              "y": 300,
+              "z": 0.5,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": 392.3,
+      "y": 270,
+      "z": 0.5,
+      "yaw": -90,
+      "initial_speed": 8,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": 392.3,
+                "y": 270,
+                "z": 0.5,
+                "velocity": 8
+              },
+              {
+                "x": 392.3,
+                "y": 204,
+                "z": 0.5,
+                "velocity": 8
+              },
+              {
+                "x": 393.3,
+                "y": 198,
+                "z": 0.5,
+                "velocity": 8
+              },
+              {
+                "x": 395.3,
+                "y": 192,
+                "z": 0.5,
+                "velocity": 8
+              },
+              {
+                "x": 396.3,
+                "y": 186,
+                "z": 0.5,
+                "velocity": 8
+              },
+              {
+                "x": 396.3,
+                "y": 15,
+                "z": 0.5,
+                "velocity": 8
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

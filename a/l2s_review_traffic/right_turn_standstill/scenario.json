@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0",
+  "map": "Town05",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 8,
+    "walkers": 6,
+    "seed": 1278,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -184.57,
+    "y": -12.7,
+    "z": 0.56,
+    "yaw": -90,
+    "initial_speed": 7,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -184.57,
+              "y": -12.7,
+              "z": 0.56,
+              "strategy": "fastest"
+            },
+            {
+              "x": -153,
+              "y": -84.62,
+              "z": 0.5,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      },
+      {
+        "id": "evt-2",
+        "trigger": {
+          "type": "distance_to_point",
+          "value": 3,
+          "point": {
+            "x": -183.90192046551633,
+            "y": -81.40913153779991,
+            "z": 0.55
+          },
+          "entity_ref": "obj-1"
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 0
+          },
+          "dynamics": {
+            "shape": "linear",
+            "dimension": "rate",
+            "value": 6
+          }
+        }
+      },
+      {
+        "id": "evt-3",
+        "trigger": {
+          "type": "after_event",
+          "event_id": "evt-2"
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 0
+          },
+          "dynamics": {
+            "shape": "step",
+            "dimension": "time",
+            "value": 4
+          }
+        }
+      },
+      {
+        "id": "evt-4",
+        "trigger": {
+          "type": "after_event",
+          "event_id": "evt-3"
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 7
+          },
+          "dynamics": {
+            "shape": "linear",
+            "dimension": "rate",
+            "value": 3
+          }
+        }
+      }
+    ]
+  },
+  "npcs": [],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

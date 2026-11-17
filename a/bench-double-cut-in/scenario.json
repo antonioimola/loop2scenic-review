@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "map": "Town05",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": 15,
+    "y": -204.02,
+    "z": 0.5,
+    "yaw": 180,
+    "trajectory": [],
+    "events": []
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -5,
+      "y": -207.5,
+      "yaw": 180,
+      "z": 1,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "e1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 3
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 5
+            }
+          }
+        },
+        {
+          "id": "e2",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "e1"
+          },
+          "action": {
+            "type": "lane_change",
+            "direction": "left",
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "distance",
+              "value": 18
+            }
+          }
+        },
+        {
+          "id": "e3",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "e2"
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 12
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "obj-3",
+      "type": "car",
+      "x": -20,
+      "y": -200.5,
+      "yaw": 180,
+      "z": 2.43,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "f1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 3
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 5
+            }
+          }
+        },
+        {
+          "id": "f2",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "f1"
+          },
+          "action": {
+            "type": "lane_change",
+            "direction": "right",
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "distance",
+              "value": 18
+            }
+          }
+        },
+        {
+          "id": "f3",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "f2"
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 12
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 5
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": []
+}

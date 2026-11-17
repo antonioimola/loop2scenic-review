@@ -1,0 +1,116 @@
+{
+ "name": "l2st-lateral_navigate_parked_motorcycle",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   56.7,
+   55.7,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.79,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    1.94,
+    7.63
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.52,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.7,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    2.08,
+    8.12
+   ],
+   "closest_to_hero": [
+    3.37,
+    3.73
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    3.36,
+    4.08
+   ],
+   "closest_to_hero": [
+    3.5,
+    3.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "lateral_navigate_parked_motorcycle",
+ "hash": "0fbc686f2b89",
+ "elapsed": 25,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_navigate_parked_motorcycle__Town04__2026-11-16_03-46-11_174"
+}

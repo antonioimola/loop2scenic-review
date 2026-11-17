@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": false,
+    "count": 19,
+    "walkers": 0,
+    "seed": 1,
+    "radius": 80,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-38",
+    "type": "ego",
+    "x": -237.8,
+    "y": 37.1,
+    "z": 3.32,
+    "yaw": 0,
+    "initial_speed": 12,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -237.8,
+              "y": 37.1,
+              "z": 3.32,
+              "strategy": "fastest"
+            },
+            {
+              "x": 12.1,
+              "y": 37.4,
+              "z": 0.5,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-39",
+      "type": "car",
+      "x": -119.8,
+      "y": 115.1,
+      "z": 4.5,
+      "yaw": -116.8,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -119.8,
+                "y": 115.1,
+                "z": 4.5,
+                "strategy": "fastest"
+              },
+              {
+                "x": 61.1,
+                "y": 37.8,
+                "z": 11.5,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 125
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 12
+            },
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "rate",
+              "value": 3
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

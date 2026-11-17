@@ -1,0 +1,136 @@
+{
+ "name": "l2st-lateral_two_adv_cut_in_both_side_highway",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   24.0,
+   23.05,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.1,
+    0.05
+   ],
+   [
+    "adversary_LaneChangeEvent1",
+    2.85,
+    2.8
+   ],
+   [
+    "adversary_SpeedEvent2",
+    4.75,
+    5.15
+   ],
+   [
+    "adversary1_SpeedEvent0",
+    0.1,
+    0.05
+   ],
+   [
+    "adversary1_LaneChangeEvent1",
+    2.85,
+    2.85
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.49,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.42,
+    6.89
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.54,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.04,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.91,
+    7.47
+   ],
+   "closest_to_hero": [
+    7.78,
+    8.58
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 129.12,
+   "shape_median_m": 0.15,
+   "end_diff_m": 134.32,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    2.03,
+    10.94
+   ],
+   "closest_to_hero": [
+    43.86,
+    36.58
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "lateral_two_adv_cut_in_both_side_highway",
+ "hash": "2aa29dc19859",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_two_adv_cut_in_both_side_highway__Town04__2026-11-16_03-44-48_777"
+}

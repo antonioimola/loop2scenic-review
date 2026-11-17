@@ -1,0 +1,106 @@
+{
+ "name": "l2st-CMRb_50kph",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   21.8,
+   21.25,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    11.7,
+    11.65
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.09,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.62,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 17.32,
+   "shape_median_m": 0.0,
+   "end_diff_m": 17.26,
+   "turn_deg": [
+    6,
+    0
+   ],
+   "z": [
+    -0.07,
+    1.28
+   ],
+   "closest_to_hero": [
+    0.36,
+    0.17
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [
+  "adversary's body yaw jumps up to 50\u00b0 in one tick (1\u00d7)"
+ ],
+ "verdict": "PASS*",
+ "card": "CMRb_50kph",
+ "hash": "b4cd23e77559",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CMRb_50kph__Town01__2026-11-16_03-08-11_639"
+}

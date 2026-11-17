@@ -1,0 +1,123 @@
+{
+ "name": "l2st-oncoming_adv_overtake",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   22.9,
+   21.25,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 1.05,
+   "shape_median_m": 0.0,
+   "end_diff_m": 13.79,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.06,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.32,
+   "shape_median_m": 0.16,
+   "end_diff_m": 18.55,
+   "turn_deg": [
+    -2,
+    0
+   ],
+   "z": [
+    0.03,
+    2.54
+   ],
+   "closest_to_hero": [
+    2.46,
+    0.1
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 1.18,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.38,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.0,
+    0.69
+   ],
+   "closest_to_hero": [
+    4.17,
+    4.0
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [
+  "adversary's body yaw jumps up to 180\u00b0 in one tick (1\u00d7)"
+ ],
+ "verdict": "PASS*",
+ "card": "oncoming_adv_overtake",
+ "hash": "6d5932690294",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "FAILURE"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-oncoming_adv_overtake__Town01__2026-11-16_03-57-48_614"
+}

@@ -1,0 +1,165 @@
+{
+ "name": "l2st-MD_Highway_On-Ramp_Merge6",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   21.2,
+   20.7,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.28,
+   "shape_median_m": 0.11,
+   "end_diff_m": 0.65,
+   "turn_deg": [
+    125,
+    124
+   ],
+   "z": [
+    3.4,
+    11.0
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.94,
+   "shape_median_m": 0.06,
+   "end_diff_m": 0.94,
+   "turn_deg": [
+    109,
+    109
+   ],
+   "z": [
+    4.69,
+    11.03
+   ],
+   "closest_to_hero": [
+    14.94,
+    14.89
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 1.88,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.88,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    4.44,
+    11.02
+   ],
+   "closest_to_hero": [
+    17.33,
+    18.56
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 2.01,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.01,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.32,
+    11.03
+   ],
+   "closest_to_hero": [
+    19.48,
+    18.21
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 2.01,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.01,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    6.32,
+    11.03
+   ],
+   "closest_to_hero": [
+    18.53,
+    17.18
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Highway_On-Ramp_Merge6",
+ "hash": "e3efb73a1af1",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Highway_On-Ramp_Merge6__Town04__2026-11-16_02-16-03_756"
+}

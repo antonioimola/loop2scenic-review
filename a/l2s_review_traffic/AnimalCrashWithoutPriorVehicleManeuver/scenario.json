@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "nighttime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 10,
+    "walkers": 13,
+    "seed": 6458,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -335,
+    "y": 37,
+    "z": 0.64,
+    "yaw": 0,
+    "initial_speed": 25,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -335,
+              "y": 37,
+              "z": 0.64,
+              "strategy": "fastest"
+            },
+            {
+              "x": -127.7,
+              "y": 37.28,
+              "z": 8.97,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ],
+    "max_acceleration": 6
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "deer",
+      "x": -175,
+      "y": 41.2,
+      "z": 6.62,
+      "yaw": -90,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 40
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": -175,
+                "y": 41.2,
+                "z": 6.52,
+                "velocity": 4
+              },
+              {
+                "x": -175,
+                "y": 37,
+                "z": 6.52,
+                "velocity": 4
+              }
+            ]
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "evt-1"
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 0
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 20
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

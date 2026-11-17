@@ -1,0 +1,112 @@
+{
+ "id": "l2s-media-truck-red",
+ "source": "Loop2Scenic turning_truck_runredlight (video)",
+ "description": "the ego is turning left; a truck coming from the left runs a red light, speeding straight through",
+ "town": "Town05",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "ego_left_crossing",
+  "npc_from": "left",
+  "npc_type": "truck"
+ },
+ "passed": 15,
+ "total": 15,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-truck-red.xosc",
+  "route": "l2s-media-truck-red_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9,
+  "layout": "ego_left_crossing",
+  "npc_from": "left",
+  "npc_type": "truck",
+  "junction": "1722",
+  "signalized": true,
+  "oncoming": false,
+  "npc_speed": 11,
+  "npc_run_up_m": 31.1,
+  "arrival_offset_s": -0.1,
+  "trigger_m": 52.7
+ },
+ "checks": [
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): builds \u2014 \u201cthe ego is turning left; a truck coming from the left runs a red light\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'ego_left_crossing', 'ego_left_crossing')"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): pinned npc_from honoured",
+   "status": "PASS",
+   "detail": "('npc_from', 'left', 'left')"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): pinned npc_type honoured",
+   "status": "PASS",
+   "detail": "('npc_type', 'truck', 'truck')"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((38, 51, '1722'), (7, 24, '1722'))"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): the ego goes left through it",
+   "status": "PASS",
+   "detail": "-90.58015738536042"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "0.0"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): ...it comes from the ego's left",
+   "status": "PASS",
+   "detail": "89.42557230654677"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): they meet",
+   "status": "PASS",
+   "detail": "0.18061354355148942"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): the ego's route goes through a junction there",
+   "status": "PASS",
+   "detail": "{'x': -131.36, 'y': 88.633}"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): a traffic light governs the ego's way through the junction",
+   "status": "PASS",
+   "detail": "([39, 80], (38, 51, '1722'))"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): ...agrees with the generator's own label",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): the other vehicle ignores traffic lights (runs the red)",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): the other road user is a truck",
+   "status": "PASS",
+   "detail": "truck"
+  },
+  {
+   "check": "l2s-media-truck-red (Loop2Scenic turning_truck_runredlight (video)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

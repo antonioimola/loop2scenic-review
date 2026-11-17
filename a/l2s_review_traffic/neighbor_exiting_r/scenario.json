@@ -1,0 +1,118 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 9,
+    "walkers": 8,
+    "seed": 5380,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -320,
+    "y": 30.02,
+    "z": 0.83,
+    "yaw": 0,
+    "initial_speed": 10,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -320,
+              "y": 30.02,
+              "z": 0.83,
+              "strategy": "fastest"
+            },
+            {
+              "x": -60,
+              "y": 30.37,
+              "z": 10.47,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -316,
+      "y": 33.52,
+      "z": 0.89,
+      "yaw": 0,
+      "initial_speed": 10,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 10
+            },
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 60
+            }
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_point",
+            "value": 2.5,
+            "point": {
+              "x": -250,
+              "y": 33.61,
+              "z": 2.802
+            },
+            "entity_ref": "obj-2"
+          },
+          "action": {
+            "type": "lane_change",
+            "direction": "right",
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "distance",
+              "value": 15
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

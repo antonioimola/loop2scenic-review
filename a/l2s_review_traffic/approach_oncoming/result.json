@@ -1,0 +1,105 @@
+{
+ "name": "l2st-approach_oncoming",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   27.75,
+   23.1,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    0.1,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 2.05,
+   "shape_median_m": 0.0,
+   "end_diff_m": 39.87,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.35,
+   "shape_median_m": 0.4,
+   "end_diff_m": 0.48,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    3.33,
+    0.2
+   ]
+  },
+  "problems": [
+   "the run lasts 28 s in CARLA vs 23 s (egoDone)",
+   "adversary comes within 3.3 m of the ego in CARLA vs 0.2 m"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "the run lasts 28 s in CARLA vs 23 s (egoDone)",
+  "adversary comes within 3.3 m of the ego in CARLA vs 0.2 m"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "approach_oncoming",
+ "hash": "849df80c7ffb",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "FAILURE"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-approach_oncoming__Town01__2026-11-16_02-02-48_167"
+}

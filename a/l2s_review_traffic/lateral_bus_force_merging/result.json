@@ -1,0 +1,99 @@
+{
+ "name": "l2st-lateral_bus_force_merging",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   26.85,
+   26.55,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.62,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.8,
+    11.0
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.1,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.1,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.18,
+    10.98
+   ],
+   "closest_to_hero": [
+    3.5,
+    3.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "lateral_bus_force_merging",
+ "hash": "03c525d11534",
+ "elapsed": 24,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_bus_force_merging__Town04__2026-11-16_03-45-13_631"
+}

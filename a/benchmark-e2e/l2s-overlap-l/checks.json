@@ -1,0 +1,83 @@
+{
+ "id": "l2s-overlap-l",
+ "source": "Loop2Scenic approach_overlapping_lead_l (VVM)",
+ "description": "It approaches a leading adversarial object that is overlapping its lane to the left",
+ "town": "Town03",
+ "type": "slow_lead",
+ "seed": 1,
+ "pins": {
+  "lead_type": "car",
+  "lateral_m": 0.8,
+  "side": "left"
+ },
+ "passed": 10,
+ "total": 10,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-overlap-l.xosc",
+  "route": "l2s-overlap-l_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 13.5,
+  "lead_type": "car",
+  "lead_speed": 5.1,
+  "speed_diff_kmh": 30,
+  "initial_gap_m": 78.2,
+  "lateral_m": 0.8,
+  "side": "left"
+ },
+ "checks": [
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): builds \u2014 \u201cIt approaches a leading adversarial object that is overlapping its lan\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): pinned lead_type honoured",
+   "status": "PASS",
+   "detail": "('lead_type', 'car', 'car')"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): pinned lateral_m honoured",
+   "status": "PASS",
+   "detail": "('lateral_m', 0.8, 0.8)"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): pinned side honoured",
+   "status": "PASS",
+   "detail": "('side', 'left', 'left')"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): lead is a car",
+   "status": "PASS",
+   "detail": "car"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.7976645555918253"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): lead held 0.8 m off the lane centre",
+   "status": "PASS",
+   "detail": "[{'id': 'evt-2', 'trigger': {'type': 'distance_to_ego', 'value': 75.2}, 'action': {'type': 'lane_offset', 'direction': 'left', 'offset': 0.8}}]"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): ...and actually off it when the ego closes in",
+   "status": "PASS",
+   "detail": "0.9822987322566243"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): ...to the left of the ego's lane",
+   "status": "PASS",
+   "detail": "-0.6227286968911406"
+  },
+  {
+   "check": "l2s-overlap-l (Loop2Scenic approach_overlapping_lead_l (VVM)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

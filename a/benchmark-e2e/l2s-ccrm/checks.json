@@ -1,0 +1,79 @@
+{
+ "id": "l2s-ccrm",
+ "source": "Loop2Scenic CCRm_50kph (Euro NCAP)",
+ "description": "a vehicle travels forwards towards another vehicle that is travelling at constant speed",
+ "town": "Town04",
+ "type": "slow_lead",
+ "seed": 5,
+ "pins": {
+  "lead_type": "car",
+  "ego_speed": 14,
+  "lead_speed": 5.5,
+  "lateral_m": 0
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-ccrm.xosc",
+  "route": "l2s-ccrm_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 14,
+  "lead_type": "car",
+  "lead_speed": 5.5,
+  "speed_diff_kmh": 31,
+  "initial_gap_m": 57.6,
+  "lateral_m": 0,
+  "side": "right"
+ },
+ "checks": [
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): builds \u2014 \u201ca vehicle travels forwards towards another vehicle that is travelling \u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): pinned lead_type honoured",
+   "status": "PASS",
+   "detail": "('lead_type', 'car', 'car')"
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): pinned ego_speed honoured",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): pinned lead_speed honoured",
+   "status": "PASS",
+   "detail": "('lead_speed', 5.5, 5.5)"
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): pinned lateral_m honoured",
+   "status": "PASS",
+   "detail": "('lateral_m', 0, 0)"
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): lead is a car",
+   "status": "PASS",
+   "detail": "car"
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): speed difference 30.6 km/h",
+   "status": "PASS",
+   "detail": "30.6"
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.004257243521450732"
+  },
+  {
+   "check": "l2s-ccrm (Loop2Scenic CCRm_50kph (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

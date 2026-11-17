@@ -1,0 +1,70 @@
+{
+ "id": "l2s-vvm-lt-onc",
+ "source": "Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting",
+ "description": "the ego car initiates a left turn at the intersection. Simultaneously, an oncoming adversarial object drives straight",
+ "town": "Town05",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "ego_left_oncoming"
+ },
+ "passed": 7,
+ "total": 7,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-vvm-lt-onc.xosc",
+  "route": "l2s-vvm-lt-onc_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9,
+  "layout": "ego_left_oncoming",
+  "npc_from": "oncoming",
+  "npc_type": "truck",
+  "junction": "1722",
+  "signalized": true,
+  "oncoming": true,
+  "npc_speed": 11,
+  "npc_run_up_m": 39.2,
+  "arrival_offset_s": -0.1,
+  "trigger_m": 86.4
+ },
+ "checks": [
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): builds \u2014 \u201cthe ego car initiates a left turn at the intersection. Simultaneously,\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'ego_left_oncoming', 'ego_left_oncoming')"
+  },
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((38, 51, '1722'), (8, 27, '1722'))"
+  },
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): the ego goes left through it",
+   "status": "PASS",
+   "detail": "-90.58015738536042"
+  },
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "0.007161962330286542"
+  },
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): ...it comes from the ego's oncoming",
+   "status": "PASS",
+   "detail": "180.0"
+  },
+  {
+   "check": "l2s-vvm-lt-onc (Loop2Scenic left_turn_with_oncoming_obj_passing_straight_intersecting): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

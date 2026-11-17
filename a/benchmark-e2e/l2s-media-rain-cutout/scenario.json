@@ -1,0 +1,170 @@
+{
+ "schema_version": "1.0",
+ "map": "Town03",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-248",
+  "type": "ego",
+  "x": -85.2,
+  "y": -124.7,
+  "z": 0.44,
+  "yaw": 89,
+  "initial_speed": 9.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": -85.2,
+       "y": -124.7,
+       "z": 0.44,
+       "strategy": "fastest"
+      },
+      {
+       "x": -84.8,
+       "y": 36.6,
+       "z": 0.72,
+       "strategy": "fastest"
+      },
+      {
+       "x": -84.5,
+       "y": 116.6,
+       "z": 0.61,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-246",
+   "type": "car",
+   "x": -85.2,
+   "y": -110.1,
+   "z": 0.21,
+   "yaw": 89,
+   "initial_speed": 8.9,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_point",
+      "value": 2,
+      "entity_ref": "obj-246",
+      "point": {
+       "name": "Point 1",
+       "x": -85,
+       "y": -67.9,
+       "z": -0.33
+      }
+     },
+     "action": {
+      "type": "lane_change",
+      "direction": "right",
+      "dynamics": {
+       "shape": "linear",
+       "value": 12.3
+      }
+     }
+    }
+   ],
+   "obey_traffic_lights": false,
+   "obey_obstacles": false
+  },
+  {
+   "id": "obj-247",
+   "type": "car",
+   "x": -85,
+   "y": -47.1,
+   "z": -0.03,
+   "yaw": 89,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 13.5
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "linear",
+       "dimension": "rate",
+       "value": 2
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 9.1
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [],
+ "generated": {
+  "type": "cut_out",
+  "label": "Ausscheren vor Stauende",
+  "seed": 3,
+  "town": "Town03",
+  "near": {
+   "x": -85,
+   "y": -50.6
+  },
+  "anchored": false,
+  "attempt": 1,
+  "overrides": {},
+  "params": {
+   "ego_speed": 9.5,
+   "lead_type": "car",
+   "stopped_type": "car",
+   "side": "right",
+   "headway_s": 1.07,
+   "lead_speed": 8.9,
+   "lane_change_m": 12.3,
+   "cut_to_obstacle_m": 20.8,
+   "cut_margin_m": 2.9,
+   "stopped_drives_off": true
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 3.3,
+   "decel_mps2": 1.5,
+   "min_gap_m": 0,
+   "conflict_with": "car",
+   "at": {
+    "x": -85,
+    "y": -50.6
+   }
+  },
+  "signature": "2oih6a"
+ }
+}

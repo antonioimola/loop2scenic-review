@@ -1,0 +1,108 @@
+{
+ "name": "l2st-lateral_front_brake_drift_obstacle",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.85,
+   20.3,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    5.8,
+    5.75
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.18,
+   "shape_median_m": 0.02,
+   "end_diff_m": 0.61,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.39,
+    9.79
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.28,
+   "shape_median_m": 1.14,
+   "end_diff_m": 1.1,
+   "turn_deg": [
+    -2,
+    0
+   ],
+   "z": [
+    0.81,
+    2.88
+   ],
+   "closest_to_hero": [
+    2.66,
+    2.45
+   ]
+  },
+  "problems": [],
+  "warnings": [
+   "adversary runs 1.14 m beside the preview path (median)"
+  ]
+ },
+ "problems": [],
+ "warnings": [
+  "adversary runs 1.14 m beside the preview path (median)"
+ ],
+ "verdict": "PASS*",
+ "card": "lateral_front_brake_drift_obstacle",
+ "hash": "2c747cfbe783",
+ "elapsed": 19,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_front_brake_drift_obstacle__Town04__2026-11-16_04-16-38_512"
+}

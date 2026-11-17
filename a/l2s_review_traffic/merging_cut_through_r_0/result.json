@@ -1,0 +1,99 @@
+{
+ "name": "l2st-merging_cut_through_r_0",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   29.25,
+   28.85,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.21,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.61,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    10.14
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.19,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.54,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.87,
+    10.51
+   ],
+   "closest_to_hero": [
+    19.46,
+    19.61
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "merging_cut_through_r_0",
+ "hash": "11c3048f1fbb",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-merging_cut_through_r_0__Town04__2026-11-16_03-43-14_655"
+}

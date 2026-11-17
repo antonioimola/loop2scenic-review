@@ -1,0 +1,81 @@
+{
+ "id": "l2s-cpta",
+ "source": "Loop2Scenic CPTA (Euro NCAP)",
+ "description": "a vehicle turns towards an adult pedestrian crossing its path, walking across a junction",
+ "town": "Town10HD",
+ "type": "turn_vru",
+ "seed": 2,
+ "pins": {
+  "vru_type": "pedestrian",
+  "turn": "right"
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-cpta.xosc",
+  "route": "l2s-cpta_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 13,
+  "turn": "right",
+  "junction": "468",
+  "vru_type": "pedestrian",
+  "speed": 2.5,
+  "from": "right",
+  "crossing_m": 21.9,
+  "on_crosswalk": false,
+  "arrival_offset_s": 0.47,
+  "trigger_m": 31.8,
+  "stops_in_lane_s": null
+ },
+ "checks": [
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): builds \u2014 \u201ca vehicle turns towards an adult pedestrian crossing its path, walking\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'pedestrian', 'pedestrian')"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): pinned turn honoured",
+   "status": "PASS",
+   "detail": "('turn', 'right', 'right')"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): the crossing person is a pedestrian",
+   "status": "PASS",
+   "detail": "pedestrian"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): the crossing is on the ego's route",
+   "status": "PASS",
+   "detail": "0.10024182393864389"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): the ego has just turned right when it reaches the crossing",
+   "status": "PASS",
+   "detail": "105.10503241712735"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): the person crosses the road the ego turned into",
+   "status": "PASS",
+   "detail": "89.20224030012173"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): a non-reacting ego meets it",
+   "status": "PASS",
+   "detail": "0.9753414102066695"
+  },
+  {
+   "check": "l2s-cpta (Loop2Scenic CPTA (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

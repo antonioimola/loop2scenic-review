@@ -1,0 +1,153 @@
+{
+ "name": "l2st-MMUE_9",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   30.95,
+   29.9,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "hero_SpeedEvent1",
+    5.15,
+    5.15
+   ],
+   [
+    "hero_SpeedEvent2",
+    21.45,
+    21.1
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    4.35,
+    4.35
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_SpeedEvent1",
+    5.55,
+    5.55
+   ],
+   [
+    "adversary1_SpeedEvent2",
+    15.6,
+    15.2
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_SpeedEvent1",
+    5.85,
+    5.85
+   ],
+   [
+    "adversary2_SpeedEvent2",
+    15.6,
+    15.2
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.74,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.35,
+   "turn_deg": [
+    -91,
+    -90
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.3,
+   "shape_median_m": 0.24,
+   "end_diff_m": 0.24,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.95,
+    1.48
+   ],
+   "closest_to_hero": [
+    10.6,
+    9.96
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.85,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    15.27,
+    14.97
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.61,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    15.27,
+    14.97
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MMUE_9",
+ "hash": "6949bfccdcf8",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MMUE_9__Town01__2026-11-16_02-08-34_190"
+}

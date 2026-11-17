@@ -1,0 +1,80 @@
+{
+ "id": "l2s-enter-lead-r",
+ "source": "Loop2Scenic enter_lead_r (VVM)",
+ "description": "Ahead of it, the adversarial object moves across the lane ... a lead object entering from the right",
+ "town": "Town03",
+ "type": "cut_in",
+ "seed": 3,
+ "pins": {},
+ "passed": 10,
+ "total": 10,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-enter-lead-r.xosc",
+  "route": "l2s-enter-lead-r_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9.5,
+  "npc_type": "car",
+  "from_side": "right",
+  "npc_speed": 5.3,
+  "initial_gap_m": 33.4,
+  "trigger_m": 20.9,
+  "lane_change_m": 11.8,
+  "brakes_after": true
+ },
+ "checks": [
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): builds \u2014 \u201cAhead of it, the adversarial object moves across the lane ... a lead o\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): the other car starts in the neighbouring lane",
+   "status": "PASS",
+   "detail": "3.5100365311529753"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): ...on the ego's right",
+   "status": "PASS",
+   "detail": "3.5100365311529753"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): ...ahead of the ego",
+   "status": "PASS",
+   "detail": "(16, 0)"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): it changes lanes",
+   "status": "PASS",
+   "detail": "['lane_change', 'set_speed']"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): ...when the ego closes in",
+   "status": "PASS",
+   "detail": "{'type': 'distance_to_ego', 'value': 20.9}"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): ...towards the ego's lane",
+   "status": "PASS",
+   "detail": "('left', True)"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): it ends up in the ego's lane (within 1.0 m of its centre)",
+   "status": "PASS",
+   "detail": "8.436449128091165e-06"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.08706397808546058"
+  },
+  {
+   "check": "l2s-enter-lead-r (Loop2Scenic enter_lead_r (VVM)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

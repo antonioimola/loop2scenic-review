@@ -1,0 +1,116 @@
+{
+ "name": "l2st-lateral_adv_cutin_navigateobstacle",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   21.8,
+   21.35,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.3,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.54,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.39,
+    9.05
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.21,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.42,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.52,
+    9.54
+   ],
+   "closest_to_hero": [
+    3.05,
+    3.28
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.04,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    5.25,
+    5.94
+   ],
+   "closest_to_hero": [
+    3.49,
+    3.51
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "lateral_adv_cutin_navigateobstacle",
+ "hash": "fd0d359ee1dd",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_adv_cutin_navigateobstacle__Town04__2026-11-16_03-45-46_937"
+}

@@ -1,0 +1,108 @@
+{
+ "name": "l2st-CCFtap_10kph_30kph",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   33.05,
+   30.9,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    9.05,
+    9
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.77,
+   "shape_median_m": 0.1,
+   "end_diff_m": 4.34,
+   "turn_deg": [
+    -91,
+    -90
+   ],
+   "z": [
+    0.0,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 1.0,
+   "shape_median_m": 0.07,
+   "end_diff_m": 0.33,
+   "turn_deg": [
+    -40,
+    -36
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    3.23,
+    0.46
+   ]
+  },
+  "problems": [
+   "the run lasts 33 s in CARLA vs 31 s (egoDone)"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "the run lasts 33 s in CARLA vs 31 s (egoDone)"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "CCFtap_10kph_30kph",
+ "hash": "22edbb3759de",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CCFtap_10kph_30kph__Town05__2026-11-16_02-35-05_055"
+}

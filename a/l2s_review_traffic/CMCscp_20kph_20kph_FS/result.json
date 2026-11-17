@@ -1,0 +1,104 @@
+{
+ "name": "l2st-CMCscp_20kph_20kph_FS",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   22.25,
+   21.7,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    5.6,
+    5.6
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.54,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.58,
+   "turn_deg": [
+    86,
+    85
+   ],
+   "z": [
+    0.02,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.36,
+   "shape_median_m": 0.01,
+   "end_diff_m": 0.3,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.04,
+    0.69
+   ],
+   "closest_to_hero": [
+    1.78,
+    1.69
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "CMCscp_20kph_20kph_FS",
+ "hash": "1edd71448960",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CMCscp_20kph_20kph_FS__Town05__2026-11-16_02-35-28_295"
+}

@@ -1,0 +1,126 @@
+{
+ "name": "l2st-EncroachingOncomingVehicle",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   37.15,
+   35.65,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    22.95,
+    22.9
+   ],
+   [
+    "adversary_LaneOffsetEvent2",
+    27.15,
+    27.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 1.95,
+   "shape_median_m": 0.02,
+   "end_diff_m": 7.47,
+   "turn_deg": [
+    111,
+    120
+   ],
+   "z": [
+    -0.02,
+    0.73
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.72,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.42,
+   "turn_deg": [
+    -19,
+    -17
+   ],
+   "z": [
+    0.03,
+    0.73
+   ],
+   "closest_to_hero": [
+    2.78,
+    1.09
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.01,
+    0.73
+   ],
+   "closest_to_hero": [
+    4.42,
+    4.32
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "EncroachingOncomingVehicle",
+ "hash": "b4e00216afe8",
+ "elapsed": 21,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-EncroachingOncomingVehicle__Town05__2026-11-16_01-59-03_454"
+}

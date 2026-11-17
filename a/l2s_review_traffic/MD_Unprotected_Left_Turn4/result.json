@@ -1,0 +1,158 @@
+{
+ "name": "l2st-MD_Unprotected_Left_Turn4",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   17.36,
+   16.8,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    6.1,
+    6.1
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_SpeedEvent1",
+    0.5,
+    0.5
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_SpeedEvent1",
+    6.1,
+    6.15
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.64,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.25,
+   "turn_deg": [
+    -90,
+    -90
+   ],
+   "z": [
+    0.0,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.41,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.61,
+   "turn_deg": [
+    -35,
+    -32
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    6.18,
+    7.2
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.39,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.39,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    19.67,
+    19.68
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.72,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.92,
+   "turn_deg": [
+    -42,
+    -39
+   ],
+   "z": [
+    0.05,
+    0.75
+   ],
+   "closest_to_hero": [
+    6.77,
+    8.1
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MD_Unprotected_Left_Turn4",
+ "hash": "b23f5505cb48",
+ "elapsed": 10,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "FAILURE"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MD_Unprotected_Left_Turn4__Town05__2026-11-16_03-26-59_548"
+}

@@ -1,0 +1,116 @@
+{
+ "id": "l2s-cpnco",
+ "source": "Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)",
+ "description": "a child pedestrian crossing its path running from behind and obstruction from the nearside",
+ "town": "Town03",
+ "type": "vru_crossing",
+ "seed": 2,
+ "pins": {
+  "vru_type": "child",
+  "occluded": true,
+  "from": "right"
+ },
+ "passed": 16,
+ "total": 16,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-cpnco.xosc",
+  "route": "l2s-cpnco_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 8,
+  "vru_type": "child",
+  "speed": 2.7,
+  "from": "right",
+  "crossing_m": 18.9,
+  "on_crosswalk": false,
+  "arrival_offset_s": 0.62,
+  "trigger_m": 29.1,
+  "occluded": true,
+  "stops_in_lane_s": 2.5
+ },
+ "checks": [
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): builds \u2014 \u201ca child pedestrian crossing its path running from behind and obstructi\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'child', 'child')"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): pinned occluded honoured",
+   "status": "PASS",
+   "detail": "('occluded', True, True)"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): pinned from honoured",
+   "status": "PASS",
+   "detail": "('from', 'right', 'right')"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): a crossing child",
+   "status": "PASS",
+   "detail": "['ego', 'child', 'truck']"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): ...on a trajectory",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): it starts off the carriageway",
+   "status": "PASS",
+   "detail": "None"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): ...and walks from one side of the ego's path to the other",
+   "status": "PASS",
+   "detail": "(7.660632118625263, -11.240036931993764)"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): ...across it",
+   "status": "PASS",
+   "detail": "90.39066372888216"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): ...coming from the ego's right",
+   "status": "PASS",
+   "detail": "7.660632118625263"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): a non-reacting ego meets it",
+   "status": "PASS",
+   "detail": "1.3167105935983872"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): a child and a parked vehicle",
+   "status": "PASS",
+   "detail": "['ego', 'child', 'truck']"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): the vehicle is parked (parking lane)",
+   "status": "PASS",
+   "detail": "0"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): ...on the side the person steps out from",
+   "status": "PASS",
+   "detail": "(7.660632118625263, 3.5029203482916453)"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): ...right beside the crossing",
+   "status": "PASS",
+   "detail": "7.99922521248151"
+  },
+  {
+   "check": "l2s-cpnco (Loop2Scenic CPNCO_RunningChildFromNearSide (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

@@ -1,0 +1,209 @@
+{
+ "name": "l2st-r40_town06_hw_c",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   25.0,
+   24.65,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary4_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary5_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.16,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.42,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.41,
+    10.13
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.48,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    1.26,
+    10.77
+   ],
+   "closest_to_hero": [
+    35.09,
+    35.17
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.54,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.32,
+    10.35
+   ],
+   "closest_to_hero": [
+    6.97,
+    7.0
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.16,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.43,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.88,
+    10.51
+   ],
+   "closest_to_hero": [
+    20.24,
+    20.31
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.4,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    2.12,
+    10.84
+   ],
+   "closest_to_hero": [
+    39.49,
+    39.48
+   ]
+  },
+  "adversary4": {
+   "shape_max_m": 0.15,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.5,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.16,
+    10.09
+   ],
+   "closest_to_hero": [
+    5.09,
+    5.15
+   ]
+  },
+  "adversary5": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.58,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    1.58,
+    11.02
+   ],
+   "closest_to_hero": [
+    44.99,
+    45.0
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "r40_town06_hw_c",
+ "hash": "dd0298205de3",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-r40_town06_hw_c__Town04__2026-11-16_04-15-52_699"
+}

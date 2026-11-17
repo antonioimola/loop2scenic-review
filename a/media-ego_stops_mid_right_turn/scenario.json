@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "map": "Town03",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": false,
+    "count": 19,
+    "walkers": 0,
+    "seed": 1,
+    "radius": 80,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-79",
+    "type": "ego",
+    "x": -55.5,
+    "y": 189.8,
+    "z": 0.5,
+    "yaw": -176.7,
+    "initial_speed": 7,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -55.5,
+              "y": 189.8,
+              "z": 0.5,
+              "strategy": "fastest"
+            },
+            {
+              "x": -21.1,
+              "y": 134.4,
+              "z": 0.5,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      },
+      {
+        "id": "evt-2",
+        "trigger": {
+          "type": "distance_to_point",
+          "value": 2.5,
+          "point": {
+            "x": -71.94,
+            "y": 137.5,
+            "z": 0.5
+          },
+          "entity_ref": "obj-79"
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 0
+          },
+          "dynamics": {
+            "shape": "step",
+            "dimension": "time",
+            "value": 4
+          }
+        }
+      },
+      {
+        "id": "evt-3",
+        "trigger": {
+          "type": "after_event",
+          "event_id": "evt-2"
+        },
+        "action": {
+          "type": "set_speed",
+          "target": {
+            "mode": "absolute",
+            "value": 7
+          },
+          "dynamics": {
+            "shape": "linear",
+            "dimension": "rate",
+            "value": 3
+          }
+        }
+      }
+    ]
+  },
+  "npcs": [],
+  "staticObjects": [],
+  "trafficSignals": [
+    {
+      "id": "traffic_light_7",
+      "x": -67.8,
+      "y": 121.4,
+      "z": 0.06,
+      "events": [
+        {
+          "id": "traffic-event-1",
+          "state": "green",
+          "trigger_distance": 61.6
+        },
+        {
+          "id": "traffic-event-2",
+          "state": "green",
+          "trigger_distance": 49.7
+        },
+        {
+          "id": "traffic-event-3",
+          "state": "green",
+          "trigger_distance": 39.3
+        },
+        {
+          "id": "traffic-event-4",
+          "state": "green",
+          "trigger_distance": 31.5
+        }
+      ]
+    }
+  ],
+  "generated": null,
+  "trafficSources": []
+}

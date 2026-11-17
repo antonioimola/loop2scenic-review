@@ -1,0 +1,153 @@
+{
+ "name": "l2st-MMUE_3",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   17.8,
+   17.45,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_SpeedEvent1",
+    6.55,
+    6.55
+   ],
+   [
+    "adversary2_SpeedEvent2",
+    11.35,
+    11.3
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.1,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.37,
+   "turn_deg": [
+    7,
+    8
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.33,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.36,
+   "turn_deg": [
+    36,
+    35
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    13.78,
+    13.86
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.77,
+   "shape_median_m": 0.05,
+   "end_diff_m": 0.4,
+   "turn_deg": [
+    -90,
+    -91
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    15.47,
+    16.96
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.48,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.12,
+   "turn_deg": [
+    91,
+    90
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    12.6,
+    12.46
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MMUE_3",
+ "hash": "7a3e63e2255a",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MMUE_3__Town05__2026-11-16_03-37-09_680"
+}

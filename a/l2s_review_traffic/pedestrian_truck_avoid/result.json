@@ -1,0 +1,121 @@
+{
+ "name": "l2st-pedestrian_truck_avoid",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   25.35,
+   24.7,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_FollowTrajectoryEvent0",
+    3.85,
+    3.85
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 1.44,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.45,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.79,
+    10.15
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.65,
+   "shape_median_m": 0.04,
+   "end_diff_m": 0.6,
+   "turn_deg": [
+    1,
+    0
+   ],
+   "z": [
+    0.86,
+    10.13
+   ],
+   "closest_to_hero": [
+    2.1,
+    0.74
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 2.24,
+   "shape_median_m": 0.0,
+   "end_diff_m": 2.24,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    8.27,
+    8.27
+   ],
+   "closest_to_hero": [
+    8.78,
+    5.79
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "pedestrian_truck_avoid",
+ "hash": "95f5bc352421",
+ "elapsed": 23,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-pedestrian_truck_avoid__Town04__2026-11-16_04-17-56_750"
+}

@@ -1,0 +1,104 @@
+{
+ "name": "l2st-UN_R171_5",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   28.75,
+   28.35,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    9.2,
+    9.2
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.16,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.8,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    10.48
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.17,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.77,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    11.03
+   ],
+   "closest_to_hero": [
+    3.5,
+    3.5
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "UN_R171_5",
+ "hash": "454ee9c8d289",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-UN_R171_5__Town04__2026-11-16_03-16-55_460"
+}

@@ -1,0 +1,92 @@
+{
+ "id": "l2s-media-rain-cutout",
+ "source": "Loop2Scenic moving_rain_sudden_cut_out (video)",
+ "description": "in heavy rain the vehicle ahead slows and changes lanes to the right to avoid a stationary vehicle",
+ "town": "Town03",
+ "type": "cut_out",
+ "seed": 3,
+ "pins": {},
+ "passed": 12,
+ "total": 12,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-rain-cutout.xosc",
+  "route": "l2s-media-rain-cutout_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9.5,
+  "lead_type": "car",
+  "stopped_type": "car",
+  "side": "right",
+  "headway_s": 1.07,
+  "lead_speed": 8.9,
+  "lane_change_m": 12.3,
+  "cut_to_obstacle_m": 20.8,
+  "cut_margin_m": 2.9,
+  "stopped_drives_off": true
+ },
+ "checks": [
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): builds \u2014 \u201cin heavy rain the vehicle ahead slows and changes lanes to the right t\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): a lead that changes lanes",
+   "status": "PASS",
+   "detail": "['ego', 'car', 'car']"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): a stopped vehicle",
+   "status": "PASS",
+   "detail": "[('car', 8.9), ('car', 0)]"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): the lead is in the ego's lane, ahead",
+   "status": "PASS",
+   "detail": "(0.03504739047706869, 6, 0)"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): the stopped vehicle is in the ego's lane, past the lead",
+   "status": "PASS",
+   "detail": "(0.006547479539168375, 38, 6)"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): the lead leaves the ego's lane",
+   "status": "PASS",
+   "detail": "3.497011500354733"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): ...to the right",
+   "status": "PASS",
+   "detail": "3.497011500354733"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): ...without touching the ego",
+   "status": "PASS",
+   "detail": "3.50467577262571"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): a non-reacting ego runs into the revealed vehicle",
+   "status": "PASS",
+   "detail": "0.08000966783187974"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): exported road is wet (friction < 1)",
+   "status": "PASS",
+   "detail": "0.7"
+  },
+  {
+   "check": "l2s-media-rain-cutout (Loop2Scenic moving_rain_sudden_cut_out (video)): exported time of day is day",
+   "status": "PASS",
+   "detail": "2020-06-25T12:00:00"
+  }
+ ]
+}

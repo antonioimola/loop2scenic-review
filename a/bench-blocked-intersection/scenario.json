@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "map": "Town05",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -172,
+    "y": 94.87,
+    "z": 0.5,
+    "yaw": -0.0,
+    "trajectory": [],
+    "events": []
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -145,
+      "y": 94.9,
+      "yaw": -0.0,
+      "z": 0.5,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "e1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 16
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 0.5
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "obj-3",
+      "type": "car",
+      "x": -145,
+      "y": 91.4,
+      "yaw": -0.0,
+      "z": 0.5,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "p1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 400
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 20
+            },
+            "target": {
+              "mode": "absolute",
+              "value": -0.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": []
+}

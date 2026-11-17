@@ -1,0 +1,161 @@
+{
+ "name": "l2st-moving_egonavigatefailed",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   41.95,
+   40.05,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    6.45,
+    6.35
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.8,
+   "shape_median_m": 0.0,
+   "end_diff_m": 8.86,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.39,
+    10.15
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 8.78,
+   "shape_median_m": 8.58,
+   "end_diff_m": 8.48,
+   "turn_deg": [
+    -30,
+    0
+   ],
+   "z": [
+    0.68,
+    2.25
+   ],
+   "closest_to_hero": [
+    0.5,
+    0.46
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    2.5,
+    3.15
+   ],
+   "closest_to_hero": [
+    3.64,
+    3.5
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    2.81,
+    3.46
+   ],
+   "closest_to_hero": [
+    3.5,
+    3.5
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    3.13,
+    3.78
+   ],
+   "closest_to_hero": [
+    3.47,
+    3.5
+   ]
+  },
+  "problems": [
+   "adversary drives 8.58 m off the preview path (median)",
+   "adversary turns -30\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary drives 8.58 m off the preview path (median)",
+  "adversary turns -30\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "moving_egonavigatefailed",
+ "hash": "8028e9395745",
+ "elapsed": 20,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-moving_egonavigatefailed__Town04__2026-11-16_03-49-13_260"
+}

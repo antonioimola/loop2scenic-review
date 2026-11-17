@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "map": "Town03",
+  "weather": {},
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 10,
+    "walkers": 8,
+    "seed": 5454,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-34",
+    "type": "ego",
+    "x": -46.7,
+    "y": 185.4,
+    "z": 0.5,
+    "yaw": 142.3,
+    "initial_speed": 6,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -46.7,
+              "y": 185.4,
+              "z": 0.5,
+              "strategy": "fastest"
+            },
+            {
+              "x": -74.1,
+              "y": 80.3,
+              "z": 1.21,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-35",
+      "type": "pedestrian",
+      "x": -95.3,
+      "y": 125.2,
+      "z": 0.6,
+      "yaw": 21,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": -95.3,
+                "y": 125.2,
+                "z": 0.6,
+                "velocity": 1.4
+              },
+              {
+                "x": -66.9,
+                "y": 125.1,
+                "z": 0.5,
+                "velocity": 1.4
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [
+    {
+      "id": "traffic_light_7",
+      "x": -67.8,
+      "y": 121.4,
+      "z": 0.06,
+      "events": [
+        {
+          "id": "traffic-event-1",
+          "state": "green",
+          "trigger_distance": 69.6
+        },
+        {
+          "id": "traffic-event-2",
+          "state": "green",
+          "trigger_distance": 61.6
+        },
+        {
+          "id": "traffic-event-3",
+          "state": "green",
+          "trigger_distance": 49.7
+        },
+        {
+          "id": "traffic-event-4",
+          "state": "green",
+          "trigger_distance": 39.3
+        },
+        {
+          "id": "traffic-event-5",
+          "state": "green",
+          "trigger_distance": 31.5
+        }
+      ]
+    }
+  ],
+  "generated": null,
+  "trafficSources": []
+}

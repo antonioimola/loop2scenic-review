@@ -1,0 +1,96 @@
+{
+ "id": "l2s-media-ped-night",
+ "source": "Loop2Scenic pedestrian_night_dark (video)",
+ "description": "at night on an unlit road a pedestrian in light-colored clothing unexpectedly walks across the lanes",
+ "town": "Town04",
+ "type": "vru_crossing",
+ "seed": 1,
+ "pins": {
+  "vru_type": "pedestrian",
+  "occluded": false,
+  "stops_in_lane_s": 0
+ },
+ "passed": 12,
+ "total": 12,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-ped-night.xosc",
+  "route": "l2s-media-ped-night_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 14,
+  "vru_type": "pedestrian",
+  "speed": 2.2,
+  "from": "left",
+  "crossing_m": 11.9,
+  "on_crosswalk": false,
+  "arrival_offset_s": 0.21,
+  "trigger_m": 46.4,
+  "occluded": false,
+  "stops_in_lane_s": null
+ },
+ "checks": [
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): builds \u2014 \u201cat night on an unlit road a pedestrian in light-colored clothing unexp\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'pedestrian', 'pedestrian')"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): pinned occluded honoured",
+   "status": "PASS",
+   "detail": "('occluded', False, False)"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): pinned stops_in_lane_s honoured",
+   "status": "PASS",
+   "detail": "('stops_in_lane_s', None, 0)"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): a crossing pedestrian",
+   "status": "PASS",
+   "detail": "['ego', 'pedestrian']"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): ...on a trajectory",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): it starts off the carriageway",
+   "status": "PASS",
+   "detail": "None"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): ...and walks from one side of the ego's path to the other",
+   "status": "PASS",
+   "detail": "(-7.746010920291237, 4.201289719348209)"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): ...across it",
+   "status": "PASS",
+   "detail": "89.26779143122201"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): a non-reacting ego meets it",
+   "status": "PASS",
+   "detail": "0.3472376199239564"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  },
+  {
+   "check": "l2s-media-ped-night (Loop2Scenic pedestrian_night_dark (video)): exported time of day is night",
+   "status": "PASS",
+   "detail": "2020-10-23T22:00:00"
+  }
+ ]
+}

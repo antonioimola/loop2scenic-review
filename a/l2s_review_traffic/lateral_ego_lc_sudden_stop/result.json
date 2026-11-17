@@ -1,0 +1,110 @@
+{
+ "name": "l2st-lateral_ego_lc_sudden_stop",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   26.25,
+   24.65,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent1",
+    7.15,
+    7.1
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.37,
+   "shape_median_m": 0.0,
+   "end_diff_m": 11.37,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    10.15
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 13.13,
+   "shape_median_m": 12.8,
+   "end_diff_m": 12.8,
+   "turn_deg": [
+    48,
+    0
+   ],
+   "z": [
+    0.66,
+    4.91
+   ],
+   "closest_to_hero": [
+    0.3,
+    0.67
+   ]
+  },
+  "problems": [
+   "adversary drives 12.8 m off the preview path (median)",
+   "adversary turns 48\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary drives 12.8 m off the preview path (median)",
+  "adversary turns 48\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "lateral_ego_lc_sudden_stop",
+ "hash": "f538cbd64e3d",
+ "elapsed": 14,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_ego_lc_sudden_stop__Town04__2026-11-16_03-48-47_110"
+}

@@ -1,0 +1,99 @@
+{
+ "name": "l2st-pedestrian_cyclist_merges_into_ego",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   17.1,
+   16.8,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    0.1,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.43,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.16,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 2.16,
+   "shape_median_m": 0.84,
+   "end_diff_m": 0.84,
+   "turn_deg": [
+    -69,
+    -60
+   ],
+   "z": [
+    -0.02,
+    0.87
+   ],
+   "closest_to_hero": [
+    0.8,
+    0.36
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "pedestrian_cyclist_merges_into_ego",
+ "hash": "36a130ea0746",
+ "elapsed": 10,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-pedestrian_cyclist_merges_into_ego__Town01__2026-11-16_03-56-01_343"
+}

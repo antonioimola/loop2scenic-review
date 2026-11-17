@@ -1,0 +1,104 @@
+{
+ "name": "l2st-C-ICAP_Daytime_-_motorcycle_cutting-in",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   15.6,
+   15.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.1,
+    0.05
+   ],
+   [
+    "adversary_LaneChangeEvent1",
+    3.15,
+    3.15
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.9,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.91,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.42,
+    6.93
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.44,
+   "shape_median_m": 0.02,
+   "end_diff_m": 1.73,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.91,
+    7.43
+   ],
+   "closest_to_hero": [
+    5.91,
+    6.98
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "C-ICAP_Daytime - motorcycle cutting-in",
+ "hash": "ec0091905989",
+ "elapsed": 11,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-C-ICAP_Daytime_-_motorcycle_cutting-in__Town04__2026-11-16_03-42-54_233"
+}

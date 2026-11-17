@@ -1,0 +1,225 @@
+{
+ "schema_version": "1.0",
+ "map": "Town03",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-111",
+  "type": "ego",
+  "x": 42.7,
+  "y": -196.4,
+  "z": 0.5,
+  "yaw": 2,
+  "initial_speed": 13,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 42.7,
+       "y": -196.4,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 105.2,
+       "y": -194.9,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 174.2,
+       "y": -197.4,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 234.5,
+       "y": -165.4,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-110",
+   "type": "motorcycle",
+   "x": 112.2,
+   "y": -194.7,
+   "z": 0.5,
+   "yaw": 2,
+   "initial_speed": 2,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "simulation_time",
+      "value": 0
+     },
+     "action": {
+      "type": "assign_route",
+      "route_strategy": "fastest",
+      "waypoints": [
+       {
+        "x": 112.2,
+        "y": -194.7,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": 174.2,
+        "y": -197.4,
+        "z": 0.5,
+        "strategy": "fastest"
+       },
+       {
+        "x": 237.7,
+        "y": -105.8,
+        "z": 0.5,
+        "strategy": "fastest"
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 66.5
+     },
+     "action": {
+      "type": "lane_offset",
+      "direction": "right",
+      "offset": 1
+     }
+    }
+   ],
+   "obey_traffic_lights": false
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_17",
+   "x": 94.7,
+   "y": -184.3,
+   "z": -0.1,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 49
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 38.3
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 30.7
+    }
+   ]
+  },
+  {
+   "id": "traffic_light_16",
+   "x": 167,
+   "y": -187.2,
+   "z": 0,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 82
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 65.1
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 51.2
+    },
+    {
+     "id": "traffic-event-4",
+     "state": "green",
+     "trigger_distance": 40.3
+    },
+    {
+     "id": "traffic-event-5",
+     "state": "green",
+     "trigger_distance": 32.4
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "slow_lead",
+  "label": "Langsames Fahrzeug voraus",
+  "seed": 3,
+  "town": "Town03",
+  "near": {
+   "x": 125.5,
+   "y": -194.3
+  },
+  "anchored": false,
+  "attempt": 5,
+  "overrides": {
+   "lead_type": "motorcycle",
+   "lead_speed": 2,
+   "lateral_m": 1,
+   "side": "right"
+  },
+  "params": {
+   "ego_speed": 13,
+   "lead_type": "motorcycle",
+   "lead_speed": 2,
+   "speed_diff_kmh": 40,
+   "initial_gap_m": 69.5,
+   "lateral_m": 1,
+   "side": "right"
+  },
+  "criticality": {
+   "verdict": "ok",
+   "ttc_s": 8.4,
+   "decel_mps2": 0,
+   "min_gap_m": 0,
+   "conflict_with": "motorcycle",
+   "at": {
+    "x": 125.5,
+    "y": -194.3
+   }
+  },
+  "signature": "1bz08i1"
+ }
+}

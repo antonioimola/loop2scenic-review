@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "nighttime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 13,
+    "walkers": 9,
+    "seed": 3922,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -330,
+    "y": 30,
+    "z": 0.69,
+    "yaw": 0,
+    "initial_speed": 18,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -330,
+              "y": 30,
+              "z": 0.69,
+              "strategy": "fastest"
+            },
+            {
+              "x": -60,
+              "y": 30.37,
+              "z": 10.47,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ],
+    "max_acceleration": 6
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "pedestrian",
+      "x": -140,
+      "y": 40.72,
+      "z": 8.44,
+      "yaw": -90,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 156
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": -140,
+                "y": 40.72,
+                "z": 8.34,
+                "velocity": 1.4
+              },
+              {
+                "x": -140,
+                "y": 24.6,
+                "z": 8.34,
+                "velocity": 1.4
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

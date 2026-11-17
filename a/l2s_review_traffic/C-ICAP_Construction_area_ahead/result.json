@@ -1,0 +1,99 @@
+{
+ "name": "l2st-C-ICAP_Construction_area_ahead",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   27.25,
+   26.85,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.17,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.57,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    9.8
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.76,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.32,
+    9.66
+   ],
+   "closest_to_hero": [
+    9.75,
+    9.93
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "C-ICAP_Construction area ahead",
+ "hash": "61031476b1d9",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-C-ICAP_Construction_area_ahead__Town04__2026-11-16_04-14-52_231"
+}

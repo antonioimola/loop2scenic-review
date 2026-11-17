@@ -1,0 +1,188 @@
+{
+ "schema_version": "1.0",
+ "map": "Town01",
+ "weather": {
+  "fog": 0,
+  "rainy": 0,
+  "cloudy": 0,
+  "sunny": 0,
+  "wet_road": 0,
+  "snowy": 0,
+  "dust_storm": 0
+ },
+ "time": "daytime",
+ "bgTraffic": {
+  "enabled": false,
+  "count": 30,
+  "walkers": 20,
+  "seed": 1,
+  "clearance": 0.5,
+  "radius": 80
+ },
+ "ego": {
+  "id": "obj-256",
+  "type": "ego",
+  "x": 158,
+  "y": 37.5,
+  "z": 0.5,
+  "yaw": -90,
+  "initial_speed": 9.5,
+  "events": [
+   {
+    "id": "evt-1",
+    "trigger": {
+     "type": "simulation_time",
+     "value": 0
+    },
+    "action": {
+     "type": "assign_route",
+     "route_strategy": "fastest",
+     "waypoints": [
+      {
+       "x": 158,
+       "y": 37.5,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 176.1,
+       "y": 2,
+       "z": 0.5,
+       "strategy": "fastest"
+      },
+      {
+       "x": 324.6,
+       "y": 2,
+       "z": 0.5,
+       "strategy": "fastest"
+      }
+     ]
+    }
+   }
+  ]
+ },
+ "npcs": [
+  {
+   "id": "obj-255",
+   "type": "pedestrian",
+   "x": 247.5,
+   "y": 5.7,
+   "z": 1,
+   "yaw": -90,
+   "initial_speed": 0,
+   "events": [
+    {
+     "id": "evt-1",
+     "trigger": {
+      "type": "distance_to_ego",
+      "value": 12.1
+     },
+     "action": {
+      "type": "follow_trajectory",
+      "trajectory": [
+       {
+        "x": 247.5,
+        "y": 5.7,
+        "z": 0.5,
+        "velocity": 2.3
+       },
+       {
+        "x": 247.5,
+        "y": -5.7,
+        "z": 0.5,
+        "velocity": 2.3
+       }
+      ]
+     }
+    },
+    {
+     "id": "evt-2",
+     "trigger": {
+      "type": "after_event",
+      "event_id": "evt-1"
+     },
+     "action": {
+      "type": "set_speed",
+      "dynamics": {
+       "shape": "step",
+       "dimension": "time",
+       "value": 5
+      },
+      "target": {
+       "mode": "absolute",
+       "value": 0
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "staticObjects": [],
+ "trafficSignals": [
+  {
+   "id": "traffic_light_31",
+   "x": 160.7,
+   "y": 12.9,
+   "z": 0,
+   "events": [
+    {
+     "id": "traffic-event-1",
+     "state": "green",
+     "trigger_distance": 22.6
+    },
+    {
+     "id": "traffic-event-2",
+     "state": "green",
+     "trigger_distance": 11.7
+    },
+    {
+     "id": "traffic-event-3",
+     "state": "green",
+     "trigger_distance": 4.4
+    }
+   ]
+  }
+ ],
+ "generated": {
+  "type": "vru_crossing",
+  "label": "Querende Person",
+  "seed": 1,
+  "town": "Town01",
+  "near": {
+   "x": 245.3,
+   "y": 2
+  },
+  "anchored": false,
+  "attempt": 0,
+  "overrides": {
+   "vru_type": "pedestrian",
+   "from": "right",
+   "occluded": false,
+   "stops_in_lane_s": 0
+  },
+  "params": {
+   "ego_speed": 9.5,
+   "vru_type": "pedestrian",
+   "speed": 2.3,
+   "from": "right",
+   "crossing_m": 11.4,
+   "on_crosswalk": false,
+   "arrival_offset_s": -0.42,
+   "trigger_m": 12.1,
+   "occluded": false,
+   "stops_in_lane_s": null
+  },
+  "criticality": {
+   "verdict": "unavoidable",
+   "ttc_s": 0.9,
+   "decel_mps2": 5.6,
+   "min_gap_m": 0,
+   "conflict_with": "pedestrian",
+   "at": {
+    "x": 245.3,
+    "y": 2
+   }
+  },
+  "signature": "1afk7a9"
+ }
+}

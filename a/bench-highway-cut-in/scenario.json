@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -195.847,
+    "y": 37.184,
+    "z": 5.45,
+    "yaw": 0.1,
+    "trajectory": [],
+    "events": []
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -123.4,
+      "y": 75.7,
+      "yaw": 286.3,
+      "z": 8,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "r1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -123.352,
+                "y": 75.715,
+                "z": 8
+              },
+              {
+                "x": -58.2,
+                "y": 37.2,
+                "z": 10.5
+              },
+              {
+                "x": -24.5,
+                "y": 37.3,
+                "z": 11.08
+              }
+            ]
+          }
+        },
+        {
+          "id": "m1",
+          "trigger": {
+            "type": "distance_to_point",
+            "value": 9.7,
+            "entity_ref": "obj-1",
+            "point": {
+              "name": "Merge cue",
+              "x": -142.8,
+              "y": 37.4,
+              "z": 8.19
+            }
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 2
+            },
+            "target": {
+              "mode": "relative",
+              "entity_ref": "obj-1",
+              "delta": 0
+            }
+          }
+        },
+        {
+          "id": "m2",
+          "trigger": {
+            "type": "distance_to_point",
+            "value": 5.5,
+            "entity_ref": "obj-2",
+            "point": {
+              "name": "Merge complete",
+              "x": -67.5,
+              "y": 37.4,
+              "z": 10.34
+            }
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 5
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 10
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": []
+}

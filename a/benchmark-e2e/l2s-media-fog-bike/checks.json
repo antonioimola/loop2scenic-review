@@ -1,0 +1,94 @@
+{
+ "id": "l2s-media-fog-bike",
+ "source": "Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)",
+ "description": "a stationary shared bicycle 0.5 m to the right of the lane centre; fog with a visibility of 150\u2013200 m",
+ "town": "Town05",
+ "type": "obstacle",
+ "seed": 3,
+ "pins": {
+  "variant": "stationary_vru",
+  "vru_type": "cyclist",
+  "lateral_m": 0.5,
+  "side": "right"
+ },
+ "passed": 12,
+ "total": 12,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-fog-bike.xosc",
+  "route": "l2s-media-fog-bike_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 14,
+  "variant": "stationary_vru",
+  "vru_type": "cyclist",
+  "lateral_m": 0.5,
+  "site": "straight",
+  "distance_m": 87.6,
+  "side": "right"
+ },
+ "checks": [
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): builds \u2014 \u201ca stationary shared bicycle 0.5 m to the right of the lane centre; fog\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): pinned variant honoured",
+   "status": "PASS",
+   "detail": "('variant', 'stationary_vru', 'stationary_vru')"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'cyclist', 'cyclist')"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): pinned lateral_m honoured",
+   "status": "PASS",
+   "detail": "('lateral_m', 0.5, 0.5)"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): pinned side honoured",
+   "status": "PASS",
+   "detail": "('side', 'right', 'right')"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): a standing cyclist (no events)",
+   "status": "PASS",
+   "detail": "['ego', 'cyclist']"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): it stands 0.5 m beside the ego's path",
+   "status": "PASS",
+   "detail": "0.48110922640432996"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): ...with its back to the ego",
+   "status": "PASS",
+   "detail": "(-91, -90.67039706784918)"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): a non-reacting ego reaches it",
+   "status": "PASS",
+   "detail": "0.4812638630824799"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): exported time of day is day",
+   "status": "PASS",
+   "detail": "2020-06-25T12:00:00"
+  },
+  {
+   "check": "l2s-media-fog-bike (Loop2Scenic C-ICAP Encountering a stationary target on foggy days (image)): exported fog visibility 140\u2013200 m",
+   "status": "PASS",
+   "detail": "150.0"
+  }
+ ]
+}

@@ -1,0 +1,309 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 11,
+    "walkers": 6,
+    "seed": 7612,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -320,
+    "y": 37.02,
+    "z": 0.83,
+    "yaw": 0,
+    "initial_speed": 11,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -320,
+              "y": 37.02,
+              "z": 0.83,
+              "strategy": "fastest"
+            },
+            {
+              "x": -280,
+              "y": 37.07,
+              "z": 1.74,
+              "strategy": "fastest"
+            },
+            {
+              "x": -277,
+              "y": 37.05,
+              "z": 1.83,
+              "strategy": "shortest"
+            },
+            {
+              "x": -274,
+              "y": 37.01,
+              "z": 1.92,
+              "strategy": "shortest"
+            },
+            {
+              "x": -271,
+              "y": 36.93,
+              "z": 2.02,
+              "strategy": "shortest"
+            },
+            {
+              "x": -268,
+              "y": 36.82,
+              "z": 2.12,
+              "strategy": "shortest"
+            },
+            {
+              "x": -265,
+              "y": 36.67,
+              "z": 2.23,
+              "strategy": "shortest"
+            },
+            {
+              "x": -262,
+              "y": 36.5,
+              "z": 2.33,
+              "strategy": "shortest"
+            },
+            {
+              "x": -259,
+              "y": 36.3,
+              "z": 2.44,
+              "strategy": "shortest"
+            },
+            {
+              "x": -256,
+              "y": 36.08,
+              "z": 2.56,
+              "strategy": "shortest"
+            },
+            {
+              "x": -253,
+              "y": 35.82,
+              "z": 2.67,
+              "strategy": "shortest"
+            },
+            {
+              "x": -250,
+              "y": 35.55,
+              "z": 2.8,
+              "strategy": "shortest"
+            },
+            {
+              "x": -247,
+              "y": 35.25,
+              "z": 2.92,
+              "strategy": "shortest"
+            },
+            {
+              "x": -244,
+              "y": 34.93,
+              "z": 3.05,
+              "strategy": "shortest"
+            },
+            {
+              "x": -241,
+              "y": 34.59,
+              "z": 3.18,
+              "strategy": "shortest"
+            },
+            {
+              "x": -238,
+              "y": 34.23,
+              "z": 3.31,
+              "strategy": "shortest"
+            },
+            {
+              "x": -235,
+              "y": 33.86,
+              "z": 3.45,
+              "strategy": "shortest"
+            },
+            {
+              "x": -232,
+              "y": 33.48,
+              "z": 3.59,
+              "strategy": "shortest"
+            },
+            {
+              "x": -229,
+              "y": 33.08,
+              "z": 3.74,
+              "strategy": "shortest"
+            },
+            {
+              "x": -226,
+              "y": 32.68,
+              "z": 3.89,
+              "strategy": "shortest"
+            },
+            {
+              "x": -223,
+              "y": 32.28,
+              "z": 4.04,
+              "strategy": "shortest"
+            },
+            {
+              "x": -220,
+              "y": 31.87,
+              "z": 4.19,
+              "strategy": "shortest"
+            },
+            {
+              "x": -217,
+              "y": 31.46,
+              "z": 4.35,
+              "strategy": "shortest"
+            },
+            {
+              "x": -214,
+              "y": 31.06,
+              "z": 4.5,
+              "strategy": "shortest"
+            },
+            {
+              "x": -211,
+              "y": 30.66,
+              "z": 4.66,
+              "strategy": "shortest"
+            },
+            {
+              "x": -208,
+              "y": 30.26,
+              "z": 4.81,
+              "strategy": "shortest"
+            },
+            {
+              "x": -205,
+              "y": 29.88,
+              "z": 4.97,
+              "strategy": "shortest"
+            },
+            {
+              "x": -202,
+              "y": 29.51,
+              "z": 5.12,
+              "strategy": "shortest"
+            },
+            {
+              "x": -199,
+              "y": 29.15,
+              "z": 5.28,
+              "strategy": "shortest"
+            },
+            {
+              "x": -196,
+              "y": 28.81,
+              "z": 5.44,
+              "strategy": "shortest"
+            },
+            {
+              "x": -193,
+              "y": 28.49,
+              "z": 5.59,
+              "strategy": "shortest"
+            },
+            {
+              "x": -190,
+              "y": 28.19,
+              "z": 5.75,
+              "strategy": "shortest"
+            },
+            {
+              "x": -187,
+              "y": 27.92,
+              "z": 5.9,
+              "strategy": "shortest"
+            },
+            {
+              "x": -184,
+              "y": 27.66,
+              "z": 6.06,
+              "strategy": "shortest"
+            },
+            {
+              "x": -181,
+              "y": 27.44,
+              "z": 6.21,
+              "strategy": "shortest"
+            },
+            {
+              "x": -178,
+              "y": 27.24,
+              "z": 6.37,
+              "strategy": "shortest"
+            },
+            {
+              "x": -175,
+              "y": 27.07,
+              "z": 6.52,
+              "strategy": "shortest"
+            },
+            {
+              "x": -172,
+              "y": 26.92,
+              "z": 6.68,
+              "strategy": "shortest"
+            },
+            {
+              "x": -169,
+              "y": 26.81,
+              "z": 6.84,
+              "strategy": "shortest"
+            },
+            {
+              "x": -166,
+              "y": 26.73,
+              "z": 6.99,
+              "strategy": "shortest"
+            },
+            {
+              "x": -163,
+              "y": 26.69,
+              "z": 7.15,
+              "strategy": "shortest"
+            },
+            {
+              "x": -160,
+              "y": 26.73,
+              "z": 7.3,
+              "strategy": "shortest"
+            },
+            {
+              "x": -60,
+              "y": 26.87,
+              "z": 10.47,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

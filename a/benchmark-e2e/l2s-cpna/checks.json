@@ -1,0 +1,119 @@
+{
+ "id": "l2s-cpna",
+ "source": "Loop2Scenic CPNA_25_50kph (Euro NCAP)",
+ "description": "a vehicle travels forwards towards an adult pedestrian crossing its path walking from the nearside",
+ "town": "Town05",
+ "type": "vru_crossing",
+ "seed": 2,
+ "pins": {
+  "vru_type": "pedestrian",
+  "speed": 1.4,
+  "from": "right",
+  "occluded": false,
+  "stops_in_lane_s": 0,
+  "ego_speed": 14
+ },
+ "passed": 16,
+ "total": 16,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-cpna.xosc",
+  "route": "l2s-cpna_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 14,
+  "vru_type": "pedestrian",
+  "speed": 1.4,
+  "from": "right",
+  "crossing_m": 18.9,
+  "on_crosswalk": false,
+  "arrival_offset_s": -0.1,
+  "trigger_m": 41.3,
+  "occluded": false,
+  "stops_in_lane_s": null
+ },
+ "checks": [
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): builds \u2014 \u201ca vehicle travels forwards towards an adult pedestrian crossing its pa\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): pinned vru_type honoured",
+   "status": "PASS",
+   "detail": "('vru_type', 'pedestrian', 'pedestrian')"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): pinned speed honoured",
+   "status": "PASS",
+   "detail": "('speed', 1.4, 1.4)"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): pinned from honoured",
+   "status": "PASS",
+   "detail": "('from', 'right', 'right')"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): pinned occluded honoured",
+   "status": "PASS",
+   "detail": "('occluded', False, False)"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): pinned stops_in_lane_s honoured",
+   "status": "PASS",
+   "detail": "('stops_in_lane_s', None, 0)"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): pinned ego_speed honoured",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): a crossing pedestrian",
+   "status": "PASS",
+   "detail": "['ego', 'pedestrian']"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): ...on a trajectory",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): it starts off the carriageway",
+   "status": "PASS",
+   "detail": "None"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): ...and walks from one side of the ego's path to the other",
+   "status": "PASS",
+   "detail": "(4.20727661519064, -14.731928755497774)"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): ...across it",
+   "status": "PASS",
+   "detail": "90.25171398821652"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): ...coming from the ego's right",
+   "status": "PASS",
+   "detail": "4.20727661519064"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): it moves at 1.4 m/s in the preview",
+   "status": "PASS",
+   "detail": "1.399999999999752"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): a non-reacting ego meets it",
+   "status": "PASS",
+   "detail": "0.4689896972560596"
+  },
+  {
+   "check": "l2s-cpna (Loop2Scenic CPNA_25_50kph (Euro NCAP)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

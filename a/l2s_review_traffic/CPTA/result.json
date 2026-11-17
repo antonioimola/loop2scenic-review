@@ -1,0 +1,90 @@
+{
+ "name": "l2st-CPTA",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   21.2,
+   20.65,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    11.2,
+    11.15
+   ],
+   [
+    "adversary_SpeedEvent1",
+    null,
+    19.6
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.58,
+   "shape_median_m": 0.12,
+   "end_diff_m": 0.48,
+   "turn_deg": [
+    90,
+    90
+   ],
+   "z": [
+    -0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 16.5,
+   "shape_median_m": 0.0,
+   "end_diff_m": 22.95,
+   "turn_deg": [
+    118,
+    0
+   ],
+   "z": [
+    0.19,
+    1.91
+   ],
+   "closest_to_hero": [
+    0.76,
+    0.98
+   ]
+  },
+  "problems": [
+   "adversary_SpeedEvent1 fires only in the preview",
+   "adversary turns 118\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary_SpeedEvent1 fires only in the preview",
+  "adversary turns 118\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "CPTA",
+ "hash": "e17904b5782f",
+ "elapsed": 24,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CPTA__Town10HD__2026-11-16_03-59-46_197"
+}

@@ -1,0 +1,138 @@
+{
+ "name": "l2st-C-ICAP_Stationary_pedestrian_in_curve",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   60.3,
+   22.4,
+   "idle"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_LaneChangeEvent1",
+    9.85,
+    9.8
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 1.36,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.36,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.2,
+    4.26
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 32.27,
+   "shape_median_m": 0.0,
+   "end_diff_m": 35.02,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.54,
+    11.03
+   ],
+   "closest_to_hero": [
+    19.63,
+    19.34
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    5.3,
+    5.3
+   ],
+   "closest_to_hero": [
+    9.18,
+    10.54
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    5.96,
+    5.96
+   ],
+   "closest_to_hero": [
+    13.64,
+    14.96
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "C-ICAP_Stationary pedestrian in curve",
+ "hash": "5ce49687d4e8",
+ "elapsed": 27,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-C-ICAP_Stationary_pedestrian_in_curve__Town04__2026-11-16_02-18-00_146"
+}

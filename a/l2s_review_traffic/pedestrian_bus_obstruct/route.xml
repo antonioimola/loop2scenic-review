@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<routes>
+  <route id="0" town="Town01">
+    <waypoint x="392.32" y="60" z="0.5" pitch="0.0" roll="0.0" yaw="90.04" />
+    <waypoint x="392.29" y="100" z="0.5" pitch="0.0" roll="0.0" yaw="84.86" />
+    <waypoint x="392.56" y="103" z="0.5" pitch="0.0" roll="0.0" yaw="76.32" />
+    <waypoint x="393.29" y="106" z="0.5" pitch="0.0" roll="0.0" yaw="71.57" />
+    <waypoint x="394.29" y="109" z="0.5" pitch="0.0" roll="0.0" yaw="71.57" />
+    <waypoint x="395.29" y="112" z="0.5" pitch="0.0" roll="0.0" yaw="76.32" />
+    <waypoint x="396.02" y="115" z="0.5" pitch="0.0" roll="0.0" yaw="84.86" />
+    <waypoint x="396.29" y="118" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="121" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="124" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="127" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="130" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="133" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="136" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="139" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="142" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="145" z="0.5" pitch="0.0" roll="0.0" yaw="90" />
+    <waypoint x="396.29" y="148" z="0.5" pitch="0.0" roll="0.0" yaw="95.14" />
+    <waypoint x="396.02" y="151" z="0.5" pitch="0.0" roll="0.0" yaw="103.68" />
+    <waypoint x="395.29" y="154" z="0.5" pitch="0.0" roll="0.0" yaw="108.43" />
+    <waypoint x="394.29" y="157" z="0.5" pitch="0.0" roll="0.0" yaw="108.43" />
+    <waypoint x="393.29" y="160" z="0.5" pitch="0.0" roll="0.0" yaw="103.68" />
+    <waypoint x="392.56" y="163" z="0.5" pitch="0.0" roll="0.0" yaw="94.95" />
+    <waypoint x="392.3" y="166" z="0.5" pitch="0.0" roll="0.0" yaw="89.98" />
+    <waypoint x="392.34" y="300" z="0.5" pitch="0.0" roll="0.0" yaw="89.98" />
+  </route>
+</routes>

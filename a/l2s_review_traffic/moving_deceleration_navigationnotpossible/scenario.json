@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 10,
+    "walkers": 10,
+    "seed": 2478,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -330,
+    "y": 30,
+    "z": 0.69,
+    "yaw": 0,
+    "initial_speed": 20,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -330,
+              "y": 30,
+              "z": 0.69,
+              "strategy": "fastest"
+            },
+            {
+              "x": -100,
+              "y": 30.31,
+              "z": 9.8,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ],
+    "max_acceleration": 6
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "car",
+      "x": -312,
+      "y": 30.03,
+      "z": 0.96,
+      "yaw": 0,
+      "initial_speed": 20,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -312,
+                "y": 30.03,
+                "z": 0.96,
+                "strategy": "fastest"
+              },
+              {
+                "x": 100,
+                "y": 31.02,
+                "z": 11.17,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "distance_to_point",
+            "value": 3,
+            "point": {
+              "x": -215,
+              "y": 30.16,
+              "z": 4.452
+            },
+            "entity_ref": "obj-2"
+          },
+          "action": {
+            "type": "set_speed",
+            "target": {
+              "mode": "absolute",
+              "value": 0
+            },
+            "dynamics": {
+              "shape": "linear",
+              "dimension": "rate",
+              "value": 9
+            }
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false,
+      "max_acceleration": 6
+    },
+    {
+      "id": "obj-3",
+      "type": "truck",
+      "x": -326,
+      "y": 33.51,
+      "z": 0.74,
+      "yaw": 0,
+      "initial_speed": 20,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "simulation_time",
+            "value": 0
+          },
+          "action": {
+            "type": "assign_route",
+            "route_strategy": "fastest",
+            "waypoints": [
+              {
+                "x": -326,
+                "y": 33.51,
+                "z": 0.74,
+                "strategy": "fastest"
+              },
+              {
+                "x": 100,
+                "y": 34.52,
+                "z": 11.17,
+                "strategy": "fastest"
+              }
+            ]
+          }
+        }
+      ],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false,
+      "max_acceleration": 6
+    },
+    {
+      "id": "obj-4",
+      "type": "car",
+      "x": -172,
+      "y": 30.22,
+      "z": 6.68,
+      "yaw": 0,
+      "initial_speed": 0,
+      "events": [],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    },
+    {
+      "id": "obj-5",
+      "type": "car",
+      "x": -165,
+      "y": 30.23,
+      "z": 7.04,
+      "yaw": 0.6,
+      "initial_speed": 0,
+      "events": [],
+      "obey_traffic_lights": false,
+      "obey_obstacles": false
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

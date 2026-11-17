@@ -1,0 +1,99 @@
+{
+ "name": "l2st-lateral_sudden_enter_adv",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.8,
+   20.3,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    10.2,
+    10.15
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.14,
+   "shape_median_m": 0.0,
+   "end_diff_m": 1.11,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.4,
+    9.81
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 2.36,
+   "shape_median_m": 0.02,
+   "end_diff_m": 2.06,
+   "turn_deg": [
+    39,
+    33
+   ],
+   "z": [
+    5.8,
+    8.39
+   ],
+   "closest_to_hero": [
+    3.45,
+    1.93
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "lateral_sudden_enter_adv",
+ "hash": "075923073ee0",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-lateral_sudden_enter_adv__Town04__2026-11-16_04-17-36_057"
+}

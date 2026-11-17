@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "map": "Town01",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": 300.631,
+    "y": -2.025,
+    "z": 0.5,
+    "yaw": 180,
+    "trajectory": [],
+    "events": []
+  },
+  "npcs": [
+    {
+      "id": "obj-7",
+      "type": "pedestrian",
+      "x": 244.5,
+      "y": -6.1,
+      "z": 0.6,
+      "yaw": 90,
+      "behaviors": [
+        "constant_speed"
+      ],
+      "trigger_distance": 400,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 50
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 10
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 2
+            }
+          }
+        },
+        {
+          "id": "evt-2",
+          "trigger": {
+            "type": "after_event",
+            "event_id": "evt-1"
+          },
+          "action": {
+            "type": "set_speed",
+            "dynamics": {
+              "shape": "step",
+              "dimension": "time",
+              "value": 5
+            },
+            "target": {
+              "mode": "absolute",
+              "value": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": []
+}

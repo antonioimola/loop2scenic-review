@@ -1,0 +1,92 @@
+{
+ "id": "l2s-media-moto-cutin",
+ "source": "Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)",
+ "description": "the VUT in the left lane; a motorcycle ahead in the right lane cuts into its lane",
+ "town": "Town03",
+ "type": "cut_in",
+ "seed": 3,
+ "pins": {
+  "npc_type": "motorcycle"
+ },
+ "passed": 12,
+ "total": 12,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-moto-cutin.xosc",
+  "route": "l2s-media-moto-cutin_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 9.5,
+  "npc_type": "motorcycle",
+  "from_side": "right",
+  "npc_speed": 5.3,
+  "initial_gap_m": 33.4,
+  "trigger_m": 20.9,
+  "lane_change_m": 11.8,
+  "brakes_after": true
+ },
+ "checks": [
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): builds \u2014 \u201cthe VUT in the left lane; a motorcycle ahead in the right lane cuts in\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): pinned npc_type honoured",
+   "status": "PASS",
+   "detail": "('npc_type', 'motorcycle', 'motorcycle')"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): the other car starts in the neighbouring lane",
+   "status": "PASS",
+   "detail": "3.5100365311529753"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): ...on the ego's right",
+   "status": "PASS",
+   "detail": "3.5100365311529753"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): ...ahead of the ego",
+   "status": "PASS",
+   "detail": "(16, 0)"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): it changes lanes",
+   "status": "PASS",
+   "detail": "['lane_change', 'set_speed']"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): ...when the ego closes in",
+   "status": "PASS",
+   "detail": "{'type': 'distance_to_ego', 'value': 20.9}"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): ...towards the ego's lane",
+   "status": "PASS",
+   "detail": "('left', True)"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): it ends up in the ego's lane (within 1.0 m of its centre)",
+   "status": "PASS",
+   "detail": "8.436449128091165e-06"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): a non-reacting ego runs into it",
+   "status": "PASS",
+   "detail": "0.08706397808546058"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): the other road user is a motorcycle",
+   "status": "PASS",
+   "detail": "motorcycle"
+  },
+  {
+   "check": "l2s-media-moto-cutin (Loop2Scenic C-ICAP Daytime - motorcycle cutting-in (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

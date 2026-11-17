@@ -1,0 +1,121 @@
+{
+ "name": "l2st-VehicleMakingAManeuver_VehicleTravelingInOppositeDirection",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   28.1,
+   27.7,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.57,
+   "shape_median_m": 0.28,
+   "end_diff_m": 0.52,
+   "turn_deg": [
+    -2,
+    -2
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.04,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.38,
+   "turn_deg": [
+    -1,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    3.71,
+    3.46
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.35,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.35,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    2.81,
+    3.25
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "VehicleMakingAManeuver_VehicleTravelingInOppositeDirection",
+ "hash": "d071cdae9c02",
+ "elapsed": 17,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "FAILURE"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-VehicleMakingAManeuver_VehicleTravelingInOppositeDirection__Town01__2026-11-16_02-08-11_526"
+}

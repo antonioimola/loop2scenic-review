@@ -1,0 +1,79 @@
+{
+ "name": "l2st-approach_lat_crossing_traffic_area_from_right",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   29.05,
+   28.55,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    9.05,
+    9.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.67,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.67,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 13.3,
+   "shape_median_m": 0.12,
+   "end_diff_m": 13.3,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.95,
+    4.14
+   ],
+   "closest_to_hero": [
+    3.8,
+    3.98
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "approach_lat_crossing_traffic_area_from_right",
+ "hash": "e8bd3c519575",
+ "elapsed": 18,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-approach_lat_crossing_traffic_area_from_right__Town01__2026-11-16_03-53-06_787"
+}

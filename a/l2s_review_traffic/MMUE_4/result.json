@@ -1,0 +1,175 @@
+{
+ "name": "l2st-MMUE_4",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   25.26,
+   24.5,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "hero_SpeedEvent1",
+    5.45,
+    5.45
+   ],
+   [
+    "hero_SpeedEvent2",
+    13.05,
+    13
+   ],
+   [
+    "adversary_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary1_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary2_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary3_AssignRouteEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.69,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.21,
+   "turn_deg": [
+    96,
+    97
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.75,
+   "shape_median_m": 0.38,
+   "end_diff_m": 0.39,
+   "turn_deg": [
+    -91,
+    -91
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    7.29,
+    6.81
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": 0.33,
+   "shape_median_m": 0.01,
+   "end_diff_m": 0.33,
+   "turn_deg": [
+    -1,
+    -1
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    21.41,
+    21.07
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": 0.77,
+   "shape_median_m": 0.28,
+   "end_diff_m": 0.41,
+   "turn_deg": [
+    -90,
+    -91
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    7.29,
+    6.82
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": 0.63,
+   "shape_median_m": 0.02,
+   "end_diff_m": 0.63,
+   "turn_deg": [
+    -14,
+    -13
+   ],
+   "z": [
+    0.03,
+    0.69
+   ],
+   "closest_to_hero": [
+    17.91,
+    17.57
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MMUE_4",
+ "hash": "8c92d64e16c7",
+ "elapsed": 13,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MMUE_4__Town05__2026-11-16_04-08-47_004"
+}

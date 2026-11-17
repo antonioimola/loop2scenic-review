@@ -1,0 +1,150 @@
+{
+ "name": "l2st-MoveOutOfTravelLane",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   60.35,
+   9.65,
+   "idle"
+  ],
+  "events": [
+   [
+    "hero_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_SpeedEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.43,
+   "shape_median_m": 0.13,
+   "end_diff_m": 0.43,
+   "turn_deg": [
+    -23,
+    -24
+   ],
+   "z": [
+    0.67,
+    1.57
+   ]
+  },
+  "adversary": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.91,
+    1.57
+   ],
+   "closest_to_hero": [
+    3.92,
+    4.04
+   ]
+  },
+  "adversary1": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.44,
+    1.1
+   ],
+   "closest_to_hero": [
+    23.5,
+    23.69
+   ]
+  },
+  "adversary2": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.52,
+    1.17
+   ],
+   "closest_to_hero": [
+    16.93,
+    17.14
+   ]
+  },
+  "adversary3": {
+   "shape_max_m": null,
+   "shape_median_m": null,
+   "end_diff_m": 0.0,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.59,
+    1.25
+   ],
+   "closest_to_hero": [
+    10.41,
+    10.65
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "MoveOutOfTravelLane",
+ "hash": "f6b7199c94f0",
+ "elapsed": 28,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "FAILURE"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-MoveOutOfTravelLane__Town03__2026-11-16_02-07-08_536"
+}

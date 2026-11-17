@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "daytime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 10,
+    "walkers": 6,
+    "seed": 4498,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -320,
+    "y": 33.52,
+    "z": 0.83,
+    "yaw": 0,
+    "initial_speed": 15.6,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "assign_route",
+          "route_strategy": "fastest",
+          "waypoints": [
+            {
+              "x": -320,
+              "y": 33.52,
+              "z": 0.83,
+              "strategy": "fastest"
+            },
+            {
+              "x": -262,
+              "y": 33.6,
+              "z": 2.33,
+              "strategy": "fastest"
+            },
+            {
+              "x": -259,
+              "y": 33.48,
+              "z": 2.44,
+              "strategy": "shortest"
+            },
+            {
+              "x": -255.99,
+              "y": 33.11,
+              "z": 2.56,
+              "strategy": "shortest"
+            },
+            {
+              "x": -252.99,
+              "y": 32.54,
+              "z": 2.67,
+              "strategy": "shortest"
+            },
+            {
+              "x": -249.98,
+              "y": 31.89,
+              "z": 2.8,
+              "strategy": "shortest"
+            },
+            {
+              "x": -246.97,
+              "y": 31.28,
+              "z": 2.93,
+              "strategy": "shortest"
+            },
+            {
+              "x": -243.97,
+              "y": 30.83,
+              "z": 3.05,
+              "strategy": "shortest"
+            },
+            {
+              "x": -240.97,
+              "y": 30.62,
+              "z": 3.18,
+              "strategy": "shortest"
+            },
+            {
+              "x": -237.97,
+              "y": 30.64,
+              "z": 3.31,
+              "strategy": "shortest"
+            },
+            {
+              "x": -234.97,
+              "y": 30.67,
+              "z": 3.45,
+              "strategy": "shortest"
+            },
+            {
+              "x": -231.97,
+              "y": 30.7,
+              "z": 3.6,
+              "strategy": "shortest"
+            },
+            {
+              "x": -228.97,
+              "y": 30.73,
+              "z": 3.74,
+              "strategy": "shortest"
+            },
+            {
+              "x": -225.97,
+              "y": 30.76,
+              "z": 3.89,
+              "strategy": "shortest"
+            },
+            {
+              "x": -222.97,
+              "y": 30.93,
+              "z": 4.04,
+              "strategy": "shortest"
+            },
+            {
+              "x": -219.97,
+              "y": 31.37,
+              "z": 4.19,
+              "strategy": "shortest"
+            },
+            {
+              "x": -216.98,
+              "y": 32,
+              "z": 4.35,
+              "strategy": "shortest"
+            },
+            {
+              "x": -213.99,
+              "y": 32.71,
+              "z": 4.5,
+              "strategy": "shortest"
+            },
+            {
+              "x": -210.99,
+              "y": 33.37,
+              "z": 4.66,
+              "strategy": "shortest"
+            },
+            {
+              "x": -208,
+              "y": 33.88,
+              "z": 4.81,
+              "strategy": "shortest"
+            },
+            {
+              "x": -205,
+              "y": 34.15,
+              "z": 4.97,
+              "strategy": "shortest"
+            },
+            {
+              "x": -200,
+              "y": 33.68,
+              "z": 5.23,
+              "strategy": "shortest"
+            },
+            {
+              "x": -100,
+              "y": 33.81,
+              "z": 9.8,
+              "strategy": "fastest"
+            }
+          ]
+        }
+      }
+    ],
+    "max_acceleration": 5
+  },
+  "npcs": [],
+  "staticObjects": [
+    {
+      "id": "obj-2",
+      "type": "prop",
+      "prop": "static.prop.box02",
+      "x": -233,
+      "y": 33.63,
+      "z": 3.05,
+      "yaw": -0.0
+    }
+  ],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "map": "Town04",
+  "weather": {
+    "fog": 0,
+    "rainy": 0,
+    "cloudy": 0,
+    "sunny": 0,
+    "wet_road": 0,
+    "snowy": 0,
+    "dust_storm": 0
+  },
+  "time": "nighttime",
+  "bgTraffic": {
+    "enabled": true,
+    "count": 9,
+    "walkers": 7,
+    "seed": 3360,
+    "radius": 50,
+    "density": true
+  },
+  "ego": {
+    "id": "obj-1",
+    "type": "ego",
+    "x": -257.6,
+    "y": 39.7,
+    "z": 2.5,
+    "yaw": -0.0,
+    "initial_speed": 0,
+    "events": [
+      {
+        "id": "evt-1",
+        "trigger": {
+          "type": "simulation_time",
+          "value": 0
+        },
+        "action": {
+          "type": "follow_trajectory",
+          "trajectory": [
+            {
+              "x": -257.6,
+              "y": 39.7,
+              "z": 2.5,
+              "velocity": 6
+            },
+            {
+              "x": -250,
+              "y": 39.4,
+              "z": 2.8,
+              "velocity": 6
+            },
+            {
+              "x": -240,
+              "y": 37.2,
+              "z": 3.22,
+              "velocity": 6
+            },
+            {
+              "x": -225,
+              "y": 37,
+              "z": 3.94,
+              "velocity": 6
+            },
+            {
+              "x": -150,
+              "y": 37.1,
+              "z": 7.82,
+              "velocity": 6
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "npcs": [
+    {
+      "id": "obj-2",
+      "type": "deer",
+      "x": -228,
+      "y": 29,
+      "z": 3.89,
+      "yaw": 90,
+      "initial_speed": 0,
+      "events": [
+        {
+          "id": "evt-1",
+          "trigger": {
+            "type": "distance_to_ego",
+            "value": 26
+          },
+          "action": {
+            "type": "follow_trajectory",
+            "trajectory": [
+              {
+                "x": -228,
+                "y": 29,
+                "z": 3.79,
+                "velocity": 2
+              },
+              {
+                "x": -228,
+                "y": 37,
+                "z": 3.79,
+                "velocity": 2
+              },
+              {
+                "x": -228,
+                "y": 41,
+                "z": 3.79,
+                "velocity": 2
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "staticObjects": [],
+  "trafficSignals": [],
+  "generated": null,
+  "trafficSources": []
+}

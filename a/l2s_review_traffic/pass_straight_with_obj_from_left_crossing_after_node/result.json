@@ -1,0 +1,83 @@
+{
+ "name": "l2st-pass_straight_with_obj_from_left_crossing_after_node",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   24.95,
+   23.95,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    0.15,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.69,
+   "shape_median_m": 0.08,
+   "end_diff_m": 1.85,
+   "turn_deg": [
+    126,
+    126
+   ],
+   "z": [
+    0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 3.03,
+   "shape_median_m": 0.0,
+   "end_diff_m": 9.48,
+   "turn_deg": [
+    -126,
+    0
+   ],
+   "z": [
+    0.24,
+    1.1
+   ],
+   "closest_to_hero": [
+    1.12,
+    0.75
+   ]
+  },
+  "problems": [
+   "adversary turns -126\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary turns -126\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "pass_straight_with_obj_from_left_crossing_after_node",
+ "hash": "a8e916fe43ac",
+ "elapsed": 16,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-pass_straight_with_obj_from_left_crossing_after_node__Town03__2026-11-16_01-58-08_565"
+}

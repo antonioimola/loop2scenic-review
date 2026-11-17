@@ -1,0 +1,99 @@
+{
+ "name": "l2st-UN_WP29_WrongWayDriver",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   21.55,
+   21.25,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    0.1,
+    0.05
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.3,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.3,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.25,
+    8.13
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.41,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.41,
+   "turn_deg": [
+    -2,
+    0
+   ],
+   "z": [
+    1.05,
+    7.49
+   ],
+   "closest_to_hero": [
+    3.39,
+    3.42
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "UN_WP29_WrongWayDriver",
+ "hash": "b2ef93ca5f5c",
+ "elapsed": 15,
+ "criteria": [
+  [
+   "RunningRedLightTest",
+   "SUCCESS"
+  ],
+  [
+   "OnSidewalkTest",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "RunningStopTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckKeepLane",
+   "SUCCESS"
+  ],
+  [
+   "WrongLaneTest",
+   "SUCCESS"
+  ],
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-UN_WP29_WrongWayDriver__Town04__2026-11-16_02-13-02_382"
+}

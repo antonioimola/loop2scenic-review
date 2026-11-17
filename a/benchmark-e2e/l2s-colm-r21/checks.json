@@ -1,0 +1,81 @@
+{
+ "id": "l2s-colm-r21",
+ "source": "Loop2Scenic r21_town07_ins_sr (CoLMDriver)",
+ "description": "the ego vehicle turns right at a signalized 4-way intersection ... while an adversary vehicle starting from the left arm passes straight through",
+ "town": "Town07",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "ego_right_crossing",
+  "npc_from": "left"
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-colm-r21.xosc",
+  "route": "l2s-colm-r21_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 12.5,
+  "layout": "ego_right_crossing",
+  "npc_from": "left",
+  "npc_type": "car",
+  "junction": "725",
+  "signalized": true,
+  "oncoming": false,
+  "npc_speed": 7.8,
+  "npc_run_up_m": 48.7,
+  "arrival_offset_s": -0.54,
+  "trigger_m": 96.3
+ },
+ "checks": [
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): builds \u2014 \u201cthe ego vehicle turns right at a signalized 4-way intersection ... whi\u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'ego_right_crossing', 'ego_right_crossing')"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): pinned npc_from honoured",
+   "status": "PASS",
+   "detail": "('npc_from', 'left', 'left')"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((87, 94, '725'), (12, 26, '725'))"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): the ego goes right through it",
+   "status": "PASS",
+   "detail": "91.03845708440286"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "0.0"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): ...it comes from the ego's left",
+   "status": "PASS",
+   "detail": "91.035648143576"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): they meet",
+   "status": "PASS",
+   "detail": "6.29222635073109"
+  },
+  {
+   "check": "l2s-colm-r21 (Loop2Scenic r21_town07_ins_sr (CoLMDriver)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

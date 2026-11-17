@@ -1,0 +1,81 @@
+{
+ "id": "l2s-media-r12",
+ "source": "Loop2Scenic r12_town06_ins_sl (image)",
+ "description": "the ego car merges into the main road from a connecting side road ... intersecting with the ego car's merging path",
+ "town": "Town06",
+ "type": "junction_conflict",
+ "seed": 1,
+ "pins": {
+  "layout": "ego_left_crossing",
+  "npc_from": "right"
+ },
+ "passed": 9,
+ "total": 9,
+ "result": "PASS",
+ "files": {
+  "json": "scenario.json",
+  "xosc": "l2s-media-r12.xosc",
+  "route": "l2s-media-r12_route.xml",
+  "png": "map.png"
+ },
+ "params": {
+  "ego_speed": 12.5,
+  "layout": "ego_left_crossing",
+  "npc_from": "right",
+  "npc_type": "truck",
+  "junction": "1203",
+  "signalized": false,
+  "oncoming": false,
+  "npc_speed": 9.8,
+  "npc_run_up_m": 29.6,
+  "arrival_offset_s": 0.53,
+  "trigger_m": 65.4
+ },
+ "checks": [
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): builds \u2014 \u201cthe ego car merges into the main road from a connecting side road ... \u2026\u201d",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): pinned layout honoured",
+   "status": "PASS",
+   "detail": "('layout', 'ego_left_crossing', 'ego_left_crossing')"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): pinned npc_from honoured",
+   "status": "PASS",
+   "detail": "('npc_from', 'right', 'right')"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): both routes go through the junction where they meet",
+   "status": "PASS",
+   "detail": "((90, 110, '1203'), (4, 24, '1203'))"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): the ego goes left through it",
+   "status": "PASS",
+   "detail": "-100.5322500048556"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): the other car goes straight through it",
+   "status": "PASS",
+   "detail": "-0.002387313153406012"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): ...it comes from the ego's right",
+   "status": "PASS",
+   "detail": "-105.05399505038226"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): they meet",
+   "status": "PASS",
+   "detail": "3.3918207365332727"
+  },
+  {
+   "check": "l2s-media-r12 (Loop2Scenic r12_town06_ins_sl (image)): exports",
+   "status": "PASS",
+   "detail": "200 <?xml version='1.0' encoding='utf-8'?>\n<OpenSCENARIO>\n  <FileHeader revMajor=\"1\" revMinor=\"0\" date=\"2020-03-24T12:00:00\" description=\"CARLA:GeneratedScenario\" author=\"llm-scenario-gen\" />\n  <Parameter"
+  }
+ ]
+}

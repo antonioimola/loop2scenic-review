@@ -1,0 +1,85 @@
+{
+ "name": "l2st-CPFA_50_50kph",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   20.5,
+   20.15,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    6.25,
+    6.25
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.02,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.56,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    -0.0,
+    0.69
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 9.81,
+   "shape_median_m": 5.05,
+   "end_diff_m": 10.53,
+   "turn_deg": [
+    -74,
+    0
+   ],
+   "z": [
+    0.19,
+    1.6
+   ],
+   "closest_to_hero": [
+    1.56,
+    0.55
+   ]
+  },
+  "problems": [
+   "adversary drives 5.05 m off the preview path (median)",
+   "adversary turns -74\u00b0 in CARLA vs 0\u00b0"
+  ],
+  "warnings": []
+ },
+ "problems": [
+  "adversary drives 5.05 m off the preview path (median)",
+  "adversary turns -74\u00b0 in CARLA vs 0\u00b0"
+ ],
+ "warnings": [],
+ "verdict": "FAIL",
+ "card": "CPFA_50_50kph",
+ "hash": "d3ca3693ed4c",
+ "elapsed": 12,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "SUCCESS"
+  ],
+  [
+   "CollisionTest",
+   "FAILURE"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-CPFA_50_50kph__Town01__2026-11-16_03-03-47_920"
+}

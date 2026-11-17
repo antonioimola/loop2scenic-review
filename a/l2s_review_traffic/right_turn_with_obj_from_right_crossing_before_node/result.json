@@ -1,0 +1,79 @@
+{
+ "name": "l2st-right_turn_with_obj_from_right_crossing_before_node",
+ "terminated": true,
+ "checks": [],
+ "rebuilt_differs": "",
+ "notes": [],
+ "vs_preview": {
+  "run_s": [
+   12.55,
+   12.05,
+   "egoDone"
+  ],
+  "events": [
+   [
+    "hero_AssignRouteEvent0",
+    0.15,
+    0.05
+   ],
+   [
+    "adversary_FollowTrajectoryEvent0",
+    1.0,
+    0.95
+   ]
+  ],
+  "hero": {
+   "shape_max_m": 0.39,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.6,
+   "turn_deg": [
+    90,
+    89
+   ],
+   "z": [
+    0.0,
+    0.75
+   ]
+  },
+  "adversary": {
+   "shape_max_m": 0.0,
+   "shape_median_m": 0.0,
+   "end_diff_m": 0.3,
+   "turn_deg": [
+    0,
+    0
+   ],
+   "z": [
+    0.95,
+    1.1
+   ],
+   "closest_to_hero": [
+    5.0,
+    5.61
+   ]
+  },
+  "problems": [],
+  "warnings": []
+ },
+ "problems": [],
+ "warnings": [],
+ "verdict": "PASS",
+ "card": "right_turn_with_obj_from_right_crossing_before_node",
+ "hash": "a5224bacd6b7",
+ "elapsed": 9,
+ "criteria": [
+  [
+   "CheckDrivenDistance",
+   "FAILURE"
+  ],
+  [
+   "CollisionTest",
+   "SUCCESS"
+  ],
+  [
+   "Timeout",
+   "SUCCESS"
+  ]
+ ],
+ "recording": "/home/dellpro2/Antonio/recordings/gui_test_l2st-right_turn_with_obj_from_right_crossing_before_node__Town05__2026-11-16_04-03-54_260"
+}
